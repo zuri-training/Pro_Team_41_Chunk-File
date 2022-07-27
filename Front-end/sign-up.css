@@ -1,0 +1,234 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-bg: #d6d2dc;
+  --color-main: #301e4e;
+  --color-btn: #ff6e6c;
+  --primary003: #52436b;
+  --fz-heading: 40px;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+  background-color: #f6f6f6;
+}
+
+main {
+  padding-inline: 3rem;
+  padding-block: 3rem;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 3rem;
+}
+
+header .logo {
+  width: clamp(8rem, 20vw, 12rem);
+}
+
+header a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.header-action .btn-login {
+  padding: 0.5rem clamp(1rem, 4vw, 3rem);
+  border-radius: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  border: 1px solid var(--color-main);
+  transition: 0.1s ease-out;
+}
+
+.header-action .btn-login:hover {
+  color: #fff;
+  background-color: var(--color-main);
+}
+
+.main-container {
+  width: 100%;
+  max-width: 900px;
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: auto;
+}
+
+.main-container .form-container {
+  background-color: #fff;
+  padding: clamp(1rem, 4vw, 3rem);
+}
+
+.form-container h2 {
+  margin-bottom: 1.5rem;
+}
+
+.form-container .form-control {
+  margin-block: 1rem;
+}
+
+.form-control label {
+  font-size: 0.9rem;
+  /* margin-bottom: 2rem; */
+}
+
+.form-control input {
+  padding: 0.7rem;
+  width: 100%;
+  outline: none;
+  margin-top: 0.3rem;
+  border: 1px solid var(--color-main);
+  border-radius: 4px;
+  font: inherit;
+  font-size: 0.9rem;
+  overflow: hidden;
+}
+
+.form-control [type="checkbox"] {
+  width: fit-content;
+}
+
+.form-control small a {
+  color: var(--color-btn);
+}
+
+.form-container button {
+  background-color: var(--color-main);
+  font: inherit;
+  color: #fff;
+  padding: 0.7rem;
+  border: none;
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-container .illustration-container {
+  height: 100%;
+  background-color: var(--primary003);
+  color: #fff;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.illustration-container .slides {
+  display: none;
+}
+
+.illustration-container .slides img {
+  max-height: 13rem;
+}
+
+.illustration-container h2 {
+  margin-block: 2rem 1rem;
+}
+
+.illustration-container p {
+  margin-bottom: 1rem;
+}
+
+.illustration-container .dots {
+  display: inline-block;
+}
+
+.slide-nav {
+  position: relative;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.slide-nav .sliders-btn-left {
+  position: absolute;
+  left: 0;
+  display: grid;
+  place-content: center;
+  padding: 0.3rem;
+  border: none;
+  border-radius: 50%;
+  aspect-ratio: 1;
+  cursor: pointer;
+}
+
+.slide-nav .sliders-btn-right {
+  position: absolute;
+  padding: 0.3rem;
+  display: grid;
+  place-content: center;
+  right: 0;
+  top: 0;
+  border: none;
+  transform: rotate(180deg);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slide-nav .arrow {
+  width: 1rem;
+  height: 1rem;
+}
+
+.slide-nav .dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 0.5rem;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.slide-nav .dot.active {
+  background-color: #fff;
+}
+
+@media (max-width: 820px) {
+  .main-container {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 30rem;
+  }
+  main {
+    padding-inline: 1rem;
+    padding-top: 1rem;
+  }
+
+  .form-container h2 {
+    margin-top: 1rem;
+  }
+  .form-container button {
+    margin-bottom: 1rem;
+  }
+}
+
+@media (max-width: 470px) {
+  header {
+    padding-inline: 1rem;
+  }
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}

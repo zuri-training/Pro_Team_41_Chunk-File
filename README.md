@@ -69,8 +69,8 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 
 
 > Dashboard:
-- *Chunking Page/Splitting*
-- *Access saved files*
+- Account settings Page
+- Library Page
 
 ### User Flow
 > Unauthenticated User:

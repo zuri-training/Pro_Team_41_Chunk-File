@@ -72,7 +72,7 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 - *Chunking Page/Splitting*
 - *Access saved files*
 
-###User Flow
+### User Flow
 > Unauthenticated User:
 - User starts flow by entering the Landing page from the link and can check through who we are and the services we can offer.
 - Users can access the platform's documentation and other resources on the header section.

@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="sign-up.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
       rel="stylesheet"
@@ -17,21 +18,51 @@
     <header>
       <div><img class="logo" src="assets/icons/logo.svg" alt="" /></div>
       <div class="header-action">
-        <a class="btn-login" href="#">Login</a>
+        <button class="btn-login btn">Login</button>
       </div>
     </header>
     <main>
+      <aside class="modal">
+        <div class="modal-content login">
+          <span class="close-button">&times;</span>
+          <img src="assets/icons/logo.svg" alt="Logo" />
+          <h1>Welcome Back</h1>
+          <form action="">
+            <div class="form-control">
+              <label for="email">Email Address</label>
+              <input type="text" placeholder="Enter your email address" />
+            </div>
+            <div class="form-control">
+              <label for="email">Password</label>
+              <input type="text" placeholder="Enter your password" />
+              <small><a href="" class="redirect">Forget Password?</a></small>
+            </div>
+            <div class="form-action">
+              <button>Login</button>
+            </div>
+          </form>
+          <small
+            >Don't have an account?
+            <a href="sign-up.html" class="redirect">Sign up</a></small
+          >
+        </div>
+      </aside>
       <section class="main-container">
         <div class="form-container">
           <h2>Create an account</h2>
           <form action="">
             <div class="form-control">
-              <label for="">Full Name</label>
-              <input type="text" required placeholder="John Doe" />
+              <label for="name">Full Name</label>
+              <input type="text" required placeholder="John Doe" id="name" />
             </div>
             <div class="form-control">
-              <label for="">Email Address</label>
-              <input type="email" required placeholder="example@gmail.com" />
+              <label for="email">Email Address</label>
+              <input
+                type="email"
+                required
+                placeholder="example@gmail.com"
+                id="email"
+              />
             </div>
             <div class="form-control">
               <label for="">Password</label>
@@ -39,6 +70,13 @@
                 type="password"
                 required
                 placeholder="Enter atleast 8 characters"
+                id="password"
+              />
+              <img
+                class=""
+                id="toggle-password"
+                src="assets/icons/remove_red_eye.png"
+                alt="show password icon"
               />
             </div>
             <div class="form-control">
@@ -101,7 +139,6 @@
             <li><a href="#">Resources</a></li>
             <li><a href="#">About us</a></li>
             <li><a href="faq.html">Contact us</a></li>
-            <li><a href="#">FAQs</a></li>
           </ul>
         </div>
       </section>
@@ -125,6 +162,7 @@
       </section>
     </footer>
 
-    <script src="signUpSlideShow.js"></script>
+    <script src="login-modal.js"></script>
+    <script src="sign-up.js"></script>
   </body>
 </html>

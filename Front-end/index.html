@@ -7,6 +7,7 @@
     <title>Chunkify</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="modal.css" />
     <link rel="stylesheet" href="footer.css" />
   </head>
   <body>
@@ -21,7 +22,7 @@
           </ul>
         </div>
         <div class="header-action navigation">
-          <a class="btn-link primary" href="#">Sign In</a>
+          <button class="btn-link btn-login primary">Sign In</button>
           <a class="btn-link secondary" href="sign-up.html">Sign Up</a>
         </div>
         <div class="mobile-nav">
@@ -30,7 +31,7 @@
             <li><a href="#">About us</a></li>
             <li><a href="faq.html">Contact us</a></li>
           </ul>
-          <a class="btn-link primary" href="#">Sign In</a>
+          <button class="btn-link btn-login primary">Sign In</button>
           <a class="btn-link secondary" href="sign-up.html">Sign Up</a>
         </div>
         <button class="hamburger">
@@ -38,9 +39,36 @@
         </button>
       </nav>
     </header>
-    <main></main>
+    <main>
+      <section class="modal">
+        <div class="modal-content login">
+          <span class="close-button">&times;</span>
+          <img src="assets/icons/logo.svg" alt="Logo" />
+          <h1>Welcome Back</h1>
+          <form action="">
+            <div class="form-control">
+              <label for="email">Email Address</label>
+              <input type="text" placeholder="Enter your email address" />
+            </div>
+            <div class="form-control">
+              <label for="email">Password</label>
+              <input type="text" placeholder="Enter your password" />
+              <small><a href="" class="redirect">Forget Password?</a></small>
+            </div>
+            <div class="form-action">
+              <button>Login</button>
+            </div>
+          </form>
+          <small
+            >Don't have an account?
+            <a href="sign-up.html" class="redirect">Sign up</a></small
+          >
+        </div>
+      </section>
+    </main>
     <!-- <footer></footer> -->
 
     <script src="nav.js"></script>
+    <script src="login-modal.js"></script>
   </body>
 </html>

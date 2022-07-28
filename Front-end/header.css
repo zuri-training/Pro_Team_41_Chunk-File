@@ -59,14 +59,20 @@ ul {
   padding: 0.5rem 3rem;
   padding-inline: clamp(0.5rem, 3vw, 3rem);
   border-radius: 0.25rem;
+  font-family: inherit;
   font-size: 0.9rem;
   font-weight: 700;
   border: 1px solid var(--color-main);
 }
 
+.header-action .primary:hover {
+  cursor: pointer;
+}
+
 .header-action .primary {
   color: var(--color-main);
   margin-inline-end: clamp(0.5rem, 1vw, 1.5rem);
+  background-color: transparent;
 }
 
 .header-action .secondary {
@@ -150,7 +156,8 @@ ul {
   display: block;
 }
 
-.mobile-nav a {
+.mobile-nav a,
+.mobile-nav button {
   display: block;
   width: 100%;
   max-width: 12rem;
@@ -159,9 +166,14 @@ ul {
   background-color: #6a5c81;
   padding: 1rem 2.5rem;
   color: #fff;
-  text-decoration: none;
 }
 
-.mobile-nav a:hover {
+.mobile-nav button {
+  font: inherit;
+  /* font-weight: 600; */
+}
+
+.mobile-nav a:hover,
+.mobile-nav button:hover {
   background-color: #b7aec7;
 }

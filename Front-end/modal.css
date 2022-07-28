@@ -1,0 +1,112 @@
+:root {
+  --color-bg: #d6d2dc;
+  --color-main: #301e4e;
+  --color-btn: #ff6e6c;
+  --fz-heading: 40px;
+}
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 2rem;
+  width: 25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* place-content: center; */
+}
+
+.close-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  /* float: right; */
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.login img {
+  width: clamp(8rem, 20vw, 10rem);
+}
+
+.login h1 {
+  margin-top: 1rem;
+}
+
+.form-control {
+  margin-block: 1rem;
+}
+
+.form-control label {
+  font-size: 0.9rem;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-family: inherit;
+  outline: none;
+}
+
+.form-control input:focus {
+  outline: 1px solid var(--color-main);
+}
+
+.login .form-control small {
+  float: right;
+  margin-top: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-btn);
+}
+
+.form-action {
+  margin-block: 3rem 1rem;
+}
+
+.form-action button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: inherit;
+  color: #fff;
+  background-color: var(--color-main);
+  border: none;
+}

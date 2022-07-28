@@ -1,5 +1,5 @@
 # ChunkIT
--A platform that accepts CSV or JSON large files, and break them into smaller bits.
+- A platform that accepts CSV or JSON large files, and break them into smaller bits.
 
 > Our Vision
 - [x] Helping clients manage their large file easily.
@@ -138,10 +138,7 @@ https://superfly101.github.io/ChunkIt/
 # DOCUMENTATION
 # Understanding the process of chunking files
 
->   Chunking is a process of splitting large files into smaller files called chunks. 
->   In some applications, such as remote data compression, data synchronisation, and data duplication, chunking is important because it determines the duplicate detection performance of the system.   
-> Chunk File is a small and handy application designed to help you split large files into pieces of a set size, so you can easily transfer them without losing any files.
-> The use of web applications with the function of splitting large CSV or JSON files into small files is for easy opening and archiving
+>   Chunking is a process of splitting large files into smaller files called chunks. In some applications, such as remote data compression, data synchronisation, and data duplication, chunking is important because it determines the duplicate detection performance of the system. Chunk File is a small and handy application designed to help you split large files into pieces of a set size, so you can easily transfer them without losing any files. The use of web applications with the function of splitting large CSV or JSON files into small files is for easy opening and archiving
 
 # What is ChunkIT?
 >   ChunkIt is a platform that accepts CSV or JSON large files and breaks them into smaller bits. For this application to work, the file being uploaded must be in the right format and within the acceptable size range. Successfully chunked files can either be downloaded soon after the chunking process or saved on the platform for future downloads.

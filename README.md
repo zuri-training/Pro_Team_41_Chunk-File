@@ -151,25 +151,20 @@ https://superfly101.github.io/ChunkIt/
 
 # Getting Started 
 
->   For a user to get started with using the chunking feature of the platform, they need to create an account by registering with their email address to become an authenticated user. 
->   This means that an unauthenticated user can not use the chunking feature. However, the unauthenticated user can interact with the platform’s documentation by accessing the resources tab in the header section. 
->   They can also go through the platform’s landing page and FAQ section to learn more about its features.
+>   For a user to get started with using the chunking feature of the platform, they need to create an account by registering with their email address to become an authenticated user. This means that an unauthenticated user can not use the chunking feature. However, the unauthenticated user can interact with the platform’s documentation by accessing the resources tab in the header section.  They can also go through the platform’s landing page and FAQ section to learn more about its features.
 
 # Uploading and chunking a file on ChunkIT
 
 >   Upon creating an account, the user is redirected to the user dashboard where they can start uploading files they want to process. 
->   They choose the option to upload a new file, and a screen appears that allows them to upload a file. 
->   The platform currently supports chunking JSON and CSV files; however, more file formats will be supported in future versions. 
->   The user then uploads their file by either dragging and dropping it on the screen, or browsing through their device’s file system. 
->   The platform can only accept files up to 250 MB in size and are also of the correct format, CSV or JSON. 
->   Once the file uploaded by the user satisfies the requirements, the user can choose the size of the chunk files they require. 
->   The size of the chunk should not be above the original file size. If it is, the file will not be chunked.
->   If the size of the chunk is within the acceptable range, the user is directed to a screen where they can download a zipped file containing the chunked files.
->   The user can also choose to download the files later, and their files are saved on the dashboard.
+  They choose the option to upload a new file, and a screen appears that allows them to upload a file. 
+  The platform currently supports chunking JSON and CSV files; however, more file formats will be supported in future versions. 
+  The user then uploads their file by either dragging and dropping it on the screen, or browsing through their device’s file system. 
+  The platform can only accept files up to 250 MB in size and are also of the correct format, CSV or JSON. 
+ Once the file uploaded by the user satisfies the requirements, the user can choose the size of the chunk files they require. 
+ The size of the chunk should not be above the original file size. If it is, the file will not be chunked.   If the size of the chunk is within the acceptable range, the user is directed to a screen where they can download a zipped file containing the chunked file. The user can also choose to download the files later, and their files are saved on the dashboard.
 
 # What to do after the file is chunked
->   When chunking is over user can save or download the file. The user can also come back later to continue the process without the risk of losing files. 
->   Downloaded files are automatically zipped for easy transfer. Past chunks can be accessed on the user dashboard when needed.
+>   When chunking is over user can save or download the file. The user can also come back later to continue the process without the risk of losing files  Downloaded files are automatically zipped for easy transfer. Past chunks can be accessed on the user dashboard when needed.
 
 # List of available features  
 

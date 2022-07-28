@@ -54,14 +54,6 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 
 
 ## ChunkIT Key features 
-> Unauthenticated User:
-- User starts his flow by entering the Landing page from the link and he can check through who we are and the services we can offer.
-- Users can access our documentation, tools, and our sign-up page.
-- The moment an unauthenticated user signs up, he becomes authenticated and his journey continues.
-> Authenticated User:
-- The user now has full access to all our services and can chunk any CSV or JSON file he wants
-- The user has a dashboard where he can upload, chunk, save or download files at any time.
-- The user also has a setting, profile, and chunk history page that he can access anytime he logs in.
 
 > Landing page
 
@@ -79,6 +71,17 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 > Dashboard:
 - *Chunking Page/Splitting*
 - *Access saved files*
+
+###User Flow
+> Unauthenticated User:
+- User starts flow by entering the Landing page from the link and can check through who we are and the services we can offer.
+- Users can access the platform's documentation and other resources on the header section.
+- The moment an unauthenticated user signs up, they are authorised to access the plaform's chunking features and their journey continues.
+> Authenticated User:
+- The user now has full access to all our services and can chunk any CSV or JSON file he wants
+- The user has a dashboard where he can upload, chunk, save or download files at any time.
+- The user also has a setting, profile, and chunk history page that he can access anytime he logs in.
+
 
 ## Product Specialization
 > Mobile Phones and Laptops

@@ -1,6 +1,7 @@
 # ChunkIT
 A platform that accepts CSV or JSON large files, and break them into smaller bits.
 
+
 ## Table of content
 - [Background](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#background)
 - [Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#objectives)
@@ -8,8 +9,10 @@ A platform that accepts CSV or JSON large files, and break them into smaller bit
 - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
 - 
 
+
 ## Background
 This project, ***ChunkIT***, is a project initiative introduced by the Zuri team. It is useful for anyone sharing large documents. Chunking is simply the process of splitting large files into smaller files called chunks without losing their content or quality.
+
 
 ## Objectives
 - To solve problems regarding issues of having large CSV and JSON files
@@ -18,11 +21,13 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 - The user should be able to view statistics of splittings done previously
 - The user should be able to sort split CSV and JSON files easily
 
+
 ## ChunkIT Solution
 - Create means of chunking CSV and JSON files seamlessly
 - Easily import, save and download your CSV and JSON files anytime
 - Chunking as much as 250MB of CSV and JSON files without a fee
 - Splitting files into different sizes and numbers
+
 
 ## Technologies Used
 - HTML/CSS/Javascript (Frontend)
@@ -49,17 +54,14 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 - *Access saved files*
 
 
-
-
-
 ## Project Status
 > Project is : in progress
+
 
 ## Collaboration
 1. Fork this repository and create a project folde on your local manchine
 
 2. Navigate to the terminal (pointing to your project folder/directory), Clone and then open it up on your prefered code editor
-
 
 ```
 git clone https://github.com/<your github username>/Pro_Team_41_Chunk-File.git
@@ -93,6 +95,7 @@ git pull upstream main
 git push origin your-current-branch-name
 ```
 10. Create a pull request to the main branch
+
 
 ## Links
 

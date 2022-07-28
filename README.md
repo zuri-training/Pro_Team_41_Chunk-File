@@ -1,6 +1,19 @@
 # ChunkIT
 A platform that accepts CSV or JSON large files, and break them into smaller bits.
 
+> Our Vision
+- [x] Managing your large files has never been easier.
+> Our Client
+- [x] Zuri
+> Our Target Market
+- [x] Large CSV and JSON file users (Developers, companies)
+
+
+> Our Personas
+- [x] Developers, Data Analyst, Multinationals
+
+
+
 
 ## Table of content
 - [Background](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#background)

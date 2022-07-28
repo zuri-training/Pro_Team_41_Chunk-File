@@ -41,6 +41,7 @@ header a {
 .header-action .btn-login {
   padding: 0.5rem clamp(1rem, 4vw, 3rem);
   border-radius: 0.25rem;
+  font-family: inherit;
   font-size: 0.9rem;
   font-weight: 700;
   border: 1px solid var(--color-main);
@@ -49,6 +50,7 @@ header a {
 
 .header-action .btn-login:hover {
   color: #fff;
+  cursor: pointer;
   background-color: var(--color-main);
 }
 
@@ -72,6 +74,7 @@ header a {
 
 .form-container .form-control {
   margin-block: 1rem;
+  position: relative;
 }
 
 .form-control label {
@@ -89,6 +92,16 @@ header a {
   font: inherit;
   font-size: 0.9rem;
   overflow: hidden;
+}
+
+.form-control img {
+  position: absolute;
+  right: 1rem;
+  top: 2.3rem;
+}
+
+.form-control img.hide {
+  content: url("assets/icons/remove_red_eye_hide.png");
 }
 
 .form-control [type="checkbox"] {

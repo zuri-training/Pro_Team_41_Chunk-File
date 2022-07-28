@@ -21,11 +21,11 @@ A platform that accepts CSV or JSON large files, and break them into smaller bit
 - [Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#objectives)
 - [ChunkIt Solutions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-solution)
 - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
-- [ChunkIT Key features](
-- [Product specialization](
+- [ChunkIT Key features](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-key-features)
+- [Product specialization](https://github.com/zuri-training/Pro_Team_41_Chunk-File#product-specialization)
 - [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
 - [Github Colaboration Manual](
-- [Links](
+- [Links](https://github.com/zuri-training/Pro_Team_41_Chunk-File#links)
 
 
 ## Background
@@ -72,15 +72,14 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 - *Access saved files*
 
 ## Product Specialization
-> Mobile Phones
-> Laptops
+> Mobile Phones and Laptops
 
 
 ## Project Status
 > Project is : in progress
 
 
-## Collaboration
+## Github Collaboration
 1. Fork this repository and create a project folde on your local manchine
 
 2. Navigate to the terminal (pointing to your project folder/directory), Clone and then open it up on your prefered code editor

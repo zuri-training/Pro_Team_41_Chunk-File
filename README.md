@@ -16,11 +16,16 @@ A platform that accepts CSV or JSON large files, and break them into smaller bit
 
 
 ## Table of content
+- [ChunkIT](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit)
 - [Background](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#background)
 - [Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#objectives)
 - [ChunkIt Solutions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-solution)
 - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
-- 
+- [ChunkIT Key features](
+- [Product specialization](
+- [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
+- [Github Colaboration Manual](
+- [Links](
 
 
 ## Background
@@ -35,7 +40,7 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 - The user should be able to sort split CSV and JSON files easily
 
 
-## ChunkIT Solution
+## ChunkIT Solutions
 - Create means of chunking CSV and JSON files seamlessly
 - Easily import, save and download your CSV and JSON files anytime
 - Chunking as much as 250MB of CSV and JSON files without a fee
@@ -48,7 +53,7 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 - Django - Framework, Python(Backend)
 
 
-## ChunkIT Key features and release dates
+## ChunkIT Key features
 > Landing page
 
 > FAQ/ContactUs Page
@@ -65,6 +70,10 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 > Dashboard:
 - *Chunking Page/Splitting*
 - *Access saved files*
+
+## Product Specialization
+> Mobile Phones
+> Laptops
 
 
 ## Project Status

@@ -50,7 +50,7 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 ## Technologies Used
 - HTML/CSS/Javascript (Frontend)
 - MYSQL (Database)
-- Django - Framework, Python(Backend)
+- Django - Framework, Python (Backend)
 
 
 ## ChunkIT Key features 

@@ -1,5 +1,5 @@
 # ChunkIT
-- A platform that accepts CSV or JSON large files, and break them into smaller bits.
+- [x] A platform that accepts CSV or JSON large files, and break them into smaller bits.
 
 > Our Vision
 - [x] Helping clients manage their large file easily.

@@ -2,7 +2,7 @@
 A platform that accepts CSV or JSON large files, and break them into smaller bits.
 
 ## Background
-This project chunking is a project initiative introduced by the Zuri team. It is useful for anyone sharing large documents. Chunking is simply the process of splitting large files into smaller files called chunks without losing their content or quality.
+This project, ***ChunkIT***, is a project initiative introduced by the Zuri team. It is useful for anyone sharing large documents. Chunking is simply the process of splitting large files into smaller files called chunks without losing their content or quality.
 
 ## Objectives
 - To solve problems regarding issues of having large CSV and JSON files
@@ -14,15 +14,15 @@ This project chunking is a project initiative introduced by the Zuri team. It is
 ## Technologies Used
 - HTML/CSS/Javascript (Frontend)
 - MYSQL (Database)
-- Django - version (Backend)
+- Django - Framework, Python(Backend)
 
-## Solution
+## ChunkIT Solution
 - Create means of chunking CSV and JSON files seamlessly
 - Easily import, save and download your CSV and JSON files anytime
 - Chunking as much as 250MB of CSV and JSON files without a fee
 - Splitting files into different sizes and numbers
 
-## Key features and release dates
+## ChunkIT Key features and release dates
 > Landing page
 
 > FAQ/ContactUs Page
@@ -36,16 +36,16 @@ This project chunking is a project initiative introduced by the Zuri team. It is
 > Documentation Page
 
 
-Dashboard:
-Chunking Page/Splitting 
-Access saved files
+> Dashboard:
+- *Chunking Page/Splitting*
+- *Access saved files*
 
 
 
 
 
 ## Project Status
-Project is : in progress
+> Project is : in progress
 
 ## Collaboration
 1. Fork this repository and create a project folde on your local manchine

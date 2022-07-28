@@ -9,7 +9,7 @@ A platform that accepts CSV or JSON large files, and break them into smaller bit
 - [x] Large CSV and JSON file users (Developers, companies)
 
 
-> Our Personas
+> Our User Personas
 - [x] Developers, Data Analyst, Multinationals
 
 

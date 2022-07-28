@@ -2,7 +2,7 @@
 A platform that accepts CSV or JSON large files, and break them into smaller bits.
 
 > Our Vision
-- [x] Managing your large files has never been easier.
+- [x] Helping clients manage their large file easily.
 > Our Client
 - [x] Zuri
 > Our Target Market

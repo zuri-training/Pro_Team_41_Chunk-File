@@ -85,7 +85,7 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 
 
 ## Project Status
-> Project is : in progress
+> Project is in progress
 
 
 ## Github Collaboration

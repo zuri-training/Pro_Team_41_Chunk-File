@@ -24,7 +24,7 @@ A platform that accepts CSV or JSON large files, and break them into smaller bit
 - [ChunkIT Key features](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-key-features)
 - [Product specialization](https://github.com/zuri-training/Pro_Team_41_Chunk-File#product-specialization)
 - [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
-- [Github Colaboration](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#github-collaboration)
+- [Github Collaboration](https://github.com/zuri-training/Pro_Team_41_Chunk-File#github-collaboration)
 - [Links](https://github.com/zuri-training/Pro_Team_41_Chunk-File#links)
 
 

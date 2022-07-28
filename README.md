@@ -53,7 +53,17 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 - Django - Framework, Python(Backend)
 
 
-## ChunkIT Key features
+## ChunkIT Key features 
+<sub>The user flow</sub>
+Unauthenticated User:
+User starts his flow by entering the Landing page from the link and he can check through who we are and the services we can offer.
+Users can access our documentation, tools, and our sign-up page.
+The moment an unauthenticated user signs up, he becomes authenticated and his journey continues.
+Authenticated User:
+The user now has full access to all our services and can chunk any CSV or JSON file he wants
+The user has a dashboard where he can upload, chunk, save or download files at any time.
+The user also has a setting, profile, and chunk history page that he can access anytime he logs in.
+
 > Landing page
 
 > FAQ/ContactUs Page

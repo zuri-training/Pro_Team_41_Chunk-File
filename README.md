@@ -1,6 +1,5 @@
-# ChunkIT-DOCUMENTATION
-
-A platform that accepts CSV or JSON large files, and break them into smaller bits.
+# ChunkIT
+-A platform that accepts CSV or JSON large files, and break them into smaller bits.
 
 > Our Vision
 - [x] Helping clients manage their large file easily.
@@ -134,3 +133,49 @@ git push origin your-current-branch-name
 ## Links
 
 https://superfly101.github.io/ChunkIt/
+
+# DOCUMENTATION
+# Understanding the process of chunking files
+
+Chunking is a process of splitting large files into smaller files called chunks. In some applications, such as remote data compression, data synchronisation, and data duplication, chunking is important because it determines the duplicate detection performance of the system.
+Chunk File is a small and handy application designed to help you split large files into pieces of a set size, so you can easily transfer them without losing any files.The use of web applications with the function of splitting large CSV or JSON files into small files is for easy opening and archiving
+
+# What is ChunkIT?
+ChunkIt is a platform that accepts CSV or JSON large files and breaks them into smaller bits. For this application to work, the file being uploaded must be in the right format and within the acceptable size range. Successfully chunked files can either be downloaded soon after the chunking process or saved on the platform for future downloads.
+
+# How does it work? 
+ChunkIt is a web-based platform that splits large or heavy CSV and JSON files. When a user uploads a large file of up to 250MB to our platform, our Python Panda modules begin authenticating the files to determine if they are CSV or JSON. If the files are none of these determined inputs or bigger than the size, our platform would not accept them, but if the data input is true, it accepts the files after determining the state, and the process of splitting commences through the help of the panda modules. The data is stacked in smaller files querying the number of parts or the size the user needs to split it. This is done through the use of logic. When the process of splitting is completed, the result is zipped using shutil modules, ready for the user to download.
+
+# Getting Started 
+
+For a user to get started with using the chunking feature of the platform, they need to create an account by registering with their email address to become an authenticated user. This means that an unauthenticated user can not use the chunking feature. However, the unauthenticated user can interact with the platform’s documentation by accessing the resources tab in the header section. They can also go through the platform’s landing page and FAQ section to learn more about its features.
+
+# Uploading and chunking a file on ChunkIT
+
+Upon creating an account, the user is redirected to the user dashboard where they can start uploading files they want to process. They choose the option to upload a new file, and a screen appears that allows them to upload a file. The platform currently supports chunking JSON and CSV files; however, more file formats will be supported in future versions. The user then uploads their file by either dragging and dropping it on the screen, or browsing through their device’s file system. The platform can only accept files up to 250 MB in size and are also of the correct format, CSV or JSON. Once the file uploaded by the user satisfies the requirements, the user can choose the size of the chunk files they require. The size of the chunk should not be above the original file size. If it is, the file will not be chunked. If the size of the chunk is within the acceptable range, the user is directed to a screen where they can download a zipped file containing the chunked files. The user can also choose to download the files later, and their files are saved on the dashboard.
+
+# What to do after the file is chunked
+When chunking is over user can save or download the file. The user can also come back later to continue the process without the risk of losing files. Downloaded files are automatically zipped for easy transfer. Past chunks can be accessed on the user dashboard when needed.
+
+# List of available features  
+
+Analyse files
+Split JSON
+Split CSV
+Split by rows
+Split by file size
+Split by number of chunks
+Save chunked CSV files
+Save chunked JSON files
+Download chunked CSV files
+Download chunked JSON files
+Delete CSV chunks
+Delete JSON chunks
+View chunk history
+
+
+
+
+
+
+

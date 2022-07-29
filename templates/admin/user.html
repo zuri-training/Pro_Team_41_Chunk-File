@@ -1,0 +1,36 @@
+{% extends 'admin/admin_base.html'%}
+{% block title %}USERS PAGE{% endblock %}
+{% block content%}
+{% include 'admin/card.html'%}
+
+
+<!--Table-->
+<!--Table-->
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-6"></div>
+        <div class="col-md-12">
+            <table class="table bg-white">
+                <thead style="background-color: #301e4e;">
+                    <tr class="text-white">
+                        <th scope="col">Username</th>
+                        <th scope="col">Email</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for user in users %}
+                    <tr>
+                        <td>{{user.username}}</td>
+                        <td>{{user.email}}</td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!--End Table-->
+{% endblock%}

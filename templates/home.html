@@ -21,6 +21,7 @@
     <form action="" enctype="multipart/form-data" method="post">
         {% csrf_token %}
         <input type="file" name="file">
+        <input type="number" name="file_count" placeholder="number of chunks">
         <button>Submit</button>
     </form>
 </body>

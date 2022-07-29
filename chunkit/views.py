@@ -6,9 +6,10 @@ from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
 from django.core.files import File as DjangoFile
 from django.core.files.base import ContentFile
+from django.utils.html import strip_tags
 from django.conf import settings
 from .forms import MessageForm
-from . models import File 
+from . models import File, Message
 import pandas as pd
 import shutil
 import time
@@ -20,6 +21,7 @@ def home(request):
     if request.method == 'POST':
         file_data = request.FILES.get("file")
         file_count = request.POST.get("file_count") or 2
+        file_count = int(file_count)
         file = File.objects.create(file=file_data)
         url = file.file.url
         url = str(settings.BASE_DIR)+url.replace("/","\\")
@@ -41,7 +43,7 @@ def home(request):
             shutil.make_archive(outputfile, 'zip', folder_name)
             file.processed_file = f"/processed-files/folder_name.zip"
             file.save()
-        return redirect("download", file.id)
+            return redirect("download", file.id)
 
         # ******************* JSON OPTION *****************************
         if url.split(".")[-1] == 'json':
@@ -57,8 +59,7 @@ def home(request):
             shutil.make_archive(outputfile, 'zip', folder_name)
             file.processed_file = f"/processed-json-files/folder_name.zip"
             file.save()
-        return redirect("download", file.id)
-        
+            return redirect("download", file.id) 
     return render(request, 'home.html')
 
 # ******************* DOWNLOAD VIEW *****************************
@@ -114,23 +115,79 @@ def sign_in(request):
         else:
             messages.error(request, "Invalid Credential")
             return redirect("login")
-    return render(request,'sign_in.html')
+    return render(request,'login.html')
 
 
 # ******************* ABOUT VIEW *****************************
-def about(request):
+def faq(request):        
+    return render(request,'faq.html')
+
+
+def send(request):
     form = MessageForm(request.POST)
     if form.is_valid():
         form.save()
         messages.success(request, "Message successfully sent")
-        return redirect(request.META.get("HTTP_REFERER"))
+        return redirect('faq')
     else:
         for field, error in form.errors.items():
             error = strip_tags(error)
             messages.error(request,f"{field}: {error}")
-            return redirect(request.META.get("HTTP_REFERER"))
+            return redirect('faq')
 
-    return render(request,'about.html')
 
+# ******************* ADMIN PAGE VIEW *****************************
+
+def admin_home(request):
+    message_count = Message.objects.all().count()
+    users_count = User.objects.all().count()
+    file_count = File.objects.all().count()
+    context = {
+        'file_count':file_count,
+        'users_count':users_count,
+        'message_count':message_count
+    }
+    return render(request,'admin/admin_home.html',context)
+
+def message(request):
+    file_count = File.objects.all().count()
+    users_count = User.objects.all().count()
+    messages = Message.objects.all().order_by("-id")
+    message_count = Message.objects.all().count()
+    context = {
+        'messages':messages,
+        'users_count':users_count,
+        'file_count':file_count,
+        'message_count':message_count
+    }
+    return render(request,'admin/message.html',context)
+    
+def user(request):
+    users = User.objects.all()
+    message_count = Message.objects.all().count()
+    file_count = File.objects.all().count()
+    users_count = User.objects.all().count()
+    context = {
+        'users':users,
+        'users_count':users_count,
+        'file_count':file_count,
+        'message_count':message_count
+
+    }
+    return render(request,'admin/user.html',context)
+
+def file(request):
+    message_count = Message.objects.all().count()
+    users_count = User.objects.all().count()
+    file_count = File.objects.all().count()
+    context = {
+        'file_count':file_count,
+        'users_count':users_count,
+        'message_count':message_count
+    }
+    return render(request,'admin/file.html',context)
+
+def subscribe(request):
+    return render(request,'admin/subscribe.html')
 
     

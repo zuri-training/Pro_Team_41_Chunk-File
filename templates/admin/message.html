@@ -1,0 +1,41 @@
+{% extends 'admin/admin_base.html'%}
+{% block title %}MESSAGE PAGE{% endblock %}
+{% block content%}
+{% include 'admin/card.html'%}
+
+
+<!--Table-->
+<!--Table-->
+<div class="container">
+    <div class="row my-4">
+        <div class="col-md-4"></div>
+        <div class="col-md-12">
+            <table class="table bg-white">
+                <thead style="background-color: #301e4e;">
+                    <tr class="text-white">
+                        <th scope="col">Full Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Number</th>
+                        <th scope="col">Message</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for message in messages %}
+                    <tr>
+                        <th>{{message.name}}</th>
+                        <td>{{message.email}}</td>
+                        <td>{{message.phone}}</td>
+                        <td><textarea style="outline: none; border: none; resize: none;" cols="30"
+                                rows="4">{{message.message}}</textarea></td>
+                    </tr>
+                    {% endfor %}
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+</div>
+
+<!--End Table-->
+{% endblock%}

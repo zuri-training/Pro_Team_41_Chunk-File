@@ -1,0 +1,53 @@
+<!--Topside-->
+<div class="container">
+    <div class="row mt-4">
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-header text-white" style="background-color: #301e4e;">
+                    Statistics
+                </div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-md-3 mb-4">
+                            <a class="text-decoration-none text-dark" href="{% url 'user'%}">
+                                <div class="card my-card shadow text-center p-3 text-white "
+                                    style="background-color: #301e4e;">
+                                    <h4>Users</h4>
+                                    <h3>{{users_count}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="text-decoration-none text-dark" href="">
+                                <div class="card my-card shadow text-center p-3 text-white"
+                                    style="background-color: #301e4e;">
+                                    <h4>Files</h4>
+                                    <h3>{{file_count}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="text-decoration-none text-dark" href="{% url 'message'%}">
+                                <div class="card my-card shadow text-center p-3 text-white"
+                                    style="background-color: #301e4e;">
+                                    <h4>Messages
+                                    </h4>
+                                    <h3>{{message_count}}</h3>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-3">
+                            <a class="text-decoration-none text-dark" href="">
+                                <div class="card my-card shadow text-center p-3 text-white "
+                                    style="background-color: #301e4e;">
+                                    <h4>Subscribers</h4>
+                                    <h3>4</h3>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

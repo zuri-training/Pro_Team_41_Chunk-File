@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+:root {
+  --color-bg: #d6d2dc;
+  --color-main: #301e4e;
+  --color-btn: #ff6e6c;
+  --fz-heading: 40px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.login {
+  background-color: #fff;
+  padding: 1rem 2rem;
+  width: 90%;
+  max-width: 25rem;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+}
+
+.login form {
+  width: 100%;
+}
+
+.login img {
+  width: clamp(8rem, 20vw, 10rem);
+}
+
+.title {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: bolder;
+  
+}
+
+.reset h1 {
+  margin-block: 1rem;
+}
+
+.login .forms-control {
+  margin-block: 1rem;
+}
+
+.login .forms-control label {
+  font-size: 0.9rem;
+}
+
+.login .forms-control input {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.3rem;
+  border: 1px solid #999999;
+  border-radius: 4px;
+  font-family: inherit;
+  outline: none;
+}
+
+.login .forms-control input:focus {
+  border: 1px solid var(--color-main);
+}
+
+.login .forms-control small {
+  float: right;
+  margin-top: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-btn);
+}
+
+.login .forms-action {
+  margin-block: 3rem 1rem;
+}
+
+.reset .forms-action {
+  margin-block: 1rem;
+}
+
+.login .forms-action button {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  font-family: inherit;
+  color: #fff;
+  background-color: var(--color-main);
+  border: none;
+}
+

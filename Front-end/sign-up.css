@@ -9,6 +9,7 @@
   --color-main: #301e4e;
   --color-btn: #ff6e6c;
   --primary003: #52436b;
+  --error-state: #d43131;
   --fz-heading: 40px;
 }
 
@@ -87,11 +88,15 @@ header a {
   width: 100%;
   outline: none;
   margin-top: 0.3rem;
-  border: 1px solid var(--color-main);
+  border: 1px solid #999999;
   border-radius: 4px;
   font: inherit;
   font-size: 0.9rem;
   overflow: hidden;
+}
+
+.form-control input:focus {
+  border: 1px solid var(--color-main);
 }
 
 .form-control img {
@@ -120,6 +125,29 @@ header a {
   border: none;
   width: 100%;
   cursor: pointer;
+}
+
+.form-control.has-error input {
+  border: 1px solid var(--error-state);
+}
+
+.error-icon,
+.error-icon + small {
+  display: none;
+}
+
+.form-control.has-error .error-icon {
+  display: inline-block;
+  position: relative;
+  width: 1rem;
+  top: 3px;
+  left: 0;
+}
+
+.form-control.has-error .error-icon + small {
+  display: inline-block;
+  margin-left: 4px;
+  color: var(--error-state);
 }
 
 .main-container .illustration-container {

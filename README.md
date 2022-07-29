@@ -132,8 +132,7 @@ git push origin your-current-branch-name
 
 
 ## Links
-
-https://superfly101.github.io/ChunkIt/
+> Our development links
 
 # DOCUMENTATION
 ## Understanding the process of chunking files

@@ -26,7 +26,7 @@
 - [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
 - [Github Collaboration](https://github.com/zuri-training/Pro_Team_41_Chunk-File#github-collaboration)
 - [Links](https://github.com/zuri-training/Pro_Team_41_Chunk-File#links)
-- [DOCUMENTATION](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#documentation)
+- [DOCUMENTATION](https://github.com/zuri-training/Pro_Team_41_Chunk-File#documentation)
 
 
 ## Background

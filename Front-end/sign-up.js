@@ -43,7 +43,9 @@ togglePassword.addEventListener("click", (e) => {
   togglePassword.classList.toggle("hide");
 });
 
-const inputs = document.querySelectorAll(".reg-form .validate");
+// Form validation
+
+const inputs = document.querySelectorAll(".reg-form .validate input");
 
 const form = document.querySelector(".reg-form");
 // console.log(inputs);
@@ -64,11 +66,15 @@ inputs.forEach((input) => {
 
 form.addEventListener("submit", (event) => {
   event.preventDefault();
-  console.log(inputs);
-  console.log(form);
+  // console.log(inputs);
+  // console.log(form);
   inputs.forEach((input) => {
     if (input.type === "email") {
-      if (input.value === "" || !isValid(input.value)) {
+      if (input.value === "" || !emailIsValid(input.value)) {
+        showError(input);
+      }
+    } else if (input.type === "password") {
+      if (input.value === "" || !passwordIsValid(input.value)) {
         showError(input);
       }
     } else {
@@ -77,12 +83,17 @@ form.addEventListener("submit", (event) => {
       }
     }
   });
-  const errorInput = document.querySelector(".has-error input:first-child");
+  const errorInput = document.querySelector(".has-error input");
+  console.log(errorInput);
   if (errorInput) {
-    document.querySelector(".has-error input:first-child").focus();
+    document.querySelector(".has-error input").focus();
     return;
   }
-  inputs.forEach((input) => (input.value = ""));
+  inputs.forEach((input) => {
+    console.log(input.id + ": " + input.value);
+    input.value = "";
+  });
+  console.log("Form successfully submitted");
 });
 
 function showError(input) {
@@ -95,8 +106,13 @@ function clearError(input) {
   parent.className = "form-control validate";
 }
 
-function isValid(email) {
+function emailIsValid(email) {
   return /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(
     email
   );
+}
+
+function passwordIsValid(password) {
+  if (password.length < 8) return false;
+  return true;
 }

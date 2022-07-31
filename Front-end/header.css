@@ -61,7 +61,7 @@ ul {
   border-radius: 0.25rem;
   font-family: inherit;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 500;
   border: 1px solid var(--color-main);
 }
 
@@ -82,7 +82,7 @@ ul {
 
 @media (max-width: 740px) {
   .primary-navigation {
-    min-height: 3rem;
+    min-height: 3.5rem;
   }
 
   .primary-navigation .navigation {

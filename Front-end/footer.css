@@ -17,7 +17,7 @@ footer {
 
 footer .logo {
   color: #fff;
-  font-size: clamp(20px, 5vw, 30px);
+  width: clamp(8rem, 20vw, 12rem);
 }
 
 footer a {

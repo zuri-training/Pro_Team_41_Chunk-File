@@ -1,7 +1,7 @@
 :root {
   --color-bg: #d6d2dc;
   --color-main: #301e4e;
-  --color-btn: #ff6e6c;
+  --pink: #ff6e6c;
   --fz-heading: 40px;
 }
 
@@ -16,6 +16,10 @@ header {
   background-color: var(--color-bg);
   padding-inline: 2rem;
   position: relative;
+}
+
+header .logo {
+  width: clamp(8rem, 20vw, 12rem);
 }
 
 .big-heading {
@@ -55,6 +59,11 @@ ul {
   color: inherit;
 }
 
+.primary-navigation .nav-link a:hover {
+  color: var(--pink);
+  cursor: pointer;
+}
+
 .header-action .btn-link {
   padding: 0.5rem 3rem;
   padding-inline: clamp(0.5rem, 3vw, 3rem);
@@ -67,17 +76,24 @@ ul {
 
 .header-action .primary:hover {
   cursor: pointer;
+  color: #fff;
+  background-color: var(--color-main);
 }
 
 .header-action .primary {
   color: var(--color-main);
   margin-inline-end: clamp(0.5rem, 1vw, 1.5rem);
   background-color: transparent;
+  transition: background-color 0.1s ease-out;
 }
 
 .header-action .secondary {
   color: #fff;
   background-color: var(--color-main);
+}
+
+.header-action .secondary:hover {
+  background-color: #301e4eb4;
 }
 
 @media (max-width: 740px) {

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Landing Page</title>
+  </head>
+  <body>
+    <!-- intro section -->
+    <!-- navbar -->
+    <nav class="navbar">
+      <div class="container flex--center">
+        <!-- logo -->
+        <div>
+          <img class="logo" src="./img/logo.svg" alt="" />
+        </div>
+        <ul class="nav-links">
+          <li class="link__item"><a href="">Resources</a></li>
+          <li class="link__item"><a href="">About us</a></li>
+          <li class="link__item"><a href="">Contact</a></li>
+        </ul>
+        <div class="btns">
+          <button class="sign-in__btn">Sign in</button>
+          <button class="primary--color sign-up__btn">Sign up</button>
+        </div>
+      </div>
+    </nav>
+    <!-- main -->
+    <!-- hero -->
+    <main class="hero">
+      <div class="container flex--center">
+        <div class="hero--header">
+          <h1>
+            Chunking made easy with
+            <span class="complementary-color">ChunkIT</span>
+          </h1>
+          <h5>Get free access to splitting large files</h5>
+          <div class="email--address__input">
+            <input type="email" placeholder="Email Address" />
+            <button>Get Started</button>
+          </div>
+          <div class="checkmarks">
+            <div class="checkmark">
+              <img src="./img/check.svg" alt="" />
+              <span>No Setup</span>
+            </div>
+            <div class="checkmark">
+              <img src="./img/check.svg" alt="" />
+              <span>No Credit card</span>
+            </div>
+            <div class="checkmark">
+              <img src="./img/check.svg" alt="" />
+              <span>Free Forever</span>
+            </div>
+          </div>
+        </div>
+        <!-- aside -->
+        <div class="tilt--folder">
+          <img src="./img/folder-tilt.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <section class="bg-grey cards__section">
+      <div class="container">
+        <h5>WHAT WE OFFER YOU</h5>
+        <!-- cards -->
+        <div class="cards">
+          <div class="card">
+            <img src="./img/Security.svg" alt="" />
+            <h5>Security</h5>
+            <p>Protecting your data at every process</p>
+          </div>
+          <div class="card">
+            <img src="./img/Save files.svg" alt="" />
+            <h5>Save Files</h5>
+            <p>Save your chunked files now download anytime</p>
+          </div>
+          <div class="card">
+            <img src="./img/Dashboard.svg" alt="" />
+            <h5>Dashboard</h5>
+            <p>Visualize your chunked data in a manner of ways</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video section -->
+    <section class="video__section">
+      <div class="container">
+        <h4>A STEP BY STEP PROCESS OF USING THIS PLATFORM</h4>
+        <img src="./img/video-img.png" />
+      </div>
+    </section>
+    <!-- articles -->
+    <article>
+      <div class="container flex space-between center">
+        <section class="article--section padding--0">
+          <h4>WORRIED ABOUT YOUR PRIVACY?</h4>
+          <h5>
+            ChunkIt respects your right to privacy when you make use of our
+            software. Your personal data is treated in compliance with data
+            protection laws.
+          </h5>
+        </section>
+        <aside class="article__image">
+          <img src="./img/rafiki.svg" alt="" />
+        </aside>
+      </div>
+    </article>
+    <article class="json--csv__article">
+      <div class="container flex space-between flex--reverse center">
+        <section class="article--section padding--0">
+          <h4>ANALYZE HUGE FILES IN REAL TIME</h4>
+          <h5>
+            Is your JSON or CSV file too large? Simply upload it to ChunkIt,
+            click on chunk file, and you're done. ChunkIt provides you with an
+            exceptional file chunking tool in minutes, not hours.
+          </h5>
+        </section>
+        <aside class="flex article__image">
+          <img src="./img/JSON 1.svg" alt="" />
+          <img src="./img/CSV 1.svg" alt="" />
+        </aside>
+      </div>
+    </article>
+    <!-- footer section-->
+    <section class="footer--section">
+      <div class="container flex space-between center">
+        <h4 class="footer--section__h4">
+          There Is No Need For Installation, a Database, or Configuration
+        </h4>
+        <a class="get--started__btn" href=""><h4>Get Started For Free</h4></a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <div class="container">
+        <div class="flex space-between">
+          <img class="footer__logo" src="./img/white-logo.svg" alt="" />
+          <ul class="footer--links flex">
+            <li class="link__item"><a href="">Resources</a></li>
+            <li class="link__item"><a href="">About us</a></li>
+            <li class="link__item"><a href="">Contact us</a></li>
+            <li class="link__item"><a href="">FAQs</a></li>
+          </ul>
+        </div>
+        <hr />
+        <div class="subscribe flex center">
+          <span>SUBSCRIBE NOW</span>
+          <input type="email" placeholder="Your email" />
+          <button>
+            <img class="play__btn" src="./img/play.svg" alt="" />
+          </button>
+        </div>
+        <span class="copyright">© All Right Reserved 2022</span>
+      </div>
+    </footer>
+  </body>
+  <script src="app.js"></script>
+</html>

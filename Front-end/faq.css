@@ -173,10 +173,11 @@ textarea:focus {
 }
 
 .form-container button {
-  background-color: #000;
+  background-color: var(--color-main);
+  width: 50%;
   border: none;
   color: #fff;
-  padding: 0.5rem 5rem;
+  padding: 0.8rem;
   font-family: inherit;
 }
 

@@ -30,21 +30,26 @@
           <button class="primary--color sign-up__btn">Sign up</button>
         </div>
       </div>
+      <!-- <div class="hambuger"></div> -->
     </nav>
     <!-- main -->
     <!-- hero -->
     <main class="hero">
-      <div class="container flex--center">
+      <div class="container flex--center mobile--center">
         <div class="hero--header">
           <h1>
             Chunking made easy with
             <span class="complementary-color">ChunkIT</span>
           </h1>
           <h5>Get free access to splitting large files</h5>
-          <div class="email--address__input">
-            <input type="email" placeholder="Email Address" />
+          <form class="email--address__input">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="hero--input"
+            />
             <button>Get Started</button>
-          </div>
+          </form>
           <div class="checkmarks">
             <div class="checkmark">
               <img src="./img/check.svg" alt="" />
@@ -68,7 +73,7 @@
     </main>
     <section class="bg-grey cards__section">
       <div class="container">
-        <h5>WHAT WE OFFER YOU</h5>
+        <h5 class="card--title">WHAT WE OFFER YOU</h5>
         <!-- cards -->
         <div class="cards">
           <div class="card">
@@ -96,8 +101,8 @@
         <img src="./img/video-img.png" />
       </div>
     </section>
-    <!-- articles -->
-    <article>
+    <!-- desktop--view of articles -->
+    <article class="mobile--hidden">
       <div class="container flex space-between center">
         <section class="article--section padding--0">
           <h4>WORRIED ABOUT YOUR PRIVACY?</h4>
@@ -112,7 +117,7 @@
         </aside>
       </div>
     </article>
-    <article class="json--csv__article">
+    <article class="json--csv__article mobile--hidden">
       <div class="container flex space-between flex--reverse center">
         <section class="article--section padding--0">
           <h4>ANALYZE HUGE FILES IN REAL TIME</h4>
@@ -128,9 +133,35 @@
         </aside>
       </div>
     </article>
+    <!-- mobile--view of article--section  -->
+    <article class="desktop--hidden">
+      <div class="container flex--center col">
+        <h6>WORRIED ABOUT YOUR PRIVACY?</h6>
+        <img class="vault" src="./img/rafiki.svg" alt="" />
+        <p>
+          ChunkIt respects your right to privacy when you make use of our
+          software. Your personal data is treated in compliance with data
+          protection laws.
+        </p>
+      </div>
+    </article>
+    <article class="desktop--hidden json--csv__article">
+      <div class="container flex--center col">
+        <h6>ANALYZE HUGE FILES IN REAL TIME</h6>
+        <div class="tilted--json__csv">
+          <img class="right" src="./img/JSON 1.svg" alt="" />
+          <img class="left" src="./img/CSV 1.svg" alt="" />
+        </div>
+        <p>
+          Is your JSON or CSV file too large? Simply upload it to ChunkIt, click
+          on chunk file, and you're done. ChunkIt provides you with an
+          exceptional file chunking tool in minutes, not hours.
+        </p>
+      </div>
+    </article>
     <!-- footer section-->
     <section class="footer--section">
-      <div class="container flex space-between center">
+      <div class="container flex space-between center mobile--center">
         <h4 class="footer--section__h4">
           There Is No Need For Installation, a Database, or Configuration
         </h4>
@@ -140,9 +171,9 @@
     <!-- footer -->
     <footer>
       <div class="container">
-        <div class="flex space-between">
+        <div class="flex space-between mobile--center">
           <img class="footer__logo" src="./img/white-logo.svg" alt="" />
-          <ul class="footer--links flex">
+          <ul class="footer--links flex mobile--center">
             <li class="link__item"><a href="">Resources</a></li>
             <li class="link__item"><a href="">About us</a></li>
             <li class="link__item"><a href="">Contact us</a></li>
@@ -150,12 +181,19 @@
           </ul>
         </div>
         <hr />
-        <div class="subscribe flex center">
+        <div class="subscribe flex center footer--subscribe">
           <span>SUBSCRIBE NOW</span>
-          <input type="email" placeholder="Your email" />
-          <button>
-            <img class="play__btn" src="./img/play.svg" alt="" />
-          </button>
+          <form class="subscribe--input">
+            <input type="email" placeholder="Your email" required />
+            <button>
+              <img
+                type="submit"
+                class="play__btn"
+                src="./img/play.svg"
+                alt=""
+              />
+            </button>
+          </form>
         </div>
         <span class="copyright">© All Right Reserved 2022</span>
       </div>

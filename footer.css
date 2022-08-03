@@ -1,0 +1,99 @@
+:root {
+  --color-bg: #d6d2dc;
+  --color-main: #301e4e;
+  --color-btn: #ff6e6c;
+  --primary003: #52436b;
+  --fz-heading: 40px;
+}
+
+footer {
+  background-color: var(--color-main);
+  color: #fff;
+  font-weight: 700;
+  min-height: 10rem;
+  padding-inline: 3rem;
+  padding-bottom: 1rem;
+}
+
+footer .logo {
+  color: #fff;
+  width: clamp(8rem, 20vw, 12rem);
+}
+
+footer a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-first {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 0;
+  border-bottom: 1px solid #fff;
+}
+
+footer ul {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.footer-second {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.footer-second > div {
+  display: flex;
+  /* gap: 2rem; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-second > p {
+  /* margin-block: 1rem; */
+  font-size: 0.8rem;
+}
+
+.subscribe-field {
+  position: relative;
+  margin-block: 1rem;
+  margin-left: 1rem;
+}
+
+.subscribe-field input {
+  padding: 0.6rem 1rem;
+  outline: none;
+  font-family: inherit;
+  border-radius: 4px;
+  border: none;
+  width: 15rem;
+}
+
+.subscribe-field button {
+  padding: 0.6rem 0.8rem;
+  border-width: 0;
+  border-radius: 0 4px 4px 0;
+  background-color: var(--color-btn);
+  position: absolute;
+  right: -1rem;
+  top: -0.5px;
+}
+
+.subscribe-field svg {
+  height: 1rem;
+  fill: #fff;
+}
+
+@media (max-width: 500px) {
+  .footer-first {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .footer-first .nav-link {
+    flex-direction: column;
+    gap: 1rem;
+    font-size: clamp(0.8rem, 3vw, 1rem);
+  }
+}

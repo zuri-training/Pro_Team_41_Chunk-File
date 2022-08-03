@@ -17,8 +17,3 @@ body {
   min-height: 100vh;
   font-family: "Manrope", sans-serif;
 }
-
-button {
-  border-radius: 4px;
-  font-weight: 500;
-}

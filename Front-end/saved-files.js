@@ -48,7 +48,7 @@ function renderSavedFiles(files) {
                 <img src="assets/icons/file_download.png" alt="" />
             </button>
             <button class='btn-delete'>
-                <img src="assets/icons/delete_outline.png" alt="" />
+                <img src="assets/icons/delete-icon-dark.png" alt="" />
             </button>
         </div>`;
     newRow.appendChild(lastCell);

@@ -1,5 +1,5 @@
 :root {
-  --color-bg: #d6d2dc;
+  --color-bg: #f2f1f4;
   --color-main: #301e4e;
   --pink: #ff6e6c;
   --fz-heading: 40px;
@@ -18,8 +18,8 @@ button {
 
 header {
   width: 100%;
-  background-color: var(--color-bg);
-  padding-inline: 2rem;
+  background-color: #f2f1f4;
+  padding-inline: 4rem;
   position: relative;
 }
 
@@ -71,9 +71,11 @@ ul {
 
 .header-action .btn-link {
   padding: 0.5rem 3rem;
-  padding-inline: clamp(0.5rem, 3vw, 3rem);
+  padding-inline: clamp(0.5rem, 4vw, 3rem);
   border-radius: 4px;
-  font: inherit;
+  font-family: inherit;
+  border-radius: 4px;
+  font-weight: 500;
   font-size: 0.9rem;
   border: 1px solid var(--color-main);
 }
@@ -96,9 +98,9 @@ ul {
   background-color: var(--color-main);
 }
 
-.header-action .secondary:hover {
+/* .header-action .secondary:hover {
   background-color: #301e4eb4;
-}
+} */
 
 @media (max-width: 740px) {
   .primary-navigation {
@@ -107,6 +109,10 @@ ul {
 
   .primary-navigation .navigation {
     display: none;
+  }
+
+  header {
+    padding-inline: 2rem;
   }
 }
 

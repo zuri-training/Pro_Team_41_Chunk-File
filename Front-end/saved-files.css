@@ -17,6 +17,7 @@
   border-collapse: collapse;
   width: 100%;
   min-width: 740px;
+  /* height: fit-content; */
   text-align: left;
   overflow-x: scroll;
 }
@@ -57,7 +58,6 @@ table button img {
 }
 
 table input {
-  /* width: 3rem; */
   accent-color: var(--color-main);
   transform: scale(1.3);
 }

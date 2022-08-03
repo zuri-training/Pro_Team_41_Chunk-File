@@ -6,7 +6,7 @@
 }
 
 body {
-  background-color: var(--color-bg);
+  background-color: #d6d2dc;
   font-weight: 600;
 }
 
@@ -59,7 +59,7 @@ header .logo {
 
 .question-container h3 {
   font-size: clamp(1rem, 2vw, 1.2rem);
-  margin-right: 1rem;
+  padding-right: 2rem;
   /* font-size: 1rem; */
 }
 

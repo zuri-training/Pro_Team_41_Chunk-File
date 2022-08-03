@@ -7,8 +7,56 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="saved-files.css" />
+    <link rel="stylesheet" href="dashboard-modal.css" />
   </head>
   <body>
+    <section id="download-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-button"
+          ><img src="assets/icons/close.png" alt=""
+        /></span>
+        <h2>Download Files</h2>
+        <div class="inner-modal-content">
+          <img src="assets/images/download-folder.png" alt="" />
+          <p>
+            Download <span id="name"><strong>Filename.csv</strong></span> files.
+          </p>
+          <button class="primary">
+            <span
+              ><img
+                src="assets/icons/file_download.png"
+                alt="file download icon" /></span
+            >Download Zipped Files
+          </button>
+          <button class="complementary">
+            <span
+              ><img
+                src="assets/icons/file_download.svg"
+                alt="file download icon" /></span
+            >Download Zipped Files
+          </button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </div>
+    </section>
+    <section id="delete-modal" class="modal">
+      <div class="modal-content">
+        <!-- <span class="close-button"
+          ><img src="assets/icons/close.png" alt=""
+        /></span> -->
+        <h2>Confirm Deletion</h2>
+        <div class="inner-modal-content">
+          <p>
+            Are you sure you want to delete this file and its chunked files?
+          </p>
+          <p>
+            <span id="name"><strong>Filename.csv</strong></span>
+          </p>
+          <button class="danger">Delete</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </div>
+    </section>
     <section class="saved-files">
       <table>
         <thead>
@@ -47,10 +95,9 @@
           </tr> -->
         </tbody>
       </table>
-      <div></div>
-      <div class="files-list"></div>
     </section>
 
     <script src="saved-files.js"></script>
+    <!-- <script src="dashboard-modal.js"></script> -->
   </body>
 </html>

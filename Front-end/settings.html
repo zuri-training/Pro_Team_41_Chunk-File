@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="settings.css" />
+  </head>
+  <body>
+    <main>
+      <section class="settings">
+        <div class="account">
+          <div class="info">
+            <h4>Account</h4>
+            <p>Name: <span>Jane Doe</span></p>
+            <p>Email: user@gmail.com</p>
+          </div>
+          <div class="change-password">
+            <h4>Change password</h4>
+            <form action="">
+              <div class="form-control">
+                <label for="current-password">Current password</label>
+                <input
+                  type="password"
+                  name="current-password"
+                  id="current-password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-control">
+                <label for="new-password">New password</label>
+                <input
+                  type="password"
+                  name="new-password"
+                  id="new-password"
+                  placeholder="Password"
+                />
+              </div>
+              <div class="form-action">
+                <button>Save New Password</button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="right">
+          <div>
+            <img src="assets/images/Settings-panel.png" alt="settings image" />
+          </div>
+          <div class="account-action">
+            <button class="btn-danger">
+              <span
+                ><img src="assets/icons/delete-icon-light.png" alt=""
+              /></span>
+              Delete Account
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

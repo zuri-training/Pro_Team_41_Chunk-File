@@ -10,8 +10,8 @@ body {
   font-weight: 600;
 }
 
-.logo {
-  font-size: clamp(20px, 5vw, 30px);
+header .logo {
+  width: clamp(8rem, 20vw, 12rem);
 }
 
 .top-section {
@@ -26,14 +26,25 @@ body {
   clip-path: ellipse(120% 100% at 53.5% 0%);
 }
 
-/* .big-heading {
-  font-size: clamp(16px, 4vw, 40px);
-} */
+.big-heading {
+  font-size: clamp(32px, 6vw, var(--fz-heading));
+}
+
+.top-section .line {
+  position: absolute;
+  z-index: -1;
+  margin-top: 1px;
+}
+
+.top-section .line:last-of-type {
+  top: 1.8rem;
+  margin: 0;
+}
 
 .top-section h1 {
   margin-block: 8rem 1rem;
   font-weight: 800;
-  font-size: clamp(32px, 6vw, var(--fz-heading));
+  /* font-size: clamp(32px, 6vw, var(--fz-heading)); */
 }
 
 .top-section p {
@@ -48,6 +59,7 @@ body {
 
 .question-container h3 {
   font-size: clamp(1rem, 2vw, 1.2rem);
+  margin-right: 1rem;
   /* font-size: 1rem; */
 }
 
@@ -60,7 +72,7 @@ p {
   max-width: 40rem;
   background-color: #fff;
   padding: 1rem;
-  margin: 0.8rem auto;
+  margin: 0.7rem auto;
   border-radius: 0.2rem;
 }
 
@@ -69,7 +81,7 @@ p {
 }
 
 .question {
-  color: var(--pink);
+  color: var(--color-main);
   position: relative;
 }
 
@@ -94,18 +106,16 @@ p {
   border: none;
   width: 1rem;
   position: absolute;
-  top: 0.5rem;
-  right: 1rem;
+  top: 0;
+  right: 0.5rem;
   background-color: transparent;
 }
 
 button img {
   width: 100%;
-  src: url("assets/icons/drop-down.png");
 }
 
 .slide button img {
-  /* src: url(); */
   transform: rotate(180deg);
 }
 
@@ -114,12 +124,7 @@ button img {
   justify-content: center;
   padding: 2rem;
   gap: 2rem;
-  background-color: #fff;
-}
-
-.contact-section h2 {
-  font-size: clamp(1.5rem, 3vw, 2rem);
-  /* font-size: 2rem; */
+  background-color: #f5f5f5;
 }
 
 .contact-section > div:first-of-type {
@@ -130,7 +135,7 @@ button img {
 }
 
 .form-container {
-  background-color: #ffc3bd;
+  background-color: transparent;
   padding: 3rem 1.5rem;
   width: 100%;
   max-width: 35rem;
@@ -144,6 +149,10 @@ button img {
 .contact-section h2 {
   font-size: clamp(16px, 4vw, --fz-heading);
   color: var(--pink);
+}
+
+.contact-section p {
+  margin-top: 1rem;
 }
 
 .form-container input,
@@ -164,10 +173,11 @@ textarea:focus {
 }
 
 .form-container button {
-  background-color: #000;
+  background-color: var(--color-main);
+  width: 50%;
   border: none;
   color: #fff;
-  padding: 0.5rem 5rem;
+  padding: 0.8rem;
   font-family: inherit;
 }
 
@@ -185,5 +195,11 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .top-section .line {
+    display: none;
   }
 }

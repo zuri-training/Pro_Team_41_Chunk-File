@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FAQ</title>
     <link rel="stylesheet" href="index.css" />
-    <link rel="stylesheet" href="faq.css" />
     <link rel="stylesheet" href="header.css" />
     <link rel="stylesheet" href="footer.css" />
-    <link rel="stylesheet" href="modal.css" />
+    <link rel="stylesheet" href="faq.css" />
   </head>
   <body>
     <header>
       <nav class="primary-navigation">
-        <h4 class="logo big-heading">ChunkIT</h4>
+        <div>
+          <a href="../index.html"
+            ><img class="logo" src="assets/icons/logo.svg" alt="ChunkIT logo"
+          /></a>
+        </div>
         <div class="navigation">
           <ul class="nav-link">
             <li><a>Resources</a></li>
@@ -42,7 +45,9 @@
     </header>
     <main>
       <section class="top-section">
-        <h1>FAQs</h1>
+        <img src="assets/icons/Line 4.png" class="line" alt="" />
+        <img src="assets/icons/Line 5.png" class="line" alt="" />
+        <h1 class="big-heading">FAQs</h1>
         <p>
           Here you can find frequently asked questions. We help you find the
           answers.
@@ -65,36 +70,47 @@
         </div>
         <div class="inner">
           <div class="question">
-            <h3>Is your platform free of charge?</h3>
+            <h3>What file formats can I split on your platform?</h3>
+            <button class="btn-dropdown">
+              <img src="assets/icons/drop-down.png" alt="" />
+            </button>
+          </div>
+          <div class="answer">
+            <p>We have several options for you including CSV and JSON files.</p>
+          </div>
+        </div>
+        <div class="inner">
+          <div class="question">
+            <h3>Can I save my files on your platform?</h3>
             <button class="btn-dropdown">
               <img src="assets/icons/drop-down.png" alt="" />
             </button>
           </div>
           <div class="answer">
             <p>
-              Yes our platform is absolutely free, no monthly subscriptions, no
-              hidden charges.
+              Yes, you can always save your files on our website and have access
+              to them anytime you need them.
             </p>
           </div>
         </div>
         <div class="inner">
           <div class="question">
-            <h3>Is your platform free of charge?</h3>
+            <h3>
+              As a marketer that has files containing large data, can I also use
+              your platform?
+            </h3>
             <button class="btn-dropdown">
               <img src="assets/icons/drop-down.png" alt="" />
             </button>
           </div>
           <div class="answer">
-            <p>
-              Yes our platform is absolutely free, no monthly subscriptions, no
-              hidden charges.
-            </p>
+            <p>Yes we have different file formats made for you.</p>
           </div>
         </div>
       </section>
       <section class="contact-section">
         <div>
-          <h2>We're here to help!</h2>
+          <h2 class="big-heading">We're here to help!</h2>
           <p>
             We have a 24/7 support that will be happy to help you, please feel
             free to reach out to us.
@@ -149,8 +165,9 @@
     <footer>
       <section class="footer-first">
         <div>
-          <h4 class="logo">ChunkIT</h4>
+          <img class="logo" src="assets/icons/footer-logo.png" alt="" />
         </div>
+
         <div>
           <ul class="nav-link">
             <li><a href="#">Resources</a></li>
@@ -180,6 +197,5 @@
     </footer>
     <script src="nav.js"></script>
     <script src="faq-dropdown.js"></script>
-    <script src="login-modal.js"></script>
   </body>
 </html>

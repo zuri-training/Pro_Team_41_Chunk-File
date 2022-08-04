@@ -7,7 +7,7 @@
     <title>ChunkIT</title>
     <link rel="stylesheet" href="Front-end/index.css" />
     <link rel="stylesheet" href="Front-end/header.css" />
-    <!-- <link rel="stylesheet" href="Front-end/footer.css" /> -->
+    <link rel="stylesheet" href="Front-end/footer.css" />
   </head>
   <body>
     <header class="navbar">
@@ -187,36 +187,39 @@
     </section>
     <!-- footer -->
     <footer>
-      <div class="container">
-        <div class="flex space-between mobile--center">
-          <img class="footer__logo" src="./img/white-logo.svg" alt="" />
-          <ul class="footer--links flex mobile--center">
-            <li class="link__item"><a href="">Documentation</a></li>
-            <li class="link__item"><a href="">About us</a></li>
-            <li class="link__item"><a href="">Contact us</a></li>
-            <li class="link__item"><a href="">FAQs</a></li>
+      <section class="footer-first">
+        <div>
+          <img class="logo" src="Front-end/assets/icons/footer-logo.png" alt="" />
+        </div>
+
+        <div>
+          <ul class="nav-link">
+            <li><a href="#">Resources</a></li>
+            <li><a href="About-us.html">About us</a></li>
+            <li><a href="faq.html">Contact us</a></li>
           </ul>
         </div>
-        <hr />
-        <div class="subscribe flex center footer--subscribe">
-          <span>SUBSCRIBE NOW</span>
-          <form class="subscribe--input">
-            <input type="email" placeholder="Your email" required />
-            <button>
-              <img
-                type="submit"
-                class="play__btn"
-                src="./img/play.svg"
-                alt=""
-              />
-            </button>
-          </form>
+      </section>
+      <section class="footer-second">
+        <div>
+          <p>SUBSCRIBE NOW</p>
+          <div class="subscribe-field">
+            <form action="">
+              <input type="email" placeholder="Your email" />
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                  <path
+                    d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
         </div>
-        <span class="copyright">© All Right Reserved 2022</span>
-      </div>
+        <p>All Rights Reserved 2022</p>
+      </section>
     </footer>
     <script src="Front-end/nav.js"></script>
-    <script src="Front-end/app.js"></script>
-    <!-- <script src="login-modal.js"></script> -->
+    <!-- <script src="Front-end/app.js"></script> -->
   </body>
 </html>

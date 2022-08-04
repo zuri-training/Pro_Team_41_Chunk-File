@@ -21,6 +21,7 @@ header {
   background-color: #f2f1f4;
   padding-inline: 4rem;
   position: relative;
+  z-index: 9999;
 }
 
 header .logo {

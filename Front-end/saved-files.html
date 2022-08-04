@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="index.css" />
+    <!-- <link rel="stylesheet" href="index.css" /> -->
     <link rel="stylesheet" href="saved-files.css" />
     <link rel="stylesheet" href="dashboard-modal.css" />
   </head>
@@ -24,7 +24,7 @@
           <button class="primary">
             <span
               ><img
-                src="assets/icons/file_download.png"
+                src="assets/icons/file_download-light.png"
                 alt="file download icon" /></span
             >Download Zipped Files
           </button>
@@ -33,7 +33,7 @@
               ><img
                 src="assets/icons/file_download.svg"
                 alt="file download icon" /></span
-            >Download Zipped Files
+            >Download Original File
           </button>
           <button class="cancel">Cancel</button>
         </div>
@@ -73,7 +73,7 @@
           </tr>
         </thead>
         <tbody>
-          <!-- <tr>
+          <tr>
             <td><input type="checkbox" name="" id="" /></td>
             <td>Filename1.csv</td>
             <td>5.41MB</td>
@@ -84,15 +84,55 @@
             <td>5</td>
             <td>
               <div>
-                <button>
+                <button class="btn-download">
                   <img src="assets/icons/file_download.png" alt="" />
                 </button>
-                <button>
-                  <img src="assets/icons/delete_outline.png" alt="" />
+                <button class="btn-delete">
+                  <img src="assets/icons/delete-icon-dark.png" alt="" />
                 </button>
               </div>
             </td>
-          </tr> -->
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="" id="" /></td>
+            <td>Filename1239sk.json</td>
+            <td>2.65MB</td>
+            <td>CSV</td>
+            <td>
+              <span class="date">July 20, 2022 - 1:12 AM</span>
+            </td>
+            <td>3</td>
+            <td>
+              <div>
+                <button class="btn-download">
+                  <img src="assets/icons/file_download.png" alt="" />
+                </button>
+                <button class="btn-delete">
+                  <img src="assets/icons/delete-icon-dark.png" alt="" />
+                </button>
+              </div>
+            </td>
+          </tr>
+          <tr>
+            <td><input type="checkbox" name="" id="" /></td>
+            <td>RandomFileNameThatIsLongSomehow.json</td>
+            <td>100 MB</td>
+            <td>CSV</td>
+            <td>
+              <span class="date">July 19, 2022 - 12:56 PM</span>
+            </td>
+            <td>4</td>
+            <td>
+              <div>
+                <button class="btn-download">
+                  <img src="assets/icons/file_download.png" alt="" />
+                </button>
+                <button class="btn-delete">
+                  <img src="assets/icons/delete-icon-dark.png" alt="" />
+                </button>
+              </div>
+            </td>
+          </tr>
         </tbody>
       </table>
     </section>

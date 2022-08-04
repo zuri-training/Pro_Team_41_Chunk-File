@@ -10,12 +10,12 @@
     <link rel="stylesheet" href="Front-end/footer.css" />
   </head>
   <body>
-    <header>
+    <header class="navbar">
       <nav class="primary-navigation">
         <div>
-          <a href="index.html"
-            ><img class="logo" src="Front-end/assets/icons/logo.svg" alt=""
-          /></a>
+          <a href="index.html"></a>
+            <img class="logo" src="Front-end/assets/icons/logo.svg" alt="" />
+          </a>
         </div>
 
         <div class="navigation">
@@ -26,12 +26,12 @@
           </ul>
         </div>
         <div class="header-action navigation">
-          <a class="btn-link btn-login primary" href="Front-end/login.html"
-            >Sign In</a
-          >
-          <a class="btn-link secondary" href="Front-end/sign-up.html"
-            >Sign Up</a
-          >
+          <a class="btn-link btn-login primary" href="Front-end/login.html">
+            Sign In
+          </a>
+          <a class="btn-link secondary" href="Front-end/sign-up.html">
+            Sign Up
+          </a>
         </div>
         <div class="mobile-nav">
           <ul class="">
@@ -39,22 +39,187 @@
             <li><a href="Front-end/About-us.html">About us</a></li>
             <li><a href="Front-end/faq.html">Contact us</a></li>
           </ul>
-          <a class="btn-link btn-login primary" href="Front-end/login.html"
-            >Sign In</a
-          >
-          <a class="btn-link secondary" href="Front-end/sign-up.html"
-            >Sign Up</a
-          >
+          <a class="btn-link btn-login primary" href="Front-end/login.html">
+            Sign In
+          </a>
+          <a class="btn-link secondary" href="Front-end/sign-up.html">
+            Sign Up
+          </a>
         </div>
         <button class="hamburger">
           <div class="bar"></div>
         </button>
       </nav>
     </header>
-    <main></main>
-    <!-- <footer></footer> -->
+    <main class="hero">
+      <div class="container flex--center mobile--center">
+        <div class="hero--header">
+          <h1>
+            Chunking made easy with
+            <span class="complementary-color">ChunkIT</span>
+          </h1>
+          <h5>Get free access to splitting large files</h5>
+          <form class="email--address__input">
+            <input
+              type="email"
+              placeholder="Email Address"
+              class="hero--input"
+            />
+            <button>Get Started</button>
+          </form>
+          <div class="checkmarks">
+            <div class="checkmark">
+              <img src="./img/check.svg" alt="" />
+              <span>No Setup</span>
+            </div>
+            <div class="checkmark">
+              <img src="./img/check.svg" alt="" />
+              <span>No Credit card</span>
+            </div>
+            <div class="checkmark">
+              <img src="./img/check.svg" alt="" />
+              <span>Free Forever</span>
+            </div>
+          </div>
+        </div>
+        <!-- aside -->
+        <div class="tilt--folder">
+          <img src="./img/folder-tilt.svg" alt="" />
+        </div>
+      </div>
+    </main>
+    <section class="bg-grey cards__section">
+      <div class="container">
+        <h5 class="card--title">WHAT WE OFFER YOU</h5>
+        <!-- cards -->
+        <div class="cards">
+          <div class="card">
+            <img src="./img/Security.svg" alt="" />
+            <h5>Security</h5>
+            <p>Protecting your data at every process</p>
+          </div>
+          <div class="card">
+            <img src="./img/Save files.svg" alt="" />
+            <h5>Save Files</h5>
+            <p>Save your chunked files now download anytime</p>
+          </div>
+          <div class="card">
+            <img src="./img/Dashboard.svg" alt="" />
+            <h5>Dashboard</h5>
+            <p>Visualize your chunked data in a manner of ways</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- video section -->
+    <section class="video__section">
+      <div class="container">
+        <h3>A STEP BY STEP PROCESS OF USING THIS PLATFORM</h3>
+        <img src="./img/video-img.png" />
+      </div>
+    </section>
+    <!-- desktop--view of articles -->
+    <article class="mobile--hidden">
+      <div class="container flex space-between center">
+        <section class="article--section padding--0">
+          <h4>WORRIED ABOUT YOUR PRIVACY?</h4>
+          <h5>
+            ChunkIt respects your right to privacy when you make use of our
+            software. Your personal data is treated in compliance with data
+            protection laws.
+          </h5>
+        </section>
+        <aside class="article__image">
+          <img src="./img/rafiki.svg" alt="" />
+        </aside>
+      </div>
+    </article>
+    <article class="json--csv__article mobile--hidden">
+      <div class="container flex space-between flex--reverse center">
+        <section class="article--section padding--0">
+          <h4>ANALYZE HUGE FILES IN REAL TIME</h4>
+          <h5>
+            Is your JSON or CSV file too large? Simply upload it to ChunkIt,
+            click on chunk file, and you're done. ChunkIt provides you with an
+            exceptional file chunking tool in minutes, not hours.
+          </h5>
+        </section>
+        <aside class="flex article__image">
+          <img src="./img/JSON 1.svg" alt="" />
+          <img src="./img/CSV 1.svg" alt="" />
+        </aside>
+      </div>
+    </article>
+    <!-- mobile--view of article--section  -->
+    <article class="desktop--hidden">
+      <div class="container flex--center col">
+        <h6>WORRIED ABOUT YOUR PRIVACY?</h6>
+        <img class="vault" src="./img/rafiki.svg" alt="" />
+        <p>
+          ChunkIt respects your right to privacy when you make use of our
+          software. Your personal data is treated in compliance with data
+          protection laws.
+        </p>
+      </div>
+    </article>
+    <article class="desktop--hidden json--csv__article">
+      <div class="container flex--center col">
+        <h6>ANALYZE HUGE FILES IN REAL TIME</h6>
+        <div class="tilted--json__csv">
+          <img class="right" src="./img/JSON 1.svg" alt="" />
+          <img class="left" src="./img/CSV 1.svg" alt="" />
+        </div>
+        <p>
+          Is your JSON or CSV file too large? Simply upload it to ChunkIt, click
+          on chunk file, and you're done. ChunkIt provides you with an
+          exceptional file chunking tool in minutes, not hours.
+        </p>
+      </div>
+    </article>
+    <!-- footer section-->
+    <section class="footer--section">
+      <div class="container flex space-between center mobile--center">
+        <h4 class="footer--section__h4">
+          There Is No Need For Installation, a Database, or Configuration
+        </h4>
+        <a class="get--started__btn" href=""><h4>Get Started For Free</h4></a>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer>
+      <section class="footer-first">
+        <div>
+          <img class="logo" src="Front-end/assets/icons/footer-logo.png" alt="" />
+        </div>
 
+        <div>
+          <ul class="nav-link">
+            <li><a href="#">Resources</a></li>
+            <li><a href="About-us.html">About us</a></li>
+            <li><a href="faq.html">Contact us</a></li>
+          </ul>
+        </div>
+      </section>
+      <section class="footer-second">
+        <div>
+          <p>SUBSCRIBE NOW</p>
+          <div class="subscribe-field">
+            <form action="">
+              <input type="email" placeholder="Your email" />
+              <button type="submit">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                  <path
+                    d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z"
+                  />
+                </svg>
+              </button>
+            </form>
+          </div>
+        </div>
+        <p>All Rights Reserved 2022</p>
+      </section>
+    </footer>
     <script src="Front-end/nav.js"></script>
-    <!-- <script src="login-modal.js"></script> -->
+    <!-- <script src="Front-end/app.js"></script> -->
   </body>
 </html>

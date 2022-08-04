@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./chunk.css" >  
+     <title>Chunk it</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img id='Ham' src='./Icons/hamburger-menu.svg'>
+                <div class='humburger-menu' id="hamburgermenu">
+                  <div class="minbar">
+                    <img onclick="popin()" src='./Icons/hamburger-menu.svg'>
+                    <img src="./Icons/Logo.svg">
+                  </div>
+                  <div class="btns">
+                  <button>+ upload New files</button><br>
+                  <p> <img src='./Icons/Folder-filled.svg' ><span>library</span> </p>
+                  <p> <img src="./Icons/manage_accounts-outline.svg"><span> Account</span></p>
+
+
+                  </div>
+                   
+                  <p class='copyright'><img src="./Icons/copyright.svg"><span>2022ChunkiT.Inc</span></p>
+                </div>
+                <div id='overlay' class="overlay"></div>
+
+            
+            </li>
+            <li class="plus">+</li>
+            <li><img class="navigate" id="clicker" src='./Icons/Folder-filled.svg'><br><span>library</span> </li>
+            <li><img src="./Icons/manage_accounts-outline.svg"><br> <span> Account</span></li>
+        </ul>
+    </nav>
+
+    <div class="top-bar">
+        <img id="logo" src="./Icons/Logo.svg">
+        <h1 class="Pagetitle" id="library">Library</h1>
+        <p class="credentials"> user3001@gmail.com</p>
+            <img class='ticon' src="./Icons/logout.svg">
+    </div>
+
+    <div class="emptyLibrary">
+
+        <div class="menu">
+            <div class="ic0"></div>
+            <div id='micons' class="icons">
+            <div id="hid" class="ic2"><img src='./Icons/grid_view.svg' width="23px" height="23px"></div>
+            <div id="hid0" class="ic3"><img src='./Icons/Folder-filled.svg' width="23px" height="23px"></div>
+            </div>
+            <img class="ic1" src="./Icons/delete.svg">
+            <div class="word">
+                <button onclick="openPopup()"> + upload New File</button>
+            </div>
+        </div>
+        <img class='big' src="./images/Add_Files-rafiki.png" width="400" height="400px">
+        <p class="welkie">Your Library is empty. Add a file to start chunking</p>
+        <p class="new"> Upload New File</p>    
+    </div>
+
+    <div class="file-drop" id="popup">
+        <div class="hiid">
+        <h3>Chunk File (1/2)</h3>
+        <img onclick="closePopup()" src="./Icons/close.svg">
+        </div>
+         <div class="drop-here" id="upload" ondrop="drop(event)" ondragover="allowDrop(event)" onchange="loadFile()">
+           <div class="svgg" ><img src="./Icons/file_upload.svg"></div>
+           <input id="Browse" type="file" required  hidden>
+            <h4> Drop files here or Browse</h4>
+            <p> .JSON/.CSV</p>
+         </div>
+         <p id="uploadedfile"></p>
+         <h4 class="inf"> <img src="./Icons/alert.svg">File must not exceed 10gb</h3><br>
+         <label for='size' ><h2 class="directive"> Maximize size of chunk</h2></label>
+         <input  class='in' type="number" name="size" placeholder="0" required>
+         <div class="unita"> 
+            <h4> Units</h4> 
+            <ul class="Units">
+                <input type="button" value="Bytes">
+                <input type="button" value="KB">
+                <input type="button" value="MB">
+                <input type="button" value="GB">
+            </ul><br>
+        <button type="submit" onclick="openPopup0()"> Chunk it</button>
+         </div>
+    </div>
+    <div id='overlay' class="overlay"></div>
+
+
+    <div class="chunken" id="popup0">
+     <div class="hiid">  
+      <h3> Chunk File (2/2)</h3>
+      <img onclick="closePopup0()" src="./Icons/close.svg">
+     </div>
+      <img src="./Images/Download-amico.png" width="250" height="250px" >
+      <button class="btn1"><img src="./Icons/download.svg"> Download zipped files</button>
+       <div class="conjuct"> <span> or </span></div>
+      <h4 class="statement">Download later. Your files will be saved in your library</h4>
+      <button class="btn2"> <img src='./Icons/download1.svg'>  Download Later </button>
+    </div>
+    <div id='overlay' class="overlay"></div>
+
+    <script>
+        var popup = document.getElementById('popup');
+        var popup0= document.getElementById('popup0');
+        var ham=document.getElementById('Ham');
+        var hamburgermenu = document.getElementById('hamburgermenu');
+        var library= document.getElementById("library");
+        var logo=document.getElementById('logo'); 
+        var micons=document.getElementById('micons');
+   
+        ham.addEventListener('click', popitmenu)
+        function popitmenu(){
+            hamburgermenu.classList.add('hamburger-menushow')
+        }
+        function popin(){
+            hamburgermenu.classList.remove('hamburger-menushow')
+
+        }
+        function openPopup(){
+            popup.classList.add("openpopup");
+            library.classList.add("show");
+            logo.classList.add("hide");
+            micons.classList.add("showing");
+
+
+        }
+        function closePopup(){
+            popup.classList.remove("openpopup");
+            library.classList.remove("show");
+            logo.classList.remove('hide');
+            micons.classList.remove('showing');
+
+        };
+        function openPopup0(){
+            popup.classList.remove("openpopup");
+            popup0.classList.add("openpopup0");
+            library.classList.remove("show");
+            logo.classList.remove('hide');
+            micons.classList.remove('showing');
+
+        }
+        function closePopup0(){
+            popup0.classList.remove("openpopup0");
+        }
+        document.getElementById('upload').addEventListener('click',browseFile)
+
+        function browseFile(){
+            document.getElementById('Browse').click();
+        }
+        document.getElementById('clicker').addEventListener('click', Library)
+
+        function Library(){
+         micons.classList.add("showing");
+         library.classList.add("show");
+         logo.classList.add("hide");
+
+        } 
+
+          function removeLibrary(){
+            micons.classList.remove("showing");
+            library.classList.remove("show");
+            logo.classList.remove("hide");
+ 
+          }
+        
+        function allowDrop(event) {
+         event.preventDefault();
+         }
+         
+        function allowDrop(event) {
+         event.preventDefault();
+         }
+
+        function drop(event) {
+         event.preventDefault();
+          var data = event.dataTransfer.getData("file");
+          event.target.appendChild(document.getElementById(data));
+        }
+        var loadFile = function(event) {
+	     document.getElementById('uploadedfile').appendChild('Browse');
+        };
+     
+    </script>
+
+
+</body>
+</html>

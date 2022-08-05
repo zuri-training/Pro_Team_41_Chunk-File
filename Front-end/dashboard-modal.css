@@ -85,9 +85,6 @@
   font-family: inherit;
   font-weight: 700;
   border-radius: 4px;
-}
-
-.inner-modal-content button:hover {
   cursor: pointer;
 }
 

@@ -275,6 +275,75 @@ li.active {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
+.modal h2 span {
+  color: #4d4d4d;
+}
+
+#download-chunk-modal .inner-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#download-chunk-modal .inner-modal-content .top-img {
+  width: 200px;
+}
+
+.top-img + small {
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+#download-chunk-modal span {
+  position: relative;
+}
+
+.inner-modal-content button img {
+  width: 1.2rem;
+  position: absolute;
+  right: 0.25rem;
+}
+
+.inner-modal-content .download-later {
+  border-top: 1px solid #b3b3b3;
+  padding-top: 1.5rem;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.download-later small:first-of-type {
+  padding-inline: 0.5rem;
+  background-color: #fff;
+  position: absolute;
+  top: -0.6rem;
+  left: 50%;
+}
+.inner-modal-content p {
+  margin-bottom: 1rem;
+}
+
+.inner-modal-content button {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inner-modal-content .primary {
+  color: #fff;
+  margin-bottom: 1.5rem;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.download-later button {
+  border: 1px solid var(--color-primary);
+  background-color: transparent;
+}
+
 .form-control,
 .form-action {
   margin-block: 1rem;
@@ -322,7 +391,7 @@ li.active {
 }
 
 .radio p {
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .form-control input {
@@ -342,7 +411,7 @@ li.active {
   background-color: transparent;
   position: relative;
   margin-right: 0.2rem;
-  padding-inline: 0.5rem;
+  padding: 0.4rem 0.5rem;
   /* color: #808080; */
   border: 1px solid #808080;
   border-radius: 4px;

@@ -23,7 +23,7 @@
           <span class="close-button"
             ><img src="assets/icons/close.png" alt=""
           /></span>
-          <h2>Chunk File (1/2)</h2>
+          <h2>Chunk File <span>(1/2)</span></h2>
           <div class="inner-modal-content">
             <form action="">
               <div class="form-control">
@@ -39,7 +39,7 @@
                 </p>
               </div>
               <div class="form-control radio">
-                <p>File type</p>
+                <p>Select file type</p>
                 <label for="csv"
                   ><input type="radio" name="file-type" id="csv" />
                   CSV
@@ -58,6 +58,35 @@
               </div>
             </form>
           </div>
+        </div>
+      </section>
+      <section id="download-chunk-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button"
+            ><img src="assets/icons/close.png" alt=""
+          /></span>
+          <h2>Chunk File <span>(2/2)</span></h2>
+          <div class="inner-modal-content">
+            <img src="assets/images/download-folder.png" alt="" class="top-img" />
+            <small>Chunking Complete</small>
+            <button class="primary">
+              <span
+                ><img
+                  src="assets/icons/file_download-light.png"
+                  alt="file download icon" /></span
+              >Download Zipped Files
+            </button>
+
+            <div class="download-later">
+                <small>Or</small>
+                <small>Download later. Your file will be saved in your library</small>
+                <button class="complementary">
+                    <span
+                      ><img
+                        src="assets/icons/file_download.svg"
+                        alt="file download icon" /></span
+                    >Download Later</button>
+            </div>
         </div>
       </section>
       <section class="backdrop"></section>

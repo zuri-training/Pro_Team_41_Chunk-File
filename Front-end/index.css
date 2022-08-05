@@ -168,17 +168,17 @@ section {
 /* navbar */
 .navbar {
   /* position: relative; */
-  /* background-color: #f2f1f4;
+  /* background-color: #f2f1f4; */
   position: fixed;
   width: 100%;
-  transition: 0.2s; */
+  transition: 0.2s;
 }
 
-/* .floatingNav {
+.floatingNav {
   width: 100%;
   border-radius: 2px;
   box-shadow: 0px 1px 10px #999;
-} */
+}
 
 .link__item + .link__item {
   margin-left: 2.75rem;
@@ -386,7 +386,7 @@ section {
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
-  line-height: 72px;
+  line-height: 52px;
   /* or 150% */
 
   /* Main Color */
@@ -396,18 +396,22 @@ section {
 
 .get--started__btn h4 {
   color: #ffffff;
-  padding: 1.125rem 5rem;
-  background-color: #301e4e;
-  border-radius: 4px;
+
   text-align: center;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
   line-height: 28px;
-  /* identical to box height, or 156% */
+  width: 100%;
+}
 
-  color: #ffffff;
+.get--started__btn {
+  padding: 1.125rem 0rem;
+  background-color: #301e4e;
+  border-radius: 4px;
+  width: 30%;
+  max-width: 335px;
 }
 
 .footer__logo {

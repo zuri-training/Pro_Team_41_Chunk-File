@@ -1,63 +1,63 @@
-let DUMMY_FILES = [
-  {
-    filename: "Filename1.csv",
-    size: "5.41 MB",
-    type: "CSV",
-    modified: "Jul 25, 2022 - 3:30 PM",
-    files: 5,
-  },
-  {
-    filename: "Superfly.json",
-    size: "2.65 MB",
-    type: "JSON",
-    modified: "Jul 20, 2022 - 1:12 PM",
-    files: 3,
-  },
-  {
-    filename: "RandonFilenameThatIsLongSomehow.json",
-    size: "5.41 MB",
-    type: "JSON",
-    modified: "Jul 19, 2022 - 12:56 PM",
-    files: 4,
-  },
-];
+// let DUMMY_FILES = [
+//   {
+//     filename: "Filename1.csv",
+//     size: "5.41 MB",
+//     type: "CSV",
+//     modified: "Jul 25, 2022 - 3:30 PM",
+//     files: 5,
+//   },
+//   {
+//     filename: "Superfly.json",
+//     size: "2.65 MB",
+//     type: "JSON",
+//     modified: "Jul 20, 2022 - 1:12 PM",
+//     files: 3,
+//   },
+//   {
+//     filename: "RandonFilenameThatIsLongSomehow.json",
+//     size: "5.41 MB",
+//     type: "JSON",
+//     modified: "Jul 19, 2022 - 12:56 PM",
+//     files: 4,
+//   },
+// ];
 
-let filterFiles = DUMMY_FILES;
+// let filterFiles = DUMMY_FILES;
 
-function renderSavedFiles(files) {
-  const myTable = document.querySelector(".saved-files tbody");
-  // myTable.innerHTML = ``;
-  files.forEach((file) => myTable.removeChild);
-  files.forEach((file) => {
-    const newRow = document.createElement("tr");
-    const checkbox = document.createElement("input");
-    checkbox.type = "checkbox";
-    const firstCell = document.createElement("td");
-    firstCell.appendChild(checkbox);
-    newRow.appendChild(firstCell);
-    Object.values(file).forEach((value) => {
-      let cell = document.createElement("td");
-      cell.innerText = value;
-      newRow.appendChild(cell);
-    });
+// function renderSavedFiles(files) {
+//   const myTable = document.querySelector(".saved-files tbody");
+//   // myTable.innerHTML = ``;
+//   files.forEach((file) => myTable.removeChild);
+//   files.forEach((file) => {
+//     const newRow = document.createElement("tr");
+//     const checkbox = document.createElement("input");
+//     checkbox.type = "checkbox";
+//     const firstCell = document.createElement("td");
+//     firstCell.appendChild(checkbox);
+//     newRow.appendChild(firstCell);
+//     Object.values(file).forEach((value) => {
+//       let cell = document.createElement("td");
+//       cell.innerText = value;
+//       newRow.appendChild(cell);
+//     });
 
-    const lastCell = document.createElement("td");
-    lastCell.innerHTML = `
-        <div>
-            <button class='btn-download'>
-                <img src="assets/icons/file_download.png" alt="" />
-            </button>
-            <button class='btn-delete'>
-                <img src="assets/icons/delete-icon-dark.png" alt="" />
-            </button>
-        </div>`;
-    newRow.appendChild(lastCell);
-    myTable.appendChild(newRow);
-  });
-}
+//     const lastCell = document.createElement("td");
+//     lastCell.innerHTML = `
+//         <div>
+//             <button class='btn-download'>
+//                 <img src="assets/icons/file_download.png" alt="" />
+//             </button>
+//             <button class='btn-delete'>
+//                 <img src="assets/icons/delete-icon-dark.png" alt="" />
+//             </button>
+//         </div>`;
+//     newRow.appendChild(lastCell);
+//     myTable.appendChild(newRow);
+//   });
+// }
 
 // console.log(filterFiles);
-renderSavedFiles(DUMMY_FILES);
+// renderSavedFiles(DUMMY_FILES);
 
 const selectAllCheckbox = document.querySelector("#select-all");
 const checkboxes = document.querySelectorAll("tbody input");
@@ -137,9 +137,9 @@ confirmDeleteButton.addEventListener("click", function (event) {
     confirmDeleteButton.parentElement.querySelector("#name");
   const fileName = parentElement.textContent;
 
-  DUMMY_FILES = DUMMY_FILES.filter((file) => file.filename !== fileName);
+  // DUMMY_FILES = DUMMY_FILES.filter((file) => file.filename !== fileName);
 
-  console.log(DUMMY_FILES);
+  // console.log(DUMMY_FILES);
   deleteModal.classList.toggle("show-modal");
 });
 

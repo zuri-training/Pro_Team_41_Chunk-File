@@ -9,6 +9,17 @@
   </head>
   <body>
     <main>
+      <section class="modal" id="delete-account-modal">
+        <div class="modal-content">
+          <h2>Delete Account</h2>
+          <p>
+            Are you sure you want to delete your account? All saved files will
+            be lost forever.
+          </p>
+          <button class="btn-danger">Delete Acount</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </section>
       <section class="settings">
         <div class="account">
           <div class="info">
@@ -18,6 +29,9 @@
           </div>
           <div class="change-password">
             <h4>Change password</h4>
+            <span
+              ><img src="assets/icons/keyboard_arrow_down.svg" alt=""
+            /></span>
             <form action="">
               <div class="form-control">
                 <label for="current-password">Current password</label>
@@ -27,6 +41,12 @@
                   id="current-password"
                   placeholder="Password"
                 />
+                <img
+                  class=""
+                  id="toggle-current-password"
+                  src="assets/icons/remove_red_eye.png"
+                  alt="show password icon"
+                />
               </div>
               <div class="form-control">
                 <label for="new-password">New password</label>
@@ -35,6 +55,12 @@
                   name="new-password"
                   id="new-password"
                   placeholder="Password"
+                />
+                <img
+                  class=""
+                  id="toggle-new-password"
+                  src="assets/icons/remove_red_eye.png"
+                  alt="show password icon"
                 />
               </div>
               <div class="form-action">
@@ -59,4 +85,6 @@
       </section>
     </main>
   </body>
+
+  <script src="settings.js"></script>
 </html>

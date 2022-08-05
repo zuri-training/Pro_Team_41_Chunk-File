@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header class="top-nav">
+      <div>
+        <img src="assets/icons/logo.svg" alt="chuck it logo" class="logo" />
+      </div>
+      <div class="user">
+        <small>user@gmail.com</small>
+        <img src="assets/icons/logout-icon.png" alt="" />
+      </div>
+    </header>
+    <main>
+      <section id="file-upload-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button"
+            ><img src="assets/icons/close.png" alt=""
+          /></span>
+          <h2>Chunk File <span>(1/2)</span></h2>
+          <div class="inner-modal-content">
+            <form action="">
+              <div class="form-control">
+                <div class="file-drop-area">
+                  <input type="file" name="file" id="file" />
+                  <img src="assets/icons/file_upload.png" alt="" />
+                  <p>Drop File Here or Browse</p>
+                  <p>CSV, JSON</p>
+                  <small id="name">File name</small>
+                </div>
+                <p>
+                  <small class="warning">File must not exceed 250 MB</small>
+                </p>
+              </div>
+              <div class="form-control radio">
+                <p>Select file type</p>
+                <label for="csv"
+                  ><input type="radio" name="file-type" id="csv" />
+                  CSV
+                </label>
+                <label for="json">
+                  <input type="radio" name="file-type" id="json" />
+                  JSON
+                </label>
+              </div>
+              <div class="form-control">
+                <label for="chunks-number">Select the number of chunks</label>
+                <input type="number" id="chunks-number" value="2" />
+              </div>
+              <div class="form-action">
+                <button>Chunk File</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section id="download-chunk-modal" class="modal">
+        <div class="modal-content">
+          <span class="close-button"
+            ><img src="assets/icons/close.png" alt=""
+          /></span>
+          <h2>Chunk File <span>(2/2)</span></h2>
+          <div class="inner-modal-content">
+            <img src="assets/images/download-folder.png" alt="" class="top-img" />
+            <small>Chunking Complete</small>
+            <button class="primary">
+              <span
+                ><img
+                  src="assets/icons/file_download-light.png"
+                  alt="file download icon" /></span
+              >Download Zipped Files
+            </button>
+
+            <div class="download-later">
+                <small>Or</small>
+                <small>Download later. Your file will be saved in your library</small>
+                <button class="complementary">
+                    <span
+                      ><img
+                        src="assets/icons/file_download.svg"
+                        alt="file download icon" /></span
+                    >Download Later</button>
+            </div>
+        </div>
+      </section>
+      <section class="backdrop"></section>
+      <nav class="nav-drawer">
+        <div class="top">
+          <img src="assets/icons/menu.png" alt="" class="hamburger" />
+          <img src="assets/icons/logo.svg" alt="chunck it logo" class="logo" />
+        </div>
+
+        <button class="file-upload btn-upload">+<small></small></button>
+        <ul class="navigation">
+          <li class="active">
+            <img src="assets/icons/Folder-filled.png" alt="" />
+            <small>Library</small>
+          </li>
+          <li>
+            <img src="assets/icons/manage_accounts.png" alt="" />
+            <small>Account</small>
+          </li>
+        </ul>
+
+        <small class="copy-right"
+          ><strong>&copy; 2022 ChunkIT, Inc</strong></small
+        >
+      </nav>
+      <section class="library-actions">
+        <button class="btn-delete">
+          <img src="assets/icons/delete-icon-dark.png" alt="" />
+        </button>
+        <button class="btn-upload">+ Upload New File</button>
+      </section>
+      <section class="page-content">
+        <img
+          src="assets/images/Add files-image.png"
+          alt="download folder image"
+        />
+        <p>Your library is empty. Upload a file to start chuncking.</p>
+        <button class="btn-upload">Upload New File</button>
+      </section>
+    </main>
+
+    <script src="dashboard.js"></script>
+  </body>
+</html>

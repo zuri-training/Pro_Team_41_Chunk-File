@@ -247,9 +247,10 @@ section {
 .hero--header button {
   width: 80%;
   max-width: 189px;
-  height: 77px;
+  /* height: 77px; */
   border-radius: 8px;
-  margin-top: -2px;
+  /* margin-top: -2px; */
+  border: none;
 }
 
 .email--address__input {
@@ -694,6 +695,8 @@ section {
 
   .get--started__btn {
     margin-top: 32px;
+    width: 70%;
+    max-width: 204px;
   }
 
   .get--started__btn h4 {
@@ -703,7 +706,6 @@ section {
     font-size: 16px;
     line-height: 24px;
     font-size: 16px;
-    padding: 12px 24;
   }
 
   .footer__logo {

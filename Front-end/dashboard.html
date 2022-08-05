@@ -42,11 +42,11 @@
                 <p>Select file type</p>
                 <label for="csv"
                   ><input type="radio" name="file-type" id="csv" />
-                  CSV
+                  <span>CSV</span>
                 </label>
                 <label for="json">
                   <input type="radio" name="file-type" id="json" />
-                  JSON
+                  <span>JSON</span>
                 </label>
               </div>
               <div class="form-control">
@@ -99,12 +99,16 @@
         <button class="file-upload btn-upload">+<small></small></button>
         <ul class="navigation">
           <li class="active">
-            <img src="assets/icons/Folder-filled.png" alt="" />
+            <a href="dashboard.html">
+              <img src="assets/icons/Folder-filled.png" alt="" />
             <small>Library</small>
+            </a>
           </li>
           <li>
-            <img src="assets/icons/manage_accounts.png" alt="" />
+            <a href="settings.html">
+              <img src="assets/icons/manage_accounts.png" alt="" />
             <small>Account</small>
+            </a>
           </li>
         </ul>
 
@@ -113,8 +117,8 @@
         >
       </nav>
       <section class="library-actions">
-        <button class="btn-delete">
-          <img src="assets/icons/delete-icon-dark.png" alt="" />
+        <button class="btn-delete" disabled>
+          <img src="assets/icons/delete-enabled-icon.png" alt="" />
         </button>
         <button class="btn-upload">+ Upload New File</button>
       </section>

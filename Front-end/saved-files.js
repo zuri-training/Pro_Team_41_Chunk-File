@@ -61,25 +61,43 @@
 
 const selectAllCheckbox = document.querySelector("#select-all");
 const checkboxes = document.querySelectorAll("tbody input");
+const deleteMultipleBtn = document.querySelector(
+  ".library-actions .btn-delete"
+);
 
 selectAllCheckbox.addEventListener("change", function () {
   if (selectAllCheckbox.checked) {
+    deleteMultipleBtn.disabled = false;
     checkboxes.forEach((checkbox) => {
       checkbox.checked = true;
     });
   } else {
+    deleteMultipleBtn.disabled = true;
     checkboxes.forEach((checkbox) => {
       checkbox.checked = false;
     });
   }
 });
 
+checkboxes.forEach((checkbox) =>
+  checkbox.addEventListener("change", () => {
+    if (checkbox.checked) {
+      deleteMultipleBtn.disabled = false;
+      return;
+    } else {
+      if (document.querySelectorAll("tbody input:checked").length === 0) {
+        deleteMultipleBtn.disabled = true;
+      }
+    }
+  })
+);
+
 // Dashboard Modal
 const downloadModal = document.querySelector("#download-modal");
 const deleteModal = document.querySelector("#delete-modal");
 const downloadBtn = document.querySelectorAll("tbody .btn-download");
 const deleteBtn = document.querySelectorAll("tbody .btn-delete");
-const closeButton = document.querySelector(".close-button");
+const closeDownloadModal = downloadModal.querySelector(".close-button");
 const downloadModalCancelButton = document.querySelector(
   "#download-modal .inner-modal-content .cancel"
 );
@@ -143,7 +161,7 @@ confirmDeleteButton.addEventListener("click", function (event) {
   deleteModal.classList.toggle("show-modal");
 });
 
-closeButton.addEventListener("click", toggleDownloadModal);
+closeDownloadModal.addEventListener("click", toggleDownloadModal);
 downloadModalCancelButton.addEventListener("click", toggleDownloadModal);
 deleteModalCancelButton.addEventListener("click", toggleDeleteModal);
 window.addEventListener("click", windowOnClick);

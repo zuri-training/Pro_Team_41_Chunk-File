@@ -46,6 +46,7 @@ footer ul {
 .footer-second {
   margin-top: 1rem;
   text-align: center;
+  padding: 0;
 }
 
 .footer-second > div {

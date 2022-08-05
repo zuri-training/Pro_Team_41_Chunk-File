@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
 
 :root {
   --color-bg: #d6d2dc;
@@ -15,7 +15,7 @@
 
 body {
   min-height: 100vh;
-  font-family: 'Manrope', sans-serif;
+  font-family: "Manrope", sans-serif;
   margin: 0;
   background-color: #d9d9d9;
 }
@@ -31,11 +31,11 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
-  font-size: 1.25rem;
-  line-height: 1.68rem;
+  /* font-size: 1.25rem; */
+  /* line-height: 1.68rem; */
 }
 
 a:hover {
@@ -56,7 +56,7 @@ img {
 }
 
 h1 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 4rem;
@@ -65,7 +65,7 @@ h1 {
 }
 
 h3 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -73,7 +73,7 @@ h3 {
 }
 
 h4 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -83,7 +83,7 @@ h4 {
 }
 
 h5 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
@@ -100,11 +100,11 @@ section {
   padding: 8rem 0rem;
 }
 
-footer {
+/* footer {
   background-color: #301e4e;
   color: #ffffff;
   padding: 2.125rem 0rem;
-}
+} */
 
 .cards__section {
   text-align: center;
@@ -168,17 +168,17 @@ footer {
 /* navbar */
 .navbar {
   /* position: relative; */
-  background-color: #f2f1f4;
+  /* background-color: #f2f1f4;
   position: fixed;
   width: 100%;
-  transition: 0.2s;
+  transition: 0.2s; */
 }
 
-.floatingNav {
+/* .floatingNav {
   width: 100%;
   border-radius: 2px;
   box-shadow: 0px 1px 10px #999;
-}
+} */
 
 .link__item + .link__item {
   margin-left: 2.75rem;
@@ -223,7 +223,7 @@ footer {
 }
 
 .hero--header h5 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 00;
   font-size: 1.7rem;
@@ -281,7 +281,7 @@ footer {
 }
 
 .checkmarks span {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
@@ -339,6 +339,7 @@ footer {
 
 .video__section img {
   width: 85%;
+  margin-top: 32px;
 }
 
 /* article--section */
@@ -353,7 +354,7 @@ footer {
 }
 
 .article--section h4 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -363,7 +364,7 @@ footer {
 }
 
 .article--section h5 {
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -380,8 +381,13 @@ footer {
 /*footer section */
 
 .footer--section__h4 {
+<<<<<<< HEAD
   width: 65%;
   font-family: 'Manrope';
+=======
+  width: 55%;
+  font-family: "Manrope";
+>>>>>>> 8892f95ac5e726cdc6ff6c761c6b62b9c0a2bf04
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -399,7 +405,7 @@ footer {
   background-color: #301e4e;
   border-radius: 4px;
   text-align: center;
-  font-family: 'Manrope';
+  font-family: "Manrope";
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -473,7 +479,7 @@ footer {
   }
 
   h1 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -526,7 +532,7 @@ footer {
   }
 
   .hero--header h5 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -537,7 +543,7 @@ footer {
   .hero--header button {
     width: 100%;
     padding: 12px 24px;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -560,7 +566,7 @@ footer {
   }
 
   .checkmark span {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -586,7 +592,7 @@ footer {
   }
 
   .card--title {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -594,7 +600,7 @@ footer {
   }
 
   .cards__section h5 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -621,7 +627,7 @@ footer {
   }
 
   .video__section h3 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -629,7 +635,7 @@ footer {
   }
 
   .desktop--hidden h6 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -640,7 +646,7 @@ footer {
   }
 
   .desktop--hidden p {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -679,7 +685,7 @@ footer {
 
   .footer--section__h4 {
     width: 100%;
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -692,7 +698,7 @@ footer {
   }
 
   .get--started__btn h4 {
-    font-family: 'Manrope';
+    font-family: "Manrope";
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

@@ -24,8 +24,11 @@ button:hover {
   display: flex;
   justify-content: space-between;
   padding: 2rem;
-  min-height: 100vh;
-  /* grid-template-columns: 1fr 1fr; */
+  min-height: 90vh;
+  position: relative;
+  top: 4rem;
+  padding-left: 6rem;
+  /* left: 5rem; */
 }
 
 .settings label {

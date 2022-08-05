@@ -6,9 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
     <link rel="stylesheet" href="settings.css" />
+    <link rel="stylesheet" href="dashboard.css" />
   </head>
   <body>
+    <header class="top-nav">
+      <div>
+        <img src="assets/icons/logo.svg" alt="chuck it logo" class="logo" />
+      </div>
+      <div class="user">
+        <small>user@gmail.com</small>
+        <img src="assets/icons/logout-icon.png" alt="" />
+      </div>
+    </header>
     <main>
+      <section class="backdrop"></section>
+      <nav class="nav-drawer">
+        <div class="top">
+          <img src="assets/icons/menu.png" alt="" class="hamburger" />
+          <img src="assets/icons/logo.svg" alt="chunck it logo" class="logo" />
+        </div>
+
+        <button class="file-upload btn-upload">+<small></small></button>
+        <ul class="navigation">
+          <li>
+            <a href="dashboard.html">
+              <img src="assets/icons/Folder-filled.png" alt="" />
+              <small>Library</small>
+            </a>
+          </li>
+          <li class="active">
+            <a href="settings.html">
+              <img src="assets/icons/manage_accounts.png" alt="" />
+              <small>Account</small>
+            </a>
+          </li>
+        </ul>
+
+        <small class="copy-right"
+          ><strong>&copy; 2022 ChunkIT, Inc</strong></small
+        >
+      </nav>
       <section class="modal" id="delete-account-modal">
         <div class="modal-content">
           <h2>Delete Account</h2>
@@ -84,7 +121,6 @@
         </div>
       </section>
     </main>
+    <script src="settings.js"></script>
   </body>
-
-  <script src="settings.js"></script>
 </html>

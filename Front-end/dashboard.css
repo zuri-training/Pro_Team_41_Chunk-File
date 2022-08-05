@@ -147,6 +147,15 @@ header .logo {
   text-align: center;
 }
 
+.navigation a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  color: inherit;
+  /* display: inline-block; */
+}
+
 .navigation {
   width: 100%;
 }
@@ -158,6 +167,12 @@ li {
   align-items: center;
   margin-block: 1rem;
   /* width: 100%; */
+}
+
+.expand .navigation a {
+  display: flex;
+  flex-direction: row;
+  gap: 0.4rem;
 }
 
 li.active {
@@ -172,6 +187,8 @@ li.active {
 
 .navigation li img {
   width: 1.2rem;
+  /* margin-inline: auto; */
+  /* display: block; */
 }
 
 .nav-drawer .hamburger {
@@ -202,7 +219,7 @@ li.active {
 .page-content {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 4px;
@@ -407,7 +424,7 @@ li.active {
   width: fit-content;
 }
 
-.form-control.radio label {
+.form-control.radio label span {
   background-color: transparent;
   position: relative;
   margin-right: 0.2rem;
@@ -417,6 +434,15 @@ li.active {
   border-radius: 4px;
 }
 
+.radio input + span {
+  cursor: pointer;
+}
+
+.radio input:checked + span,
+.radio input:hover + span,
+.radio input:focus + span {
+  background-color: #bab4c4;
+}
 .form-action {
   margin-top: 3rem;
 }

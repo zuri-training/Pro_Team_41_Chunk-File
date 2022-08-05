@@ -37,8 +37,27 @@ function windowOnClick(event) {
   if (event.target === deleteAccountModal) {
     toggleModal();
   }
+
+  if (event.target === backdrop) {
+    toggleDrawer();
+  }
 }
 
 btnDeleteAccount.addEventListener("click", toggleModal);
 cancelDeleteAccount.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+const navigationDrawer = document.querySelector(".nav-drawer");
+const hamburger = document.querySelector(".nav-drawer .hamburger");
+const backdrop = document.querySelector(".backdrop");
+
+function toggleDrawer() {
+  if (navigationDrawer.classList.toggle("expand")) {
+    backdrop.style.display = "block";
+    return;
+  }
+  backdrop.style.display = "none";
+}
+
+window.addEventListener("click", windowOnClick);
+hamburger.addEventListener("click", toggleDrawer);

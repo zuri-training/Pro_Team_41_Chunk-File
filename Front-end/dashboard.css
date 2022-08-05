@@ -202,11 +202,11 @@ li.active {
 .page-content {
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 55%;
   transform: translate(-50%, -50%);
   background-color: white;
   border-radius: 4px;
-  padding: 1rem 2.5rem;
+  padding: 1rem;
   width: 90%;
   max-width: 40rem;
   display: flex;
@@ -429,4 +429,24 @@ li.active {
   color: #fff;
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
+}
+
+@media (max-width: 500px) {
+  .nav-drawer {
+    padding-inline: 0.2rem;
+  }
+  .page-content {
+    left: 56%;
+  }
+  .navigation small {
+    font-size: 0.5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .btn-upload {
+    font-size: 0.7rem;
+  }
 }

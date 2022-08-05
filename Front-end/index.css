@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 :root {
   --color-bg: #d6d2dc;
@@ -15,7 +15,7 @@
 
 body {
   min-height: 100vh;
-  font-family: "Manrope", sans-serif;
+  font-family: 'Manrope', sans-serif;
   margin: 0;
   background-color: #d9d9d9;
 }
@@ -31,7 +31,7 @@ li {
 a {
   text-decoration: none;
   color: inherit;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   /* font-size: 1.25rem; */
@@ -56,7 +56,7 @@ img {
 }
 
 h1 {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-size: 4rem;
@@ -65,7 +65,7 @@ h1 {
 }
 
 h3 {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -73,7 +73,7 @@ h3 {
 }
 
 h4 {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-size: 2.5rem;
@@ -83,7 +83,7 @@ h4 {
 }
 
 h5 {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
   font-size: 2rem;
@@ -223,7 +223,7 @@ section {
 }
 
 .hero--header h5 {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 00;
   font-size: 1.7rem;
@@ -281,7 +281,7 @@ section {
 }
 
 .checkmarks span {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
   font-size: 1.5rem;
@@ -354,7 +354,7 @@ section {
 }
 
 .article--section h4 {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -364,7 +364,7 @@ section {
 }
 
 .article--section h5 {
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -381,13 +381,8 @@ section {
 /*footer section */
 
 .footer--section__h4 {
-<<<<<<< HEAD
   width: 65%;
   font-family: 'Manrope';
-=======
-  width: 55%;
-  font-family: "Manrope";
->>>>>>> 8892f95ac5e726cdc6ff6c761c6b62b9c0a2bf04
   font-style: normal;
   font-weight: 600;
   font-size: 48px;
@@ -405,7 +400,7 @@ section {
   background-color: #301e4e;
   border-radius: 4px;
   text-align: center;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
   font-weight: 700;
   font-size: 18px;
@@ -479,7 +474,7 @@ section {
   }
 
   h1 {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -532,7 +527,7 @@ section {
   }
 
   .hero--header h5 {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
@@ -543,7 +538,7 @@ section {
   .hero--header button {
     width: 100%;
     padding: 12px 24px;
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
@@ -566,7 +561,7 @@ section {
   }
 
   .checkmark span {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 18px;
@@ -592,7 +587,7 @@ section {
   }
 
   .card--title {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -600,7 +595,7 @@ section {
   }
 
   .cards__section h5 {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 18px;
@@ -627,7 +622,7 @@ section {
   }
 
   .video__section h3 {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -635,7 +630,7 @@ section {
   }
 
   .desktop--hidden h6 {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -646,7 +641,7 @@ section {
   }
 
   .desktop--hidden p {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -685,7 +680,7 @@ section {
 
   .footer--section__h4 {
     width: 100%;
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 24px;
@@ -698,7 +693,7 @@ section {
   }
 
   .get--started__btn h4 {
-    font-family: "Manrope";
+    font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;

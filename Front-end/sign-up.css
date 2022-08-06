@@ -66,6 +66,8 @@ header a {
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .main-container .form-container {

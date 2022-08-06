@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign Up</title>
-    <link rel="stylesheet" href="header.css" />
+    <!-- <link rel="stylesheet" href="header.css" /> -->
     <link rel="stylesheet" href="footer.css" />
     <link rel="stylesheet" href="sign-up.css" />
     <link
@@ -96,7 +96,7 @@
             <p>Enjoy seamless experience across all devices</p>
           </div>
           <div class="slide-nav">
-            <button class="sliders-btn-left" onclick="plusSlides(-1)">
+            <button class="sliders-btn-left" onclick="plusSlides(-1)" disabled>
               <img
                 class="arrow"
                 src="assets/icons/arrow_forward_ios.svg"
@@ -104,11 +104,14 @@
               />
             </button>
             <div class="dots">
-              <span class="dot active" onclick="currentSlide(1)"></span>
+              <span class="dot active"></span>
+              <span class="dot"></span>
+              <span class="dot"></span>
+              <!-- <span class="dot active" onclick="currentSlide(1)"></span>
               <span class="dot" onclick="currentSlide(2)"></span>
-              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span> -->
             </div>
-            <button class="sliders-btn-right" onclick="plusSlides(1)">
+            <button class="sliders-btn-right" onclick="plusSlides(1)" disabled>
               <img
                 class="arrow"
                 src="assets/icons/arrow_forward_ios.svg"

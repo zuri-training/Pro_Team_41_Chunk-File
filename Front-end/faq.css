@@ -4,7 +4,7 @@
   --color-bg: #d6d2dc;
   --color-main: #301e4e;
   --pink: #ff6e6c;
-  --fz-heading: 40px;
+  --fz-heading: 56px;
 }
 
 body {
@@ -13,12 +13,10 @@ body {
   font-weight: 600;
 }
 
-header .logo {
-  width: clamp(8rem, 20vw, 12rem);
-}
-
 .top-section {
   position: relative;
+  top: 4.5rem;
+  /* margin-top: 5rem; */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -27,10 +25,6 @@ header .logo {
   padding-inline: 2rem;
   color: #fff;
   clip-path: ellipse(120% 100% at 53.5% 0%);
-}
-
-.big-heading {
-  font-size: clamp(32px, 6vw, var(--fz-heading));
 }
 
 .top-section .line {
@@ -47,7 +41,6 @@ header .logo {
 .top-section h1 {
   margin-block: 8rem 1rem;
   font-weight: 800;
-  /* font-size: clamp(32px, 6vw, var(--fz-heading)); */
 }
 
 .top-section p {
@@ -55,7 +48,7 @@ header .logo {
 }
 
 .question-container {
-  margin-top: -5rem;
+  /* margin-top: -5rem; */
   position: relative;
   margin-bottom: 8rem;
 }
@@ -150,7 +143,7 @@ button img {
 }
 
 .contact-section h2 {
-  font-size: clamp(16px, 4vw, --fz-heading);
+  font-size: clamp(32px, 4vw, 40px);
   color: var(--pink);
 }
 
@@ -198,6 +191,10 @@ textarea:focus {
     flex-direction: column;
     align-items: center;
     padding: 1rem;
+  }
+
+  .top-section {
+    top: 3.5rem;
   }
 }
 

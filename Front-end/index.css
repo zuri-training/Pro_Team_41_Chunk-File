@@ -243,7 +243,7 @@ section {
   border-radius: 8px;
   width: 100%;
   padding: 0.812rem 2rem;
-  height: 75px;
+  height: 64px;
   font-family: 'Manrope';
   font-style: normal;
   font-weight: 400;
@@ -254,7 +254,7 @@ section {
 .hero--header button {
   width: 80%;
   max-width: 189px;
-  /* height: 77px; */
+  height: 64px;
   border-radius: 8px;
   /* margin-top: -2px; */
   border: none;

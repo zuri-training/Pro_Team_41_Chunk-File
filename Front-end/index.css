@@ -306,6 +306,7 @@ section {
 
 .checkmark {
   display: flex;
+  gap: 8px;
 }
 
 /* section */
@@ -314,11 +315,16 @@ section {
 
 .card--title {
   margin-bottom: 32px;
+  color: #100a1a;
 }
 
 .card img {
   width: 8.125rem;
   margin-bottom: 40px;
+}
+
+.card h5 {
+  color: #301e4e;
 }
 
 .card p {
@@ -598,7 +604,7 @@ section {
     width: 60%;
   }
   .hero {
-    height: 100vh;
+    height: 864.65px;
     background-image: none;
     background: linear-gradient(180deg, #301e4e 70%, #52436b 100%);
   }
@@ -624,6 +630,10 @@ section {
     font-weight: 700;
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .cards__section p {
+    font-size: 16px;
   }
 
   .cards {

@@ -11,16 +11,17 @@ function toggleDrawer() {
 }
 
 function windowOnClick(event) {
-  if (event.target === backdrop) {
-    toggleDrawer();
-  }
+  //   if (event.target === backdrop) {
+  //     toggleDrawer();
+  //   }
 
-  if (event.target === fileUploadModal) {
-    toggleFileUploadModal();
-  }
+  //   if (event.target === fileUploadModal) {
+  //     toggleFileUploadModal();
+  //   }
 
   if (event.target === downloadChunkModal) {
-    toggleDownloadChunkModal();
+    window.location.href = "./dashboard.html";
+    // toggleDownloadChunkModal();
   }
 }
 
@@ -41,7 +42,7 @@ function toggleFileUploadModal() {
 }
 
 function toggleDownloadChunkModal() {
-  downloadChunkModal.classList.toggle("show-modal");
+  //   downloadChunkModal.classList.toggle("show-modal");
 }
 
 // function windowOnClick(event) {
@@ -52,8 +53,12 @@ function toggleDownloadChunkModal() {
 
 // downloadBtn.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleFileUploadModal);
-closeDownloadChunkModalBtn.addEventListener("click", toggleDownloadChunkModal);
-window.addEventListener("click", windowOnClick);
+closeDownloadChunkModalBtn.addEventListener("click", () => {
+  window.location.href = "./dashboard.html";
+});
+window.addEventListener("click", () => {
+  window.location.href = "./dashboard.html";
+});
 
 fileUploadButtons.forEach((button) =>
   button.addEventListener("click", toggleFileUploadModal)
@@ -69,8 +74,7 @@ fileInput.addEventListener("change", () => {
 
 filUploadForm.addEventListener("submit", (event) => {
   event.preventDefault();
-  window.location.href = "./dashboard-chunk.html";
-  // toggleFileUploadModal();
-  // toggleDownloadChunkModal();
+  toggleFileUploadModal();
+  toggleDownloadChunkModal();
   //   console.log(fileUploadModal.classList.contains("show-modal"));
 });

@@ -3,7 +3,6 @@
   --color-main: #301e4e;
   --color-btn: #ff6e6c;
   --primary003: #52436b;
-  --fz-heading: 40px;
 }
 
 footer {
@@ -13,6 +12,11 @@ footer {
   min-height: 10rem;
   padding-inline: 3rem;
   padding-bottom: 1rem;
+}
+
+footer ul {
+  list-style: none;
+  font-weight: 600;
 }
 
 footer .logo {

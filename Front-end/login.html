@@ -18,11 +18,26 @@
           <form action="">
             <div class="form-control">
               <label for="email">Email Address</label>
-              <input type="text" placeholder="Enter your email address" />
+              <input
+                type="text"
+                placeholder="Enter your email address"
+                required
+              />
             </div>
             <div class="form-control">
-              <label for="email">Password</label>
-              <input type="text" placeholder="Enter your password" />
+              <label for="password">Password</label>
+              <input
+                type="password"
+                placeholder="Enter your password"
+                id="password"
+                required
+              />
+              <img
+                class=""
+                id="toggle-password"
+                src="assets/icons/remove_red_eye.png"
+                alt="show password icon"
+              />
               <small
                 ><a href="reset-password.html" class="redirect"
                   >Forgot Password?</a
@@ -41,5 +56,7 @@
       </section>
     </main>
     <footer></footer>
+
+    <script src="login.js"></script>
   </body>
 </html>

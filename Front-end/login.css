@@ -26,6 +26,13 @@ button {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background: linear-gradient(
+    129.38deg,
+    rgba(255, 110, 108, 0.21) -212.02%,
+    #52436b 106.07%
+  );
+
+  /* background: linear-gradient(#ff6e6c 21%, #52436b 100%); */
 }
 
 .login {
@@ -43,7 +50,11 @@ button {
   width: 100%;
 }
 
-.login img {
+h1 + small {
+  width: 100%;
+}
+
+a img {
   width: clamp(8rem, 20vw, 10rem);
 }
 
@@ -57,6 +68,7 @@ button {
 
 .login .form-control {
   margin-block: 1rem;
+  position: relative;
 }
 
 .login .form-control label {
@@ -75,6 +87,17 @@ button {
 
 .login .form-control input:focus {
   border: 1px solid var(--color-main);
+}
+
+.form-control img {
+  position: absolute;
+  right: 1rem;
+  top: 2.3rem;
+  opacity: 0.7;
+}
+
+.form-control img.hide {
+  content: url("assets/icons/remove_red_eye_hide.png");
 }
 
 .login .form-control small {

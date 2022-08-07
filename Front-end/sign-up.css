@@ -205,7 +205,8 @@ header a {
   border: none;
   border-radius: 50%;
   aspect-ratio: 1;
-  cursor: pointer;
+  /* cursor: pointer; */
+  opacity: 0;
 }
 
 .slide-nav .sliders-btn-right {
@@ -219,7 +220,8 @@ header a {
   transform: rotate(180deg);
   aspect-ratio: 1;
   border-radius: 50%;
-  cursor: pointer;
+  /* cursor: pointer; */
+  opacity: 0;
 }
 
 .slide-nav .arrow {
@@ -228,9 +230,9 @@ header a {
 }
 
 .slide-nav .dot {
-  cursor: pointer;
-  height: 15px;
-  width: 15px;
+  /* cursor: pointer; */
+  height: 13px;
+  width: 13px;
   margin: 0 0.5rem;
   background-color: #bbb;
   border-radius: 50%;

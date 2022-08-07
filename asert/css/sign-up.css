@@ -6,7 +6,7 @@
 
 :root {
   --color-bg: #d6d2dc;
-  --color-main: #301e4e;
+  --color-primary: #301e4e;
   --color-btn: #ff6e6c;
   --primary003: #52436b;
   --error-state: #d43131;
@@ -21,6 +21,10 @@ body {
 main {
   padding-inline: 3rem;
   padding-block: 3rem;
+}
+
+button {
+  border-radius: 4px;
 }
 
 header {
@@ -45,23 +49,25 @@ header a {
   font-family: inherit;
   font-size: 0.9rem;
   font-weight: 700;
-  border: 1px solid var(--color-main);
+  border: 1px solid var(--color-primary);
   transition: 0.1s ease-out;
 }
 
 .header-action .btn-login:hover {
   color: #fff;
   cursor: pointer;
-  background-color: var(--color-main);
+  background-color: var(--color-primary);
 }
 
 .main-container {
   width: 100%;
   max-width: 900px;
-  min-height: 80vh;
+  min-height: 32rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   margin: auto;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .main-container .form-container {
@@ -96,21 +102,23 @@ header a {
 }
 
 .form-control input:focus {
-  border: 1px solid var(--color-main);
+  border: 1px solid var(--color-primary);
 }
 
 .form-control img {
   position: absolute;
   right: 1rem;
   top: 2.3rem;
+  opacity: 0.7;
 }
 
 .form-control img.hide {
-  content: url("assets/icons/remove_red_eye_hide.png");
+  content: url("/static/assets/icons/remove_red_eye_hide.png");
 }
 
 .form-control [type="checkbox"] {
   width: fit-content;
+  accent-color: var(--color-primary);
 }
 
 .form-control small a {
@@ -118,7 +126,7 @@ header a {
 }
 
 .form-container button {
-  background-color: var(--color-main);
+  background-color: var(--color-primary);
   font: inherit;
   color: #fff;
   padding: 0.7rem;

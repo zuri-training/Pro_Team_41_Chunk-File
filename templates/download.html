@@ -14,7 +14,11 @@
 
 <body>
     <a href="{{file.processed_file.url}}" download="{{file.processed_file.url}}">Download</a>
-
+    <li>
+        <a href="{% url 'save_file'%}">
+            <small>Save files</small>
+        </a>
+    </li>
 </body>
 
 </html>

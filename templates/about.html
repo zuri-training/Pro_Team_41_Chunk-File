@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="{% static 'css/header.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/AboutUs.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/vectors.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/queries.css'%}" />
+
+</head>
+
+<body>
+    <header>
+        <nav class="primary-navigation">
+            <a href="{% url 'landing_page'%}"><img src="{% static 'assets/icons/logo.svg'%}" alt="" /></a>
+            <div class="navigation">
+                <ul class="nav-link">
+                    <li style="color: black;"><a>Resources</a></li>
+                    <li style="color: black;"><a>About us</a></li>
+                    <li style="color: black;"><a href="{% url 'faq'%}">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-action navigation">
+                <a class="btn-link btn-login primary" href="{% url 'login'%}">Sign In</a>
+                <a class="btn-link secondary" href="{% url 'register'%}">Sign Up</a>
+            </div>
+            <div class="mobile-nav">
+                <ul class="">
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="{% url 'about'%}">About us</a></li>
+                    <li><a href="{% url 'faq'%}">Contact us</a></li>
+                </ul>
+                <a class="btn-link btn-login primary" href="{% url 'login'%}">Sign In</a>
+                <a class="btn-link secondary" href="{% url 'register'%}">Sign Up</a>
+            </div>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+
+    <div class="hero">
+        <div class="vects">
+            <div class="mid1">
+                <img src="{% static 'assets/team images/59 1.png'%}" alt="" class="vect" id="a1" />
+                <img src="{% static 'assets/team images/29 2.png'%}" alt="" class="vect" id="a2" />
+                <img src="{% static 'assets/team images/29 10.png'%}" alt="" class="vect" id="a3" />
+                <img src="{% static 'assets/team images/29 23.png'%}" alt="" class="vect" id="a4" />
+            </div>
+
+            <!-- <div class="mid2"> -->
+
+            <!-- </div> -->
+            <div class="mid">
+                <img src="{% static 'assets/team images/29 14.png'%}" alt="" class="vect" id="a7" />
+                <img src="{% static 'assets/team images/59 2.png'%}" alt="" class="vect" id="a5" />
+                <h1>About us</h1>
+                <img src="{% static 'assets/team images/29 19.png'%}" alt="" class="vect" id="a6" />
+                <img src="{% static 'assets/team images/29 6.png'%}" alt="" class="vect" id="a8" />
+            </div>
+        </div>
+        <img src="{% static 'assets/team images/Capa 1.png'%}" alt="" id="vector" />
+    </div>
+    <main>
+        <div class="team">
+            <h3 class="head">Our Story</h3>
+            <h6>
+                We are a team of highly motivated tech professionals. We use our
+                knowledge, expertise and various talents in tech to solve real
+                problems facing the everyday man. One of our solutions is this
+                platform called ChunkIT, a platform that helps professionals working
+                with large files to better manage their files easily and hassle free.
+            </h6>
+        </div>
+        <div class="team">
+            <h3 class="head">Our Objective</h3>
+            <h6>
+                We aim to solve problems regarding issues of importing and exporting
+                large files. Users of the ChunkIT platform should be able to easily
+                chunk their files and optionally save them on our platform for future
+                download. In addition, the user should be able to view statistics of
+                previously chunked files and sort their files easily on our dashboard.
+                Our platform currently processes CSV and JSON files only; however, we
+                aim to accomodate more file formats.
+            </h6>
+        </div>
+        <div class="team" id="team">
+            <h3 id="meet">Meet our amazing team</h3>
+            <div class="cards" id="cards">
+                <div class="card" id="b1">
+                    <img src="{% static 'assets/team images/Emmanuel Osaite.png'%}" alt="" />
+                    <h3>Emma Osaita</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b2">
+                    <img src="{% static 'assets/team images/Martha.png'%}" alt="" />
+                    <h3>Marthar Nderitu</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="b3">
+                    <img src="{% static 'assets/team images/Oyin.png'%}" alt="" />
+                    <h3>Oyin Aina</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="b4">
+                    <img src="{% static 'assets/team images/Omonigho Seth.png'%}" alt="" />
+                    <h3>Nigho Seth</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b5">
+                    <img src="{% static 'assets/team images/Francis.png'%}" alt="" />
+                    <h3>Francis Ugo</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b6">
+                    <img src="{% static 'assets/team images/Emmanuel Osaite.png'%}" alt="" />
+                    <h3>Emma Osaita</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b7">
+                    <img src="{% static 'assets/team images/Martha.png'%}" alt="" />
+                    <h3>Marthar Nderitu</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="b8">
+                    <img src="{% static 'assets/team images/Ebuka.png'%}" alt="" />
+                    <h3>Chukwuebuka Ezeokechukwu</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b9">
+                    <img src="{% static 'assets/team images/Esther.png'%}" alt="" />
+                    <h3>Esther Oyebode</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b10">
+                    <img src="{% static 'assets/team images/Chukwudabere.png'%}" alt="" />
+                    <h3>Dabere Emma</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b11">
+                    <img src="{% static 'assets/team images/James Ohayi.png'%}" alt="" />
+                    <h3>James Ohayi</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b13">
+                    <img src="{% static 'assets/team images/Adedamola.png'%}" alt="" />
+                    <h3>Damola Alausa</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b14">
+                    <img src="{% static 'assets/team images/Azeez Bankole.png'%}" alt="" />
+                    <h3>Azeez Bankole</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="b15">
+                    <img src="{% static 'assets/team images/Augusta.png'%}" alt="" />
+                    <h3>Augusta Okwor</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="b16">
+                    <img src="{% static 'assets/team images/John Ojibo.png'%}" alt="" />
+                    <h3>John Ojibo</h3>
+                    <small>Product Designer</small>
+                </div>
+
+                <div class="card" id="b17">
+                    <img src="#" alt="" />
+                    <h3></h3>
+                    <small></small>
+                </div>
+                <div class="card" id="b18">
+                    <img src="#" alt="" />
+                    <h3></h3>
+                    <small></small>
+                </div>
+                <div class="card" id="b19">
+                    <img src="#" alt="" />
+                    <h3></h3>
+                    <small></small>
+                </div>
+                <div class="card" id="c1">
+                    <img src="{% static 'assets/team images/Peter Felix.png'%}" alt="" />
+                    <h3>Felix Peter</h3>
+                    <small>Product Designer</small>
+                    <p class="role">Team Lead</p>
+                </div>
+                <div class="card" id="c2">
+                    <img src="{% static 'assets/team images/Nicole.png'%}" alt="" />
+                    <h3>Nicole Moyo</h3>
+                    <small>Product Designer</small>
+                    <p class="role">Assistant(Design)</p>
+                </div>
+                <div class="card" id="c3">
+                    <img src="{% static 'assets/team images/Efosa Ero.png'%}" alt="" />
+                    <h3>Efosa Ero</h3>
+                    <small>Software Developer</small>
+                    <p class="role">Assistant(Dev)</p>
+                </div>
+                <div class="card" id="c4">
+                    <img src="{% static 'assets/team images/Metu Jane.png'%}" alt="" />
+                    <h3>Metu Jane</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c5">
+                    <img src="{% static 'assets/team images/Louis Binah.png'%}" alt="" />
+                    <h3>Louis Binah</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="c6">
+                    <img src="{% static 'assets/team images/Adewole Adzulazeez.png'%}" alt="" />
+                    <h3>Adewole Azeez</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c7">
+                    <img src="{% static 'assets/team images/Daniel Ukoha.png'%}" alt="" />
+                    <h3>Daniel Ukoha</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="c8">
+                    <img src="{% static 'assets/team images/Oyetoke.png'%}" alt="" />
+                    <h3>Oyetoke Anu</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c9">
+                    <img src="{% static 'assets/team images/Judah.png'%}" alt="" />
+                    <h3>Judah Ndukwu</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c10">
+                    <img src="{% static 'assets/team images/Oyin.png'%}" alt="" />
+                    <h3>Oyin Aina</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="c11">
+                    <img src="{% static 'assets/team images/Omonigho Seth.png'%}" alt="" />
+                    <h3>Nigho Seth</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c12">
+                    <img src="{% static 'assets/team images/Francis.png'%}" alt="" />
+                    <h3>Francis Ugo</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c13">
+                    <img src="{% static 'assets/team images/Emmanuel Osaite.png'%}" alt="" />
+                    <h3>Emma Osaita</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c14">
+                    <img src="{% static 'assets/team images/Martha.png'%}" alt="" />
+                    <h3>Marthar Nderitu</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="c15">
+                    <img src="{% static 'assets/team images/Ebuka.png'%}" alt="" />
+                    <h3>Chukwuebuka Ezeokechukwu</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c16">
+                    <img src="{% static 'assets/team images/Esther.png'%}" alt="" />
+                    <h3>Esther Oyebode</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c17">
+                    <img src="{% static 'assets/team images/Chukwudabere.png'%}" alt="" />
+                    <h3>Dabere Emma</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c18">
+                    <img src="{% static 'assets/team images/James Ohayi.png'%}" alt="" />
+                    <h3>James Ohayi</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c19">
+                    <img src="{% static 'assets/team images/Adedamola.png'%}" alt="" />
+                    <h3>Damola Alausa</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c20">
+                    <img src="{% static 'assets/team images/Azeez Bankole.png'%}" alt="" />
+                    <h3>Azeez Bankole</h3>
+                    <small>Software Developer</small>
+                </div>
+                <div class="card" id="21">
+                    <img src="{% static 'assets/team images/Augusta.png'%}" alt="" />
+                    <h3>Augusta Okwor</h3>
+                    <small>Product Designer</small>
+                </div>
+                <div class="card" id="c22">
+                    <img src="{% static 'assets/team images/John Ojibo.png'%}" alt="" />
+                    <h3>John Ojibo</h3>
+                    <small>Product Designer</small>
+                </div>
+            </div>
+            <div class="arro">
+                <div class="arrow" id="leftarrow">
+                    <img src="{% static 'assets/team images/left.png'%}" alt="" srcset="" />
+                </div>
+                <div class="arrow" id="rightarrow">
+                    <img src="{% static 'assets/team images/right.png'%}" alt="" srcset="" />
+                </div>
+            </div>
+        </div>
+        <small id="courtesy">This product is courtesy of the Zuri Team</small>
+    </main>
+    <footer>
+        <section class="footer-first">
+            <div>
+                <img class="logo" src="{% static 'assets/icons/footer-logo.png'%}" alt="" />
+            </div>
+            <div>
+                <ul class="navs-link">
+                    <li><a href="#">Resources</a></li>
+                    <li><a href="{% url 'about'%}">About us</a></li>
+                    <li><a href="{% url 'faq'%}">Contact us</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-second">
+            <div>
+                <p>SUBSCRIBE NOW</p>
+                <div class="subscribe-field">
+                    <form action="">
+                        <input type="email" placeholder="Your email" />
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                <path
+                                    d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <p>All Rights Reserved 2022</p>
+        </section>
+    </footer>
+
+    <script src="{% static 'js/nav.js'%}"></script>
+    <script src="{% static 'js/About.js'%}"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="{% static 'css/dashboard-modal.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/saved-files.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/dashboard.css'%}" />
+</head>
+
+<body>
+    <header class="top-nav">
+        <div>
+            <img src="{% static 'assets/icons/logo.svg'%}" alt="chuck it logo" class="logo" />
+        </div>
+        <div class="user">
+            <small>{{user.username}}</small>
+            <img src="{% static 'assets/icons/logout-icon.png'%}" alt="" />
+        </div>
+    </header>
+    <main>
+        <section class="backdrop"></section>
+        <nav class="nav-drawer">
+            <div class="top">
+                <img src="{% static 'assets/icons/menu.png'%}" alt="" class="hamburger" />
+                <img src="{% static 'assets/icons/logo.svg'%}" alt="chunck it logo" class="logo" />
+            </div>
+
+            <button class="file-upload btn-upload">+<small></small></button>
+            <ul class="navigation">
+                <li class="active">
+                    <a href="{% url 'home'%}">
+                        <img src="{% static 'assets/icons/Folder-filled.png'%}" alt="" />
+                        <small>Library</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'setting'%}">
+                        <img src="{% static 'assets/icons/manage_accounts.png'%}" alt="" />
+                        <small>Account</small>
+                    </a>
+                </li>
+            </ul>
+
+            <small class="copy-right"><strong>&copy; 2022 ChunkIT, Inc</strong></small>
+        </nav>
+        <section class="library-actions">
+            <button class="btn-delete" disabled>
+                <img src="{% static 'assets/icons/delete-enabled-icon.png'%}" alt="" />
+            </button>
+            <button class="btn-upload">+ Upload New File</button>
+        </section>
+        <section id="download-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-button"><img src="{% static 'assets/icons/close.png'%}" alt="" /></span>
+                <h2>Download Files</h2>
+                <div class="inner-modal-content">
+                    <img src="{% static 'assets/images/download-folder.png'%}" alt="" />
+                    <p>
+                        Download
+                        <span id="name"><strong>Filename.csv</strong></span> files.
+                    </p>
+                    <button class="primary">
+                        <span><img src="{% static 'assets/icons/file_download-light.png'%}"
+                                alt="file download icon" /></span>Download
+                        Zipped Files
+                    </button>
+                    <button class="complementary">
+                        <span><img src="{% static 'assets/icons/file_download.svg'%}"
+                                alt="file download icon" /></span>Download
+                        Original File
+                    </button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="saved-files">
+            <table>
+                <thead>
+                    <tr>
+                        <th>
+                            <input type="checkbox" name="" id="select-all" />
+                        </th>
+                        <th scope="col">File Name</th>
+                        <th scope="col">Size</th>
+                        <th scope="col">Type</th>
+                        <th scope="col">Last Modified</th>
+                        <th scope="col">Chunk files</th>
+                        <th scope="col"></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for file in files%}
+                    {% if file.user == user %}
+                    <tr>
+                        <td><input type="checkbox" name="" id="" /></td>
+                        <td>Filename1.csv</td>
+                        <td>5.41MB</td>
+                        <td>CSV</td>
+                        <td>
+                            <span class="date">{{file.date}}</span>
+                        </td>
+                        <td>{{file.chunk_number}}</td>
+                        <td>
+                            <div>
+                                <button class="btn-download">
+                                    <img src="{% static 'assets/icons/file_download.png'%}" alt="" />
+                                </button>
+                                <button class="btn-delete">
+                                    <a href="{% url 'delete' file.id %}"><img
+                                            src="{% static 'assets/icons/delete-icon-dark.png'%}" alt="" /></a>
+                                </button>
+                            </div>
+                        </td>
+                    </tr>
+                    {% endif %}
+                    {% endfor %}
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <script src="{% static 'js/saved-files.js'%}"></script>
+    <script src="{% static 'js/dashboard.js'%}"></script>
+    <!-- <script src="dashboard-modal.js"></script> -->
+</body>
+
+</html>

@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #d9d9d9;
+  font-family: "Manrope";
+  font-style: normal;
+}
+
+.hero-section {
+  position: relative;
+  width: 100%;
+  top: 4.5rem;
+  background: linear-gradient(90deg, #301e4e 0%, #4b0082 100%);
+  text-align: center;
+  display: grid;
+  place-content: center;
+  min-height: 25rem;
+  margin-bottom: 8rem;
+  padding-inline: 1rem;
+}
+
+.hero-section h1 {
+  color: #ffffff;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.hero-section p {
+  color: #cccccc;
+  font-weight: 400;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.others {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-block: 5rem;
+  padding-inline: 3rem;
+  justify-content: center;
+}
+
+hr {
+  border: 1px solid #999999;
+  width: 100%;
+  align-self: stretch;
+  flex: none;
+  margin-bottom: 0.5cm;
+}
+
+.doc {
+  /* isolation: isolate;   */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1296px;
+  background-color: #f2f1f4;
+  padding: 1rem 2.2rem 0;
+  margin-block: 0.5rem;
+  border-radius: 4px;
+}
+
+.doc-head {
+  width: 100%;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.doc-body {
+  clear: both;
+  width: 100%;
+  height: 0;
+  overflow: hidden;
+  top: -5rem;
+  opacity: 0;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.slide .doc-body {
+  height: fit-content;
+  padding-bottom: 1rem;
+  opacity: 1;
+  top: 0;
+}
+
+.doc-head img {
+  width: 1.2rem;
+  transition: transform 0.5s ease;
+}
+
+.slide .doc-head img {
+  transform: rotate(180deg);
+}
+
+.doc-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.doc button {
+  border: none;
+  width: 1rem;
+  position: absolute;
+  top: 0.3rem;
+  right: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.doc h3 {
+  color: #301e4e;
+  width: 100%;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+  /* font-size: 1.5rem; */
+  /* line-height: 72px; */
+  font-size: clamp(1.2rem, 2vw, 2rem);
+  /* text-align: center; */
+}
+
+.doc p + img {
+  width: 100%;
+  margin-top: 1rem;
+  max-width: 40rem;
+}
+
+.doc p {
+  font-weight: 400;
+  /* font-size: 1.2rem; */
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 32px;
+  width: 100%;
+}
+
+@media (max-width: 740px) {
+  .hero-section {
+    top: 3.5rem;
+  }
+
+  .others {
+    padding-inline: 1rem;
+  }
+
+  .doc button {
+    top: 0.2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .doc {
+    padding-inline: 1rem;
+  }
+
+  .doc-head img {
+    width: 1.2rem;
+  }
+}

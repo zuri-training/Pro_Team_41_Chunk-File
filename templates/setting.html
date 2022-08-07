@@ -72,20 +72,27 @@
                     <p>Name: <span>{{user.username}}</span></p>
                     <p>Email: {{user.email}}</p>
                 </div>
+                {% for message in messages %}
+                <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                    {{message}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+
                 <div class="change-password">
                     <h4>Change password</h4>
                     <span><img src="{% static 'assets/icons/keyboard_arrow_down.svg'%}" alt="" /></span>
-                    <form action="">
+                    <form action="" method="post">
+                        {% csrf_token %}
                         <div class="form-control">
                             <label for="current-password">Current password</label>
-                            <input type="password" name="current-password" id="current-password"
-                                placeholder="Password" />
+                            <input type="password" name="old" id="current-password" placeholder="Password" />
                             <img class="" id="toggle-current-password"
                                 src="{% static 'assets/icons/remove_red_eye.png'%}" alt="show password icon" />
                         </div>
                         <div class="form-control">
                             <label for="new-password">New password</label>
-                            <input type="password" name="new-password" id="new-password" placeholder="Password" />
+                            <input type="password" name="new" id="new-password" placeholder="Password" />
                             <img class="" id="toggle-new-password" src="{% static 'assets/icons/remove_red_eye.png'%}"
                                 alt="show password icon" />
                         </div>

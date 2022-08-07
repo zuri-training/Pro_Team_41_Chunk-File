@@ -17,8 +17,12 @@
     margin-top: -8px;
   }
   .head{
-    margin-bottom: 8px;
+    margin-bottom: 28px;
+    margin-top: 5.5rem;
+    font-size: 4rem;
+    width: 100%;
   }
+
   .hero{
     margin-bottom: 16px;
   }
@@ -28,10 +32,19 @@
 
 
   }
+  #b1,#b2,#b3,#b4,
+#b5,#b6,#b7,#b8,#b9,
+#b10,#b11,#b12,#b13,
+#b14,#b15,#b16,#b17,#b18,#b19{
+  display: contents;
+}
 
+.arro,#courtesy{
+  display: none;
+}
 
   .team{
-    margin-top: 18px;
+    margin-top: 54px;
     margin-bottom: -19px;
 }
     /* margin-bottom: 6px; */
@@ -43,10 +56,11 @@
     position: relative;
    
 
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 2.5rem;
+    line-height: 50px;
 /* or 150% */
     padding: 0px 126px;
+    margin-bottom: 429px;
 
   }
 
@@ -67,8 +81,6 @@
 
 .card{
   
-
- 
   width: 250px;
   height: 321px;
   gap: 6px;
@@ -76,10 +88,10 @@
   /* box-shadow: none; */
   background: #F2F1F4;
 /* Elevation/1 */
-margin: 0px 7px;
+  margin: 0px 7px;
 
-box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
-border-radius: 4px;
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
+  border-radius: 4px;
 } 
 
 .card h3{
@@ -88,23 +100,14 @@ border-radius: 4px;
 }
  #meet{
   position: relative; 
-  width: 268px; 
+  width: 100%; 
   height: 0px;
-  margin-top: 38px;
+  margin-top: 251px;
 
-
-/* H6/SemiBold */
-
- 
- 
- font-size: 24px;
+ font-size: 2.5rem;
  line-height: 36px;
-/* identical to box height, or 150% */
-
-
-/* Grey100% */
-
  color: #1A1A1A;
+ text-align: center;
 
 }
 
@@ -120,28 +123,83 @@ border-radius: 4px;
 }
 #vector{
   position: absolute;
-/* left: -37.5%;
-right: -27.78%;
-top: 2.65%; */
+
   bottom: 65.33%;
   width: 857px;
   height: 643px;
 }
-#b1,#b2,#b3,#b4,
-#b5,#b6,#b7,#b8,#b9,
-#b10,#b11,#b12,#b13,
-#b14,#b15,#b16,#b17,#b18,#b19{
-  display: contents;
-}
 
-/* #b18,#b19{
-  display: none;
-} */
-.arro,#courtesy{
-  display: none;
-}
 footer{
 margin-top: 67px;
 
 }
+
+  /* NAV BUG SOLUTION */
+  .mobile-nav a, .mobile-nav button {
+    display: block;
+    width: 100%;
+    max-width: 24rem;
+    margin: 0 auto 32px;
+    text-align: center;
+    background-color: #6a5c81;
+    padding: 2rem 5rem;
+    color: #fff;
+    font-size: 2rem;
+  }
+  .primary-navigation {
+    height: 4.5rem;
+  }
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 5%; /*changed */
+    cursor: pointer;
+    z-index: 9999;
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  
 }
+
+@media (max-width: 420px){
+  .mobile-nav a, .mobile-nav button{
+    font-size: 3.4rem;
+    max-width: 32rem;
+  }
+  .primary-navigation {
+      height: 7.5rem; 
+  }
+  #meet {
+    margin-top: 432px;
+    font-size: 2.9rem;
+    width: auto;
+    text-align: center;
+  }
+  .team>h6 {
+    font-size: 3.5rem;
+    margin-bottom: 783px;
+    line-height: 56px;
+
+  }
+   
+  .mobile-nav{
+    padding-top: 307px;
+  }
+}
+@media (max-width: 200px){
+  .mobile-nav a, .mobile-nav button{
+    font-size: 3.5rem;
+    max-width: 30rem;
+  }
+  .primary-navigation {
+    height: 8rem;
+  
+  }
+
+}
+
+
+
+  

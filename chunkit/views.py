@@ -18,16 +18,15 @@ import os
 # Create your views here.
 # ******************* HOME VIEW *****************************
 def landing_page(request):
-
     return render(request,'landing_page.html')
 
 def home(request):
     if request.method == 'POST':
         file_type = request.POST.get("name")
-        print(file_type)
         file_data = request.FILES.get("file")
         file_count = request.POST.get("file_count") or 2
         file_count = int(file_count)
+        print(file_type)
         user = request.user
         file = File.objects.create(file=file_data,chunk_number=file_count,user=user)
         url = file.file.url
@@ -74,7 +73,7 @@ def home(request):
 def download(request, file_id):
     file = File.objects.filter(id=file_id).first()
     context = {"file":file}
-    return render(request, 'download.html',context)
+    return render(request, 'dashboard-chunk.html',context)
 
 
 # ******************* REGISTER VIEW *****************************
@@ -148,10 +147,10 @@ def setting(request):
         if(user):
             user.set_password(new_password)
             user.save()
-            messages.error(request, "password change successfully")
+            messages.error(request, "Password changed successfully")
             return redirect('home')
         else:
-            messages.error(request, "incorrect password")
+            messages.error(request, "Incorrect old password")
             return redirect('setting')
     return render(request,'setting.html')
 
@@ -164,13 +163,24 @@ def save_file(request):
     }
     return render(request,'save_file.html',context)
     
-# ******************* SAVE FILES VIEW *****************************
+# ******************* DELETE FILES VIEW *****************************
 def file_delete(request, pk):
     file = File.objects.get(id=pk)
     if request.method == 'POST':
-        files.delete()
-        return redirect('save_files')
-    return render(request, "delete.html")
+        file.delete()
+        return redirect('save_file')
+    context = {
+        'file':file
+    }
+    return render(request, "delete.html",context)
+
+# ******************* HISTORY FILES VIEW *****************************
+def history(request, pk):
+    file = File.objects.get(id=pk)
+    context = {
+        'file':file
+    }
+    return render(request, "history.html",context)
 
 
 # ******************* SEND VIEW *****************************

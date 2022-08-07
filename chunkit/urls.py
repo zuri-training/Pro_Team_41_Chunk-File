@@ -16,6 +16,7 @@ path("setting", views.setting, name="setting"),
 path("save_file", views.save_file, name="save_file"),
 path('signout', views.signout, name="signout"),
 path('detele/<int:pk>/', views.file_delete, name="delete"),
+path('history/<int:pk>/', views.history, name="history"),
 
 
 # ******************* RESET PASSWORD VIEW *****************************

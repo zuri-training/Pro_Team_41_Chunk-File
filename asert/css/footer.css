@@ -3,7 +3,6 @@
   --color-main: #301e4e;
   --color-btn: #ff6e6c;
   --primary003: #52436b;
-  --fz-heading: 40px;
 }
 
 footer {
@@ -15,19 +14,24 @@ footer {
   padding-bottom: 1rem;
 }
 
+footer ul {
+  list-style: none;
+  font-weight: 600;
+}
+
 footer .logo {
   color: #fff;
-  font-size: clamp(20px, 5vw, 30px);
+  width: clamp(8rem, 20vw, 12rem);
 }
 
 footer a {
   text-decoration: none;
   color: inherit;
 }
-.navs-link li a:hover{
-  text-decoration: none;
-  color: inherit;
 
+footer p {
+  color: #fff;
+  font-size: 1rem;
 }
 
 .footer-first {
@@ -46,6 +50,7 @@ footer ul {
 .footer-second {
   margin-top: 1rem;
   text-align: center;
+  padding: 0;
 }
 
 .footer-second > div {
@@ -57,8 +62,8 @@ footer ul {
 }
 
 .footer-second > p {
-  /* margin-block: 1rem; */
   font-size: 0.8rem;
+  width: 100%;
 }
 
 .subscribe-field {
@@ -96,7 +101,7 @@ footer ul {
     flex-direction: column;
     gap: 1rem;
   }
-  .footer-first .navs-link {
+  .footer-first .nav-link {
     flex-direction: column;
     gap: 1rem;
     font-size: clamp(0.8rem, 3vw, 1rem);

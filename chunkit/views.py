@@ -17,12 +17,19 @@ import os
 
 # Create your views here.
 # ******************* HOME VIEW *****************************
+def landing_page(request):
+
+    return render(request,'landing_page.html')
+
 def home(request):
     if request.method == 'POST':
+        file_type = request.POST.get("name")
+        print(file_type)
         file_data = request.FILES.get("file")
         file_count = request.POST.get("file_count") or 2
         file_count = int(file_count)
-        file = File.objects.create(file=file_data)
+        user = request.user
+        file = File.objects.create(file=file_data,chunk_number=file_count,user=user)
         url = file.file.url
         url = str(settings.BASE_DIR)+url.replace("/","\\")
         if url.split(".")[-1] not in ["json","csv"]:
@@ -60,9 +67,10 @@ def home(request):
             file.processed_file = f"/processed-json-files/folder_name.zip"
             file.save()
             return redirect("download", file.id) 
-    return render(request, 'home.html')
+    return render(request, 'dashboard.html')
 
 # ******************* DOWNLOAD VIEW *****************************
+@login_required(login_url="login")
 def download(request, file_id):
     file = File.objects.filter(id=file_id).first()
     context = {"file":file}
@@ -118,11 +126,42 @@ def sign_in(request):
     return render(request,'login.html')
 
 
-# ******************* ABOUT VIEW *****************************
+# ******************* FAQS VIEW *****************************
 def faq(request):        
-    return render(request,'faq.html')
+    return render(request,'f.html')
+
+# ******************* FAQS VIEW *****************************
+def doc(request):        
+    return render(request,'doc.html')
+
+# ******************* ABOUT VIEW *****************************
+def about(request):
+    return render(request,'about.html')
+
+# ******************* SETTING VIEW *****************************
+@login_required(login_url="login")
+def setting(request):
+    return render(request,'setting.html')
+
+# ******************* SAVE FILES VIEW *****************************
+@login_required(login_url="login")
+def save_file(request):
+    files = File.objects.all().order_by("-id")
+    context = {
+        'files':files
+    }
+    return render(request,'save_file.html',context)
+    
+# ******************* SAVE FILES VIEW *****************************
+def file_delete(request, pk):
+    file = File.objects.get(id=pk)
+    if request.method == 'POST':
+        files.delete()
+        return redirect('save_files')
+    return render(request, "delete.html")
 
 
+# ******************* SEND VIEW *****************************
 def send(request):
     form = MessageForm(request.POST)
     if form.is_valid():
@@ -135,9 +174,16 @@ def send(request):
             messages.error(request,f"{field}: {error}")
             return redirect('faq')
 
+# ******************* LOGOUT VIEW *****************************
+def signout(request):
+    logout(request)
+    messages.success(request, "You have successfully logged out")
+    return redirect("login")
 
-# ******************* ADMIN PAGE VIEW *****************************
 
+
+# ******************* ADMIN PAGE VIEW || HOME VIEW  *****************************
+@login_required(login_url="admin_login")   
 def admin_home(request):
     message_count = Message.objects.all().count()
     users_count = User.objects.all().count()
@@ -149,6 +195,8 @@ def admin_home(request):
     }
     return render(request,'admin/admin_home.html',context)
 
+# ******************* ADMIN GET ALL MESSAGES VIEW *****************************
+@login_required(login_url="admin_login")   
 def message(request):
     file_count = File.objects.all().count()
     users_count = User.objects.all().count()
@@ -161,7 +209,9 @@ def message(request):
         'message_count':message_count
     }
     return render(request,'admin/message.html',context)
-    
+
+# ******************* ADMIN GET ALL USER'S VIEW *****************************
+@login_required(login_url="admin_login")   
 def user(request):
     users = User.objects.all()
     message_count = Message.objects.all().count()
@@ -176,6 +226,8 @@ def user(request):
     }
     return render(request,'admin/user.html',context)
 
+# ******************* ADMIN GET ALL FILES VIEW *****************************
+@login_required(login_url="admin_login")   
 def file(request):
     message_count = Message.objects.all().count()
     users_count = User.objects.all().count()
@@ -187,7 +239,31 @@ def file(request):
     }
     return render(request,'admin/file.html',context)
 
+# ******************* ADMIN GET ALL SUBSCRIBERS VIEW *****************************
+@login_required(login_url="admin_login")   
 def subscribe(request):
     return render(request,'admin/subscribe.html')
 
-    
+
+# ******************* ADMIN LOGIN VIEW *****************************
+def admin_login(request):
+    if request.method == "POST":
+        username = request.POST['username']
+        password = request.POST['password']
+
+        user = authenticate(username=username, password=password)
+        if user is not None and user.is_staff and user.is_superuser:
+            login(request, user)
+            return redirect('admin_home')
+
+        else:
+            messages.error(request, "Invalid Credential")
+            return redirect("admin_login")
+
+    return render(request, 'admin/admin_login.html')
+
+# ******************* ADMIN LOGOUT  VIEW *****************************
+def log_out(request):
+    logout(request)
+    messages.success(request, "You have successfully logged out")
+    return redirect("admin_login")

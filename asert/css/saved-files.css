@@ -1,0 +1,85 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+:root {
+  --grey: #b3b3b3;
+  --color-primary: #301e4e;
+}
+
+.saved-files {
+  position: relative;
+  margin-top: 1rem;
+  padding-inline: 1rem;
+  z-index: 0;
+  top: 8rem;
+  padding-left: 5rem;
+}
+/* 
+.saved-files .library-actions {
+  display: flex;
+  width: 100;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+} */
+.saved-files table {
+  /* table-layout: fixed; */
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 740px;
+  /* height: fit-content; */
+  text-align: left;
+  overflow-x: scroll;
+}
+
+table th:last-of-type,
+table td:last-of-type {
+  width: 5.5rem;
+  padding-inline: 0;
+}
+
+table th,
+table td {
+  padding: 0.5rem;
+}
+
+table td:nth-of-type(2) {
+  max-width: 12rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+table tr {
+  border: 1px solid var(--grey);
+  border-inline: none;
+}
+
+table button {
+  background-color: transparent;
+  border: 1px solid var(--grey);
+  margin-right: 0.4rem;
+  border-radius: 4px;
+  padding: 0.4rem;
+}
+
+table button img {
+  width: 1.2rem;
+}
+
+table input {
+  accent-color: var(--color-primary);
+  transform: scale(1.3);
+}
+
+#file-upload-modal form {
+  width: 100%;
+}

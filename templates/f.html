@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/header.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/faq.css'%}" />
+
+</head>
+
+<body>
+    <header class="navbar">
+        <nav class="primary-navigation">
+            <div>
+                <a href="{% url 'landing_page'%}">
+                    <img class="logo" src="{% static 'assets/icons/logo.svg'%}" alt="" />
+                </a>
+            </div>
+
+            <div class="navigation">
+                <ul class="nav-link">
+                    <li><a href="Front-end/documentation.html">Documentation</a></li>
+                    <li><a href="{% url 'about'%}">About us</a></li>
+                    <li><a href="{% url 'faq'%}">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="header-action navigation">
+                <a class="btn-link btn-login primary" href="{% url 'login'%}">
+                    Sign In
+                </a>
+                <a class="btn-link secondary" href="{% url 'register'%}">
+                    Sign Up
+                </a>
+            </div>
+            <div class="mobile-nav">
+                <ul class="">
+                    <li><a href="Front-end/documentation.html">Documentation</a></li>
+                    <li><a href="{% url 'about'%}">About us</a></li>
+                    <li><a href="{% url 'about'%}">Contact us</a></li>
+                </ul>
+                <a class="btn-link btn-login primary" href="{% url 'login'%}">
+                    Sign In
+                </a>
+                <a class="btn-link secondary" href="{% url 'register'%}">
+                    Sign Up
+                </a>
+            </div>
+            <button class="hamburger">
+                <div class="bar"></div>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="top-section">
+            <img src="{% static 'assets/icons/Line 4.png'%}" class="line" alt="" />
+            <img src="{% static 'assets/icons/Line 5.png'%}" class="line" alt="" />
+            <h1 class="big-heading">FAQs</h1>
+            <p>
+                Here you can find frequently asked questions. We help you find the
+                answers.
+            </p>
+        </section>
+        <section class="question-container">
+            <div class="inner">
+                <div class="question">
+                    <h3>Is your platform free of charge?</h3>
+                    <button class="btn-dropdown">
+                        <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        Yes our platform is absolutely free, no monthly subscriptions, no
+                        hidden charges.
+                    </p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="question">
+                    <h3>What file formats can I split on your platform?</h3>
+                    <button class="btn-dropdown">
+                        <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>We have several options for you including CSV and JSON files.</p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="question">
+                    <h3>Can I save my files on your platform?</h3>
+                    <button class="btn-dropdown">
+                        <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>
+                        Yes, you can always save your files on our website and have access
+                        to them anytime you need them.
+                    </p>
+                </div>
+            </div>
+            <div class="inner">
+                <div class="question">
+                    <h3>
+                        As a marketer that has files containing large data, can I also use
+                        your platform?
+                    </h3>
+                    <button class="btn-dropdown">
+                        <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
+                    </button>
+                </div>
+                <div class="answer">
+                    <p>Yes we have different file formats made for you.</p>
+                </div>
+            </div>
+        </section>
+        <section class="contact-section">
+            <div>
+                <h2 class="big-heading">We're here to help!</h2>
+                <p>
+                    We have a 24/7 support that will be happy to help you, please feel
+                    free to reach out to us.
+                </p>
+                <div class="inline">
+                    <img src="{% static 'assets/icons/icon-phone.png'%}" alt="" />
+                    <p>+23490905024</p>
+                </div>
+                <div class="inline">
+                    <img src="{% static 'assets/icons/icon-mail.png'%}" alt="" />
+                    <p>info@chunkit.io</p>
+                </div>
+            </div>
+            <div class="form-container">
+                {% for message in messages %}
+                <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                    {{message}}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+                </div>
+                {% endfor %}
+                <form action="/send" method="post">
+                    {% csrf_token %}
+                    <div>
+                        <input type="text" name="name" id="name" placeholder="Full name" />
+                    </div>
+                    <div>
+                        <input type="email" name="email" id="email" placeholder="Email address" />
+                    </div>
+                    <div>
+                        <input type="tel" name="phone" id="phone" placeholder="Phone No." />
+                    </div>
+                    <div>
+                        <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="bt">Submit</button>
+                    </div>
+                    <div class="social-icon"></div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="footer-first">
+            <div>
+                <img class="logo" src="{% static 'assets/icons/footer-logo.png'%}" alt="" />
+            </div>
+
+            <div>
+                <ul class="nav-link">
+                    <li><a href="Front-end/documentation.html">Documentation</a></li>
+                    <li><a href="{% url 'about'%}">About us</a></li>
+                    <li><a href="{% url 'faq'%}">Contact us</a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="footer-second">
+            <div>
+                <p>SUBSCRIBE NOW</p>
+                <div class="subscribe-field">
+                    <form action="">
+                        <input type="email" placeholder="Your email" />
+                        <button type="submit">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 512">
+                                <path
+                                    d="M118.6 105.4l128 127.1C252.9 239.6 256 247.8 256 255.1s-3.125 16.38-9.375 22.63l-128 127.1c-9.156 9.156-22.91 11.9-34.88 6.943S64 396.9 64 383.1V128c0-12.94 7.781-24.62 19.75-29.58S109.5 96.23 118.6 105.4z" />
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <p>All Rights Reserved 2022</p>
+        </section>
+    </footer>
+    <script src="{% static 'js/faq-dropdown.js'%}"></script>
+
+</body>
+
+</html>

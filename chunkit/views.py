@@ -141,6 +141,18 @@ def about(request):
 # ******************* SETTING VIEW *****************************
 @login_required(login_url="login")
 def setting(request):
+    if request.method == 'POST':
+        old_password = request.POST['old']
+        new_password = request.POST['new']
+        user = authenticate(username=request.user.username,password=old_password)
+        if(user):
+            user.set_password(new_password)
+            user.save()
+            messages.error(request, "password change successfully")
+            return redirect('home')
+        else:
+            messages.error(request, "incorrect password")
+            return redirect('setting')
     return render(request,'setting.html')
 
 # ******************* SAVE FILES VIEW *****************************

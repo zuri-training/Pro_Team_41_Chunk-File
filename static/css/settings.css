@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #301e4e;
+  --grey: #b3b3b3;
+  --red: #d43131;
+}
+
+body {
+  font-family: "Manrope", sans-serif;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+.settings {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  min-height: 90vh;
+  position: relative;
+  top: 4rem;
+  padding-left: 6rem;
+  /* left: 5rem; */
+}
+
+.settings label {
+  font-size: 0.9rem;
+}
+
+.settings .account {
+  width: 50%;
+}
+
+.account .info,
+.account .change-password {
+  border: 1px solid var(--grey);
+  border-radius: 4px;
+  margin-bottom: 1rem;
+  width: 30rem;
+  max-width: 100%;
+  /* max-width: 100%; */
+  padding: 1rem;
+}
+
+.account .change-password {
+  position: relative;
+  height: 3.5rem;
+  overflow: hidden;
+}
+
+.account .change-password.show-form {
+  height: fit-content;
+  overflow: visible;
+}
+
+.change-password h4 + span {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+.change-password h4 + span img:hover {
+  cursor: pointer;
+}
+
+.change-password.show-form h4 + span img {
+  content: url("/static/assets/icons/keyboard_arrow_up.svg");
+}
+
+.change-password .form-control {
+  position: relative;
+}
+
+.form-control input:focus {
+  border: 1px solid #301e4e;
+}
+
+.form-control img {
+  position: absolute;
+  width: 1.4rem;
+  right: 1rem;
+  top: 2.4rem;
+}
+
+.form-control img.hide {
+  content: url("/static/assets/icons/remove_red_eye_hide.png");
+}
+
+.change-password .form-control input {
+  width: 100%;
+  border: 1px solid var(--color-primary);
+  padding: 0.7rem;
+  border-radius: 4px;
+  font-family: inherit;
+  outline: none;
+  margin-top: 0.4rem;
+}
+
+.change-password .form-control {
+  margin-block: 1rem;
+}
+
+.change-password .form-action {
+  margin-top: 2rem;
+}
+
+.change-password .form-action button {
+  width: 100%;
+  color: #fff;
+  font-family: inherit;
+  font-weight: 700;
+  padding: 0.6rem;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  border: none;
+}
+
+.change-password .form-action button:hover {
+  cursor: pointer;
+}
+
+.settings .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 50%;
+  /* just-self: flex-end; */
+}
+
+.settings .right div {
+  width: 30rem;
+  max-width: 100%;
+  /* width: 100%; */
+}
+
+.settings .right img {
+  width: 100%;
+}
+
+.right .account-action {
+  text-align: right;
+}
+
+.settings .right .btn-danger {
+  background-color: var(--red);
+  color: #fff;
+  border: none;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  position: relative;
+}
+
+.settings .right .btn-danger:hover {
+  cursor: pointer;
+}
+
+.btn-danger span {
+  padding-inline: 0.5rem;
+}
+.settings .btn-danger img {
+  width: 1rem;
+  position: absolute;
+  left: 0.9rem;
+  /* height: 1px; */
+  /* aspect-ratio: 1; */
+}
+
+/* Modals */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  background-color: white;
+  border-radius: 4px;
+  padding: 1.5rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+#delete-account-modal .modal-content {
+  max-width: 25rem;
+}
+
+#delete-account-modal {
+  text-align: center;
+}
+
+#delete-account-modal p {
+  margin-bottom: 1rem;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#delete-account-modal h2 {
+  margin-bottom: 1rem;
+}
+#delete-account-modal button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-block-start: 1rem;
+  font-family: inherit;
+  border-radius: 4px;
+  font-weight: 700;
+}
+#delete-account-modal .btn-danger {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  color: #fff;
+}
+
+#delete-account-modal .cancel {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  transition: background-color 0.2s ease;
+}
+
+#delete-account-modal .cancel:hover {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+@media (max-width: 710px) {
+  .settings {
+    flex-direction: column;
+    gap: 1rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
+
+  .settings .account,
+  .settings .right {
+    width: 100%;
+  }
+
+  .account .info,
+  .account .change-password {
+    margin-inline: auto;
+  }
+
+  .right div {
+    margin: auto;
+  }
+}

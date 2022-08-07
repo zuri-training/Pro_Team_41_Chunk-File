@@ -1,0 +1,139 @@
+:root {
+  --color-primary: #301e4e;
+  --color-complementary: #ff6e6c;
+  --red: #d43131;
+}
+
+/* The Modal (background) */
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem 2.5rem;
+  width: 90%;
+  max-width: 40rem;
+}
+
+#delete-modal .modal-content {
+  max-width: 25rem;
+}
+
+#delete-modal {
+  text-align: center;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  /* background-color: lightgray; */
+}
+
+.close-button img {
+  width: 100%;
+}
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+#delete-modal h2 {
+  margin-bottom: 1rem;
+}
+
+.inner-modal-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.inner-modal-content img {
+  width: 200px;
+}
+
+.inner-modal-content p {
+  margin-bottom: 1rem;
+}
+
+.inner-modal-content button {
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.6rem;
+  font-family: inherit;
+  font-weight: 700;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.inner-modal-content .primary {
+  color: #fff;
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+}
+.inner-modal-content .complementary {
+  background-color: var(--color-complementary);
+  border: 1px solid var(--color-complementary);
+}
+
+.inner-modal-content .danger {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  color: #fff;
+  margin-top: 1rem;
+}
+
+#delete-modal .cancel {
+  margin-top: 0;
+  border: 1px solid var(--color-primary);
+}
+
+#delete-modal .cancel:hover {
+  background-color: var(--color-primary);
+}
+
+.inner-modal-content .cancel {
+  margin-top: 2rem;
+  background-color: transparent;
+  border: 1px solid var(--color-complementary);
+  transition: 0.2s ease-out;
+}
+
+.inner-modal-content .cancel:hover {
+  background-color: var(--color-complementary);
+  color: #fff;
+}
+
+.inner-modal-content button span {
+  position: relative;
+}
+
+.inner-modal-content button img {
+  /* height: 1rem; */
+  width: 1.2rem;
+  position: absolute;
+  right: 0.25rem;
+  touch-action: 1rem;
+}

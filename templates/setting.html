@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Settings</title>
+    <link rel="stylesheet" href="{% static 'css/settings.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/dashboard.css'%}" />
+</head>
+
+<body>
+    <header class="top-nav">
+        <div>
+            <img src="{% static 'assets/icons/logo.svg'%}" alt="chuck it logo" class="logo" />
+        </div>
+        <div class="user">
+            <small>{{user.username}}</small>
+            <a href="{% url 'signout'%}"><img src="{% static 'assets/icons/logout-icon.png'%}" alt=""
+                    style="cursor: pointer;" /></a>
+        </div>
+    </header>
+    <main>
+        <section class="backdrop"></section>
+        <nav class="nav-drawer">
+            <div class="top">
+                <img src="{% static 'assets/icons/menu.png'%}" alt="" class="hamburger" />
+                <img src="{% static 'assets/icons/logo.svg'%}" alt="chunck it logo" class="logo" />
+            </div>
+
+            <button class="file-upload btn-upload">+<small></small></button>
+            <ul class="navigation">
+                <li>
+                    <a href="{% url 'home'%}">
+                        <img src="{% static 'assets/icons/Folder-filled.png'%}" alt="" />
+                        <small>Library</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'setting'%}">
+                        <img src="{% static 'assets/icons/manage_accounts.png'%}" alt="" />
+                        <small>Account</small>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="{% url 'save_file'%}">
+                        <img src="{% static 'assets/icons/manage_accounts.png'%}" alt="" />
+                        <small>Save files</small>
+                    </a>
+                </li>
+            </ul>
+
+            <small class="copy-right"><strong>&copy; 2022 ChunkIT, Inc</strong></small>
+        </nav>
+        <section class="modal" id="delete-account-modal">
+            <div class="modal-content">
+                <h2>Delete Account</h2>
+                <p>
+                    Are you sure you want to delete your account? All saved files will
+                    be lost forever.
+                </p>
+                <button class="btn-danger">Delete Acount</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </section>
+        <section class="settings">
+            <div class="account">
+                <div class="info">
+                    <h4>Account</h4>
+                    <p>Name: <span>{{user.username}}</span></p>
+                    <p>Email: {{user.email}}</p>
+                </div>
+                <div class="change-password">
+                    <h4>Change password</h4>
+                    <span><img src="{% static 'assets/icons/keyboard_arrow_down.svg'%}" alt="" /></span>
+                    <form action="">
+                        <div class="form-control">
+                            <label for="current-password">Current password</label>
+                            <input type="password" name="current-password" id="current-password"
+                                placeholder="Password" />
+                            <img class="" id="toggle-current-password"
+                                src="{% static 'assets/icons/remove_red_eye.png'%}" alt="show password icon" />
+                        </div>
+                        <div class="form-control">
+                            <label for="new-password">New password</label>
+                            <input type="password" name="new-password" id="new-password" placeholder="Password" />
+                            <img class="" id="toggle-new-password" src="{% static 'assets/icons/remove_red_eye.png'%}"
+                                alt="show password icon" />
+                        </div>
+                        <div class="form-action">
+                            <button>Save New Password</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="right">
+                <div>
+                    <img src="{% static 'assets/images/Settings-panel.png'%}" alt="settings image" />
+                </div>
+                <div class="account-action">
+                    <button class="btn-danger">
+                        <span><img src="{% static 'assets/icons/delete-icon-light.png'%}" alt="" /></span>
+                        Delete Account
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="{% static 'js/settings.js'%}"></script>
+</body>
+
+</html>

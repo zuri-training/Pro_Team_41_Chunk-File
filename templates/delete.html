@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% load static %}
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <!-- <link rel="stylesheet" href="index.css" /> -->
+    <link rel="stylesheet" href="{% static 'css/dashboard.css'%}" />
+
+    <link rel="stylesheet" href="{% static 'css/saved-files.css'%}" />
+</head>
+
+<body>
+    <header class="top-nav">
+        <div>
+            <img src="{% static 'assets/icons/logo.svg'%}" alt="chuck it logo" class="logo" />
+        </div>
+        <div class="user">
+            <small>{{user.username}}</small>
+            <img src="{% static 'assets/icons/logout-icon.png'%}" alt="" />
+        </div>
+    </header>
+    <main>
+        <section class="backdrop"></section>
+        <nav class="nav-drawer">
+            <div class="top">
+                <img src="{% static 'assets/icons/menu.png'%}" alt="" class="hamburger" />
+                <img src="{% static 'assets/icons/logo.svg'%}" alt="chunck it logo" class="logo" />
+            </div>
+
+            <button class="file-upload btn-upload">+<small></small></button>
+            <ul class="navigation">
+                <li class="active">
+                    <a href="{% url 'home'%}">
+                        <img src="{% static 'assets/icons/Folder-filled.png'%}" alt="" />
+                        <small>Library</small>
+                    </a>
+                </li>
+                <li>
+                    <a href="{% url 'setting'%}">
+                        <img src="{% static 'assets/icons/manage_accounts.png'%}" alt="" />
+                        <small>Account</small>
+                    </a>
+                </li>
+            </ul>
+
+            <small class="copy-right"><strong>&copy; 2022 ChunkIT, Inc</strong></small>
+        </nav>
+
+        <section>
+            <div class="modal-content">
+
+                <h2>Confirm Deletion</h2>
+                <div class="inner-modal-content">
+                    <p>
+                        Are you sure you want to delete this file and its chunked files?
+                    </p>
+                    <p>
+                        <span id="name"><strong>Filename.csv</strong></span>
+                    </p>
+                    <button class="danger">Delete</button>
+                    <button class="cancel">Cancel</button>
+                </div>
+            </div>
+        </section>
+        <section class="page-content">
+
+            <img src="{% static 'assets/images/file.png '%}" alt="download folder image" />
+            <p>Your library is empty. Upload a file to start chuncking.</p>
+            <button class="btn-upload">Upload New File</button>
+        </section>
+
+    </main>
+
+    <!-- <script src="dashboard-modal.js"></script> -->
+</body>
+
+</html>

@@ -290,6 +290,29 @@ li.active {
   max-width: 40rem;
 }
 
+.chunk-content {
+  position: absolute;
+  margin-top: 2rem;
+  margin-inline: 2rem;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 85%;
+  max-width: 35rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+  box-shadow: 0 1px 8px rgb(0 0 0 / 25%);
+}
+
+.chunk-content h2 {
+  width: 100%;
+}
+
 .close-button {
   float: right;
   width: 1.5rem;
@@ -311,17 +334,18 @@ li.active {
   transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 
-.modal h2 span {
+h2 span {
   color: #4d4d4d;
 }
 
-#download-chunk-modal .inner-modal-content {
+.inner-modal-content {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
-#download-chunk-modal .inner-modal-content .top-img {
+.inner-modal-content .top-img {
   width: 200px;
 }
 
@@ -330,7 +354,7 @@ li.active {
   font-weight: 400;
 }
 
-#download-chunk-modal span {
+span {
   position: relative;
 }
 

@@ -56,7 +56,7 @@
     position: relative;
    
 
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     line-height: 50px;
 /* or 150% */
     padding: 0px 126px;
@@ -138,13 +138,13 @@ margin-top: 67px;
   .mobile-nav a, .mobile-nav button {
     display: block;
     width: 100%;
-    max-width: 24rem;
-    margin: 0 auto 32px;
+    max-width: 16rem;
+    margin: 0 auto 23px;
     text-align: center;
     background-color: #6a5c81;
-    padding: 2rem 5rem;
+    padding: 1.3rem 1.5rem;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.38rem;
   }
   .primary-navigation {
     height: 4.5rem;
@@ -159,20 +159,24 @@ margin-top: 67px;
     background: none;
     outline: none;
     border: none;
+    margin-right: 2.5rem;
   }
-  
+
 }
 
 @media (max-width: 420px){
   .mobile-nav a, .mobile-nav button{
-    font-size: 3.4rem;
+    font-size: 2rem;
     max-width: 32rem;
+    padding: 2.3rem 1.5rem;
+    margin: 0 auto 23px;
   }
+
   .primary-navigation {
       height: 7.5rem; 
   }
   #meet {
-    margin-top: 432px;
+    margin-top: 308px;
     font-size: 2.9rem;
     width: auto;
     text-align: center;
@@ -186,16 +190,23 @@ margin-top: 67px;
    
   .mobile-nav{
     padding-top: 307px;
+    padding: 231px;
   }
+
 }
 @media (max-width: 200px){
   .mobile-nav a, .mobile-nav button{
-    font-size: 3.5rem;
-    max-width: 30rem;
+    font-size: 3.2rem;
+    max-width: 47rem;
+    margin: 0 auto 50px;
   }
   .primary-navigation {
     height: 8rem;
   
+  }
+  .mobile-nav{
+    padding: 70px;
+    padding-top: 386px;
   }
 
 }

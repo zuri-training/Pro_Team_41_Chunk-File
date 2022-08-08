@@ -8,5 +8,5 @@ Create document with design specifications for developers to ensure accurate imp
 
 Wireframing & Low-fidelity for all desktop screens (Link to issue) https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/48
 
-Reset Password and Sign Up Pages (Link to the file) https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3364%3A8084
+Reset Password and Sign Up Pages (Link to the issue) https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/111
 

@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap');
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,7 @@
 }
 body {
   background-color: #d9d9d9;
-  font-family: "Manrope";
+  font-family: 'Manrope';
   font-style: normal;
 }
 
@@ -126,6 +126,14 @@ hr {
   /* text-align: center; */
 }
 
+.doc h6 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  display: flex;
+  align-self: baseline;
+}
+
 .doc p + img {
   width: 100%;
   margin-top: 1rem;
@@ -138,6 +146,10 @@ hr {
   font-size: clamp(1rem, 2vw, 1.2rem);
   line-height: 32px;
   width: 100%;
+}
+
+.eight p {
+  margin-bottom: 32px;
 }
 
 @media (max-width: 740px) {

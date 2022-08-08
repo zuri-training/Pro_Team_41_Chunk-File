@@ -139,9 +139,9 @@
                     {% if file.user == user %}
                     <tr>
                         <td><input type="checkbox" name="" id="" /></td>
-                        <td>Filename1.csv</td>
+                        <td>{{file.name}}</td>
                         <td>5.41MB</td>
-                        <td>CSV</td>
+                        <td>{{file.file_type}}</td>
                         <td>
                             <span class="date">{{file.date}}</span>
                         </td>

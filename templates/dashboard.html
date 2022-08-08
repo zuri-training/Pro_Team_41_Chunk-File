@@ -36,7 +36,7 @@
                                 <img src="{% static 'assets/icons/file_upload.png'%}" alt="" />
                                 <p>Drop File Here or Browse</p>
                                 <p>CSV, JSON</p>
-                                <small id="name" name="name">File name</small>
+                                <small id="name">File name</small>
                             </div>
                             <p>
                                 <small class="warning">File must not exceed 250 MB</small>
@@ -44,17 +44,21 @@
                         </div>
                         <div class="form-control radio">
                             <p>Select file type</p>
-                            <label for="csv"><input type="radio" name="file-type" id="csv" />
+                            <label for="csv"><input type="radio" name="type" id="csv" value="CSV" />
                                 <span>CSV</span>
                             </label>
                             <label for="json">
-                                <input type="radio" name="file-type" id="json" />
+                                <input type="radio" name="type" id="json" value="JSON" />
                                 <span>JSON</span>
                             </label>
                         </div>
                         <div class="form-control">
+                            <label for="chunks-number">File Name</label>
+                            <input type="text" id="name" name="name" required placeholder="enter file name" />
+                        </div>
+                        <div class="form-control">
                             <label for="chunks-number">Select the number of chunks</label>
-                            <input type="number" id="chunks-number" name="file_count" value="2" />
+                            <input type="number" id="chunks-number" name="file_count" value="2" required />
                         </div>
                         <div class="form-action">
                             <button>Chunk File</button>
@@ -147,7 +151,7 @@
         let size = document.getElementById('size')
 
         file.onchange = function () {
-            let maxSize = 1 * 1024 * 1024;
+            let maxSize = 250 * 1024 * 1024;
             if (this.files[0].size > maxSize) {
                 swal.fire('the file is larger than 10mb');
                 this.value = "";

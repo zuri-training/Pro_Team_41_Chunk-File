@@ -3,12 +3,16 @@ from datetime import datetime
 from django.contrib.auth.models import User
 
 class File(models.Model):
+    name = models.CharField(max_length=150, null=True)
     file = models.FileField(upload_to="uploads/user-files")
     processed_file = models.FileField(upload_to="uploads/processed-files",null=True,blank=True)
     file_type = models.CharField(max_length=50, null=True)
     chunk_number = models.PositiveIntegerField()
     user = models.ForeignKey(User, on_delete=models.CASCADE)
     date = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return f'{self.name}'
 
 
 class Message(models.Model):

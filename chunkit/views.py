@@ -22,13 +22,14 @@ def landing_page(request):
 
 def home(request):
     if request.method == 'POST':
-        file_type = request.POST.get("name")
+        name = request.POST.get("name")
+        type = request.POST.get("type")
         file_data = request.FILES.get("file")
         file_count = request.POST.get("file_count") or 2
         file_count = int(file_count)
-        print(file_type)
+        print(type)
         user = request.user
-        file = File.objects.create(file=file_data,chunk_number=file_count,user=user)
+        file = File.objects.create(file=file_data,chunk_number=file_count,user=user,name=name,file_type=type)
         url = file.file.url
         url = str(settings.BASE_DIR)+url.replace("/","\\")
         if url.split(".")[-1] not in ["json","csv"]:
@@ -45,9 +46,9 @@ def home(request):
                 new_file  = df[row_start:row_start+rows_per_file]
                 new_file.to_csv(f"{folder_name}/chunk_{row_start}.csv")
 
-            outputfile = str(settings.MEDIA_ROOT) + f"\\processed-files\\folder_name"
+            outputfile = str(settings.MEDIA_ROOT) + f"\\processed-files\\{name}"
             shutil.make_archive(outputfile, 'zip', folder_name)
-            file.processed_file = f"/processed-files/folder_name.zip"
+            file.processed_file = f"/processed-files/{name}.zip"
             file.save()
             return redirect("download", file.id)
 

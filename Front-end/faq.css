@@ -79,9 +79,6 @@ p {
 .question {
   color: var(--color-main);
   position: relative;
-}
-
-.slide .question {
   padding-bottom: 0.5rem;
   border-bottom: 1px solid #737373;
 }

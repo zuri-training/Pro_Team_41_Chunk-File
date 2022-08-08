@@ -1,5 +1,5 @@
 ## Chukwuebuka_Ezeokechukwu Assigned Tasks
-Handing over UI designs and resources (icons, style guide, images etc.) to the developers. Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues?q=is%3Aopen+is%3Aissue#:~:text=Developer%20Handoff-,Handing%20over%20UI%20designs%20and%20resources%20(icons%2C%20style%20guide%2C%20images%20etc.)%20to%20the%20developers.,-%2399%20opened%205
-Designing of high-fidelity screens (Desktop view) Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues?q=is%3Aissue+is%3Aclosed#:~:text=4-,Designing%20of%20high%2Dfidelity%20screens%20(Desktop%20view),-%2356%20by%20beverly
-Create document with design specifications for developers to ensure accurate implementation of the UI design Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues?q=is%3Aissue+is%3Aclosed#:~:text=7%20days%20ago-,Create%20document%20with%20design%20specifications%20for%20developers%20to%20ensure%20accurate%20implementation%20of%20the%20UI%20design,-documentation
-Wireframing & Low-fidelity for all desktop screens Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues?q=is%3Aissue+is%3Aclosed#:~:text=7%20days%20ago-,Wireframing%20%26%20Low%2Dfidelity%20for%20all%20desktop%20screens,-%2348%20by%20Cleverley1
+Handing over UI designs and resources (icons, style guide, images etc.) to the developers. Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/99
+Designing of high-fidelity screens (Desktop view) Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/56
+Create document with design specifications for developers to ensure accurate implementation of the UI design Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/54
+Wireframing & Low-fidelity for all desktop screens Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/48

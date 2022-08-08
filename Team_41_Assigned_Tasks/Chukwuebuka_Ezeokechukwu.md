@@ -8,4 +8,3 @@ Create document with design specifications for developers to ensure accurate imp
 
 Wireframing & Low-fidelity for all desktop screens Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/48
 
-Create document with design specifications for developers to ensure accurate implementation of the UI design Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/54

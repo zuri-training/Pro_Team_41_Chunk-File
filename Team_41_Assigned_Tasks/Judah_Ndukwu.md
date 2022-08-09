@@ -21,4 +21,4 @@ UX Content Writing/Documentation (GitHub issue)https://github.com/zuri-training/
 
 Ensure Consistency on Documentation Page Implemention:(GitHub Issue):https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/101
 
-Ensure Consitency On the About Us Page Implementation:(GitHub Issue)
+Ensure Consitency On the About Us Page Implementation:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/101

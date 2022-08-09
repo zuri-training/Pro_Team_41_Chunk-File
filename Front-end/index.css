@@ -583,19 +583,14 @@ section {
 
   .checkmarks {
     width: 100%;
-    /* border: 2px solid red; */
     margin-top: 0;
   }
 
   .checkmark__setup {
-    /* border: 0.5px solid blanchedalmond; */
     margin: 0 auto;
   }
 
   .checkmark {
-    /* border: 0.5px solid blue; */
-
-    /* text-align: center; */
     font-size: 18px;
   }
 

@@ -232,3 +232,9 @@ ul {
     gap: 1rem;
   }
 }
+
+@media (max-width: 420px) {
+  header {
+    padding-inline: 1rem;
+  }
+}

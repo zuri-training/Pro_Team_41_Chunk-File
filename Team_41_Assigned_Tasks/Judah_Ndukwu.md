@@ -8,4 +8,4 @@ User Documentation Page UI Design:https://www.figma.com/file/YsY3SLQhwZMthzbW6R1
 About Us Page UI Design:https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3364%3A8366
 User Documentation Page UI Design for mobile responsiveness:https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3697%3A28226, https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3697%3A28226
 UX Writting/User Documentation:https://docs.google.com/document/d/18BAmmkxITchlJAGZkUTknVbiR9jCGYgC/edit?usp=sharing&ouid=105122485126880922171&rtpof=true&sd=true
-https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/89
+/issues/89

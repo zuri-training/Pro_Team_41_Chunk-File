@@ -292,6 +292,12 @@ section {
   max-width: 621px;
 }
 
+.checkmark__setup {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 .checkmarks img {
   width: 30px;
 }
@@ -588,6 +594,9 @@ section {
 
   .checkmark__setup {
     margin: 0 auto;
+    flex-direction: column;
+    width: 100%;
+    max-width: 157px;
   }
 
   .checkmark {

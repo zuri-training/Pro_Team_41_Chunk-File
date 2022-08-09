@@ -688,6 +688,15 @@ section {
     padding: 46px 0px;
   }
 
+  .card img {
+    max-width: 68px;
+    margin-bottom: 20px;
+  }
+
+  .card p {
+    line-height: 24px;
+  }
+
   article {
     padding: 0;
   }

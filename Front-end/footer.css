@@ -89,6 +89,7 @@ footer ul {
   position: absolute;
   right: -1rem;
   top: -0.5px;
+  opacity: 1;
 }
 
 .subscribe-field svg {

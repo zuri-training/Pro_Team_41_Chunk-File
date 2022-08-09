@@ -1,5 +1,5 @@
 ## thejourneybeginsng Assigned Tasks
-Input Field Component with Different State (Issue): https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/36
+Input Field Component with Different State (Issue): https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/36 <br>
 Input Field Component with Different State (Figma Link): https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=621%3A2
 
 Fix inconsistencies between Contact Us page UI design and frontend implementation (Issue): https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/105

@@ -20,4 +20,5 @@ Ensure color consistency across all (Desktop and Mobile) screens on Figma (issue
 https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/78
 https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3364%3A8084
 
-
+Handing over UI designs of Landing page and About-us page and resources (icons, style guide, images etc.) to the developers https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/99
+ https://drive.google.com/drive/folders/1q5QJV82jU4UFxDu4Ot-MNqXtBDHEx6qn?usp=sharing

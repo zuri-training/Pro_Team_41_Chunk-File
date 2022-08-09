@@ -10,13 +10,14 @@ https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?nod
 Designing of high-fidelity Dsahboard screens (Desktop view) https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/56
 https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3907%3A11324
 
-Designed Low-fidelity for dashboard desktop screens https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/48
+Designed Low-fidelity for dashboard desktop (loading) screens https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/48
 https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3911%3A11325
 
 Created document with design specifications for developers to ensure accurate implementation of the UI design https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/54
 https://drive.google.com/drive/folders/1q5QJV82jU4UFxDu4Ot-MNqXtBDHEx6qn?usp=sharing
 
-Ensure color consistency across all screens on Figma (issue)
+Ensure color consistency across all (Desktop and Mobile) screens on Figma (issue)
 https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/78
+https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3364%3A8084
 
 

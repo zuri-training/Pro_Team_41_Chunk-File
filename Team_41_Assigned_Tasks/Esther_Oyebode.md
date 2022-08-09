@@ -13,7 +13,7 @@ Figma Presentation Slides (Link to Issue https://github.com/zuri-training/Pro_Te
 Creating Product Requirement Document for our Product (Link to Isue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/81)
 
 
-High Fifelity designs of Sign up, Sign in, Forgot Password screens (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/77)
+High Fidelity designs of Sign up, Sign in, Forgot Password screens (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/77)
 
 
 Check Consistencies on Buttons and Components (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/81)

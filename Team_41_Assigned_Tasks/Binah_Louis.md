@@ -4,7 +4,7 @@
 User Authentication (Link to issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/5)
 
 
-chunking logic development (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/70)
+chunking logic development - logic for splitting json or csv files (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/70)
 
 
 Host Platform on Zuri Server (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/71)

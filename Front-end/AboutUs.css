@@ -320,3 +320,7 @@ p {
   order: 3;
   flex-grow: 0;
 }
+
+#b22, #b23,#b24,#b25,#b26,#b27,#b28,#b29{
+  display: none;
+}

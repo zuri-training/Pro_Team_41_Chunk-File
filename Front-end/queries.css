@@ -35,7 +35,7 @@
   #b1,#b2,#b3,#b4,
 #b5,#b6,#b7,#b8,#b9,
 #b10,#b11,#b12,#b13,
-#b14,#b15,#b16,#b17,#b18,#b19,#b20,#b21{
+#b14,#b15,#b16,#b17,#b18,#b19,#b20,#b21,#b22,#b23,#b24,#b25{
   display: contents;
 }
 
@@ -71,7 +71,7 @@
       grid-template-columns: auto auto;
       margin: auto;
       width: 100%;
-      height: 1042px;
+      height: 1351px;
       margin-top: 8px;
       margin-bottom: 20px;
       /* gap: 10px;
@@ -96,7 +96,7 @@
 
 .card h3{
   width: 100%;
-  height: 28px;
+  /* height: 28px; */
 }
  #meet{
   position: relative; 
@@ -164,7 +164,14 @@ margin-top: 67px;
 
 }
 
+
+
+
+
 @media (max-width: 420px){
+
+  
+
   .mobile-nav a, .mobile-nav button{
     font-size: 2rem;
     max-width: 32rem;
@@ -205,6 +212,9 @@ margin-top: 67px;
 
 }
 @media (max-width: 200px){
+
+  
+
   .mobile-nav a, .mobile-nav button{
     font-size: 3.2rem;
     max-width: 47rem;

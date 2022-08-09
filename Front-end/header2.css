@@ -26,7 +26,8 @@ header {
 
 header .logo {
   width: clamp(8rem, 20vw, 12rem);
-  /* width: 16rem; */
+  
+  /* width: 12rem; */
 }
 
 /* .big-heading {
@@ -68,7 +69,6 @@ ul {
 
 .primary-navigation a {
   text-decoration: none;
-  color:  #301e4e;
 }
 
 .primary-navigation .nav-link a:hover {

@@ -16,8 +16,8 @@ Ensure consistency across all screens on Figma (Figma): https://www.figma.com/fi
 
 Mobile Responsiveness of Web screens Design(Issue): https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/77 <br>
 Mobile Responsiveness of Web screens Design (Figma): https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3549%3A17914
-https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3364%3A13266
-https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3697%3A29120
+Library Filled Responsive Web screen: [https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3364%3A13266
+Library Empty responsive web screen: https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3697%3A29120](https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3697%3A29120)
 
 Wireframing & Low-fidelity for all desktop screens (Issue): https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/48 <br>
 Wireframing & Low-fidelity for all desktop screens (figma): https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3364%3A19305

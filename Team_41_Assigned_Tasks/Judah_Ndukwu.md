@@ -19,6 +19,7 @@ Interactive Components for Desktop and Mobile Documentation Page:(Figma File)htt
 Documentation Page Design For Mobile Responsiveness:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/123,  (Figma file)https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3697%3A28226
 
 UX Content Writing/Documentation (GitHub issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/83
+(Google Docs link)https://docs.google.com/document/d/18BAmmkxITchlJAGZkUTknVbiR9jCGYgC/edit?usp=sharing&ouid=102043229206258254836&rtpof=true&sd=true
 
 Ensure Consistency on Documentation Page Implemention:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/87
 

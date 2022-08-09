@@ -1,4 +1,6 @@
 ## thejourneybeginsng Assigned Tasks
+Served as Team Lead of Team_41 (Created a working system for all team members, making sure no one was evicted and everyone carried out their roles as required)
+
 Input Field Component with Different State (Issue): https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/36 <br>
 Input Field Component with Different State (Figma Link): https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=621%3A2
 

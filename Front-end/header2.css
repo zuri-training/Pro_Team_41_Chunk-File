@@ -29,6 +29,30 @@ header .logo {
   
   /* width: 12rem; */
 }
+@media (max-width: 780px) {
+  header .logo {
+    width: clamp(8rem, 25vw, 12rem);
+  }    
+}
+
+@media (max-width: 580px) {
+  header .logo {
+    width: clamp(8rem, 30vw, 12rem);
+  }   
+}
+@media (max-width: 400px) {
+  header .logo {
+    width: clamp(8rem, 35vw, 12rem);
+  }   
+}
+
+@media (max-width: 249px) {
+  header .logo {
+    width: clamp(8rem, 35vw, 12rem);
+  }   
+}
+
+
 
 /* .big-heading {
   font-size: clamp(25px, 5vw, 40px);
@@ -157,6 +181,18 @@ ul {
   transition: 0.4s;
 }
 
+@media (max-width:700px){
+  .hamburger .bar, .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 2.5rem;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--color-main);
+    margin: 7px 0;
+    transition: 0.4s;
+  }
+}
 .hamburger.is-active::before {
   transform: rotate(-45deg) translate(-3px, 6px);
   background-color: #fff;

@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Settings</title>
-    <link rel="stylesheet" href="settings.css" />
     <link rel="stylesheet" href="dashboard.css" />
+    <link rel="stylesheet" href="settings.css" />
   </head>
   <body>
     <header class="top-nav">
@@ -15,7 +15,11 @@
       </div>
       <div class="user">
         <small>user@gmail.com</small>
-        <img src="assets/icons/logout-icon.png" alt="" />
+        <img
+          src="assets/icons/logout-icon.png"
+          alt=""
+          onclick="toggleLogoutModal()"
+        />
       </div>
     </header>
     <main>
@@ -55,6 +59,14 @@
             be lost forever.
           </p>
           <button class="btn-danger">Delete Acount</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </section>
+      <section class="modal" id="logout-modal">
+        <div class="modal-content">
+          <h2>Log out</h2>
+          <p>Are you sure you want to log out?</p>
+          <button class="btn-danger">Log out</button>
           <button class="cancel">Cancel</button>
         </div>
       </section>

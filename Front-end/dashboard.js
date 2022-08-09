@@ -22,6 +22,9 @@ function windowOnClick(event) {
   if (event.target === downloadChunkModal) {
     toggleDownloadChunkModal();
   }
+  if (event.target === logoutModal) {
+    toggleLogoutModal();
+  }
 }
 
 window.addEventListener("click", windowOnClick);
@@ -35,6 +38,8 @@ const closeButton = document.querySelector("#file-upload-modal .close-button");
 const closeDownloadChunkModalBtn = document.querySelector(
   "#download-chunk-modal .close-button"
 );
+const logoutModal = document.querySelector("#logout-modal");
+const cancelLogoutBtn = document.querySelector("#logout-modal .cancel");
 
 function toggleFileUploadModal() {
   fileUploadModal.classList.toggle("show-modal");
@@ -42,6 +47,10 @@ function toggleFileUploadModal() {
 
 function toggleDownloadChunkModal() {
   downloadChunkModal.classList.toggle("show-modal");
+}
+
+function toggleLogoutModal() {
+  logoutModal.classList.toggle("show-modal");
 }
 
 // function windowOnClick(event) {
@@ -53,6 +62,7 @@ function toggleDownloadChunkModal() {
 // downloadBtn.addEventListener("click", toggleModal);
 closeButton.addEventListener("click", toggleFileUploadModal);
 closeDownloadChunkModalBtn.addEventListener("click", toggleDownloadChunkModal);
+cancelLogoutBtn.addEventListener("click", toggleLogoutModal);
 window.addEventListener("click", windowOnClick);
 
 fileUploadButtons.forEach((button) =>

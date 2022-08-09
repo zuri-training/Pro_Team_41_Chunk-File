@@ -14,10 +14,20 @@
       </div>
       <div class="user">
         <small>user@gmail.com</small>
-        <img src="assets/icons/logout-icon.png" alt="" />
+        <img src="assets/icons/logout-icon.png" alt="" onclick="toggleLougoutModal()" />
       </div>
     </header>
     <main>
+      <section class="modal" id="logout-modal">
+        <div class="modal-content">
+          <h2>Log out</h2>
+          <p>
+            Are you sure you want to log out?
+          </p>
+          <button class="btn-danger">Log out</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </section>
       <section id="file-upload-modal" class="modal">
         <div class="modal-content">
           <span class="close-button"
@@ -35,7 +45,7 @@
                   <small id="name">File name</small>
                 </div>
                 <p>
-                  <small class="warning">File must not exceed 250 MB</small>
+                  <small class="warning"><span><img src="assets/icons/warning_amber.png" alt=""></span> File must not exceed 250 MB</small>
                 </p>
               </div>
               <div class="form-control radio">

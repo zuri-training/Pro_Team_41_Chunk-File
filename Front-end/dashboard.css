@@ -3,6 +3,7 @@
 :root {
   --color-primary: #301e4e;
   --color-btn: #ff6e6c;
+  --red: #d43131;
   --color-bg: #f2f1f4;
 }
 
@@ -47,6 +48,10 @@ header {
     0px 1px 3px 1px rgba(0, 0, 0, 0.15);
 }
 
+small {
+  font-weight: 600;
+}
+
 header .logo {
   width: clamp(8rem, 20vw, 12rem);
 }
@@ -61,6 +66,7 @@ header .logo {
   right: 0;
   top: 0.1rem;
   width: 1.5rem;
+  cursor: pointer;
 }
 
 .nav-drawer,
@@ -72,7 +78,7 @@ header .logo {
   align-items: center;
   top: 0;
   gap: 4rem;
-  width: fit-content;
+  /* width: fit-content; */
   padding: 0.5rem;
   min-height: 100vh;
   background-color: var(--color-bg);
@@ -83,10 +89,12 @@ header .logo {
 
 .nav-drawer {
   padding-block: 1rem;
+  width: 4rem;
 }
 
 .nav-drawer.expand {
   padding-inline: 0.8rem;
+  width: fit-content;
 }
 
 .nav-drawer .logo {
@@ -474,6 +482,57 @@ li.active {
   color: #fff;
   background-color: var(--color-primary);
   border: 1px solid var(--color-primary);
+}
+
+.warning {
+  color: #f3930c;
+}
+
+#logout-modal .modal-content {
+  max-width: 25rem;
+}
+
+#logout-modal {
+  text-align: center;
+}
+
+#logout-modal p {
+  margin-bottom: 1rem;
+}
+
+/* .show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+} */
+
+#logout-modal h2 {
+  margin-bottom: 1rem;
+}
+#logout-modal button {
+  width: 100%;
+  padding: 0.6rem;
+  margin-block-start: 1rem;
+  font-family: inherit;
+  border-radius: 4px;
+  font-weight: 700;
+}
+#logout-modal .btn-danger {
+  background-color: var(--red);
+  border: 1px solid var(--red);
+  color: #fff;
+}
+
+#logout-modal .cancel {
+  background-color: transparent;
+  border: 1px solid var(--color-primary);
+  transition: background-color 0.2s ease;
+}
+
+#logout-modal .cancel:hover {
+  background-color: var(--color-primary);
+  color: #fff;
 }
 
 @media (max-width: 500px) {

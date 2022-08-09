@@ -1,7 +1,7 @@
 # Tasks i worked on
 #### First week into the project, here is what i did below
 
-Started off with doing personal *researh* on the project for the team,finding out about the project,what it is and how to about it.The technolobgies to be used
+Started off with doing personal *researh* on the project for the team,finding out about the project,what it is and how to about it.The technologies to be used
 Compilation of all the reasearch - https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/117#issuecomment-1209175886
 
 Helped in preparing fo the first **presentation** with our designers  by rpoviding them with informations from the developers side -  https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/117#issuecomment-1209165164 

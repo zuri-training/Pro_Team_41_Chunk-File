@@ -17,6 +17,8 @@ High Fidelity Design for About Us Page:(GitHub Issue)https://github.com/zuri-tra
 Interactive Components for Desktop and Mobile Documentation Page:(Figma File)https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=2842%3A6574
 Interactive Components for Desktop and Mobile Documentation Page:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/112
 
+Documentation Page Design For Mobile Responsiveness:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/123,(Figma file)https://www.figma.com/file/YsY3SLQhwZMthzbW6R1xWb/Project_Chunk_File_team_41?node-id=3697%3A28226
+
 UX Content Writing/Documentation (GitHub issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/83
 
 Ensure Consistency on Documentation Page Implemention:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/87

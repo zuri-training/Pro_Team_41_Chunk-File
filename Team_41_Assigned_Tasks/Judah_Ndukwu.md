@@ -19,6 +19,6 @@ Interactive Components for Desktop and Mobile Documentation Page:(GitHub Issue)h
 
 UX Content Writing/Documentation (GitHub issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/83
 
-Ensure Consistency on Documentation Page Implemention:(GitHub Issue):https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/101
+Ensure Consistency on Documentation Page Implemention:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/87
 
 Ensure Consitency On the About Us Page Implementation:(GitHub Issue)https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/101

@@ -468,7 +468,7 @@ section {
   border-radius: 0px 8px 8px 0px;
   margin: 0;
   border: none;
-  margin-left: -5px;
+  /* margin-left: -5px; */
   height: 56px;
 }
 
@@ -564,24 +564,53 @@ section {
     font-size: 24px;
     line-height: 36px;
     text-align: center;
+    margin-bottom: 0px;
   }
 
   .hero--header button {
     width: 100%;
-    padding: 12px 24px;
+    padding: 0 24px;
     font-family: 'Manrope';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 24px;
     color: #0a0610;
+    height: 48px;
+    width: 139px;
+    border-radius: 4px;
   }
 
   .checkmarks {
+    width: 100%;
+    /* border: 2px solid red; */
+    margin-top: 0;
+  }
+
+  .checkmark__setup {
+    /* border: 0.5px solid blanchedalmond; */
+    margin: 0 auto;
+  }
+
+  .checkmark {
+    /* border: 0.5px solid blue; */
+
+    /* text-align: center; */
+    font-size: 18px;
+  }
+
+  .checkmark + .checkmark {
+    margin-top: 8px;
+  }
+
+  /* .checkmarks {
     flex-direction: column;
     gap: 15.48px;
     width: 100%;
     margin: 0 auto;
+  }
+
+  .checkmark__setup {
   }
 
   .checkmark {
@@ -589,7 +618,7 @@ section {
     margin: 0 auto;
     text-align: center;
     font-size: 18px;
-  }
+  } */
 
   .checkmark span {
     font-family: 'Manrope';
@@ -692,7 +721,7 @@ section {
   }
 
   .tilted--json__csv {
-    width: 45%;
+    width: 62%;
     max-width: 200px;
     margin: 31px 0px;
   }

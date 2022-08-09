@@ -25,7 +25,8 @@ header {
 }
 
 header .logo {
-  width: 16rem;
+  width: clamp(8rem, 20vw, 12rem);
+  /* width: 16rem; */
 }
 
 /* .big-heading {
@@ -61,12 +62,13 @@ ul {
 
 .primary-navigation ul {
   display: flex;
-  gap: clamp(1rem, 4vw, 3rem);
+  gap:3rem;
+  gap: clamp(0.5rem, 4vw, 3rem);
 }
 
 .primary-navigation a {
   text-decoration: none;
-  /* color: var(--color-main); */
+  color:  #301e4e;
 }
 
 .primary-navigation .nav-link a:hover {
@@ -76,13 +78,14 @@ ul {
 
 .header-action .btn-link {
   padding: 0.5rem 3rem;
-  padding-inline: clamp(0.5rem, 4vw, 3rem);
+  padding-inline: clamp(0.5rem, 3vw, 3rem);
   border-radius: 4px;
   font-family: inherit;
   border-radius: 4px;
   font-weight: 500;
   font-size: 0.9rem;
   border: 1px solid var(--color-main);
+  cursor: pointer;
 }
 
 .header-action .primary:hover {
@@ -215,4 +218,13 @@ ul {
   width: 100%;
   border-radius: 2px;
   box-shadow: 0px 1px 10px #999;
+}
+@media (max-width: 900px) {
+  header {
+    padding-inline: 2rem;
+  }
+
+  .primary-navigation ul {
+    gap: 1rem;
+  }
 }

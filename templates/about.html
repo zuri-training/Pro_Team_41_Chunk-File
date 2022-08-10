@@ -5,50 +5,62 @@
     {% load static %}
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
     <title>About Us</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
         rel="stylesheet" />
-    <link rel="stylesheet" href="{% static 'css/header.css'%}" />
-    <link rel="stylesheet" href="{% static 'css/footer.css'%}" />
+
     <link rel="stylesheet" href="{% static 'css/AboutUs.css'%}" />
     <link rel="stylesheet" href="{% static 'css/vectors.css'%}" />
     <link rel="stylesheet" href="{% static 'css/queries.css'%}" />
-
+    <link rel="stylesheet" href="{% static 'css/header2.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/footer.css'%}" />
 </head>
 
 <body>
-    <header>
+    <header class="navbar">
         <nav class="primary-navigation">
-            <a href="{% url 'landing_page'%}"><img src="{% static 'assets/icons/logo.svg'%}" alt="" /></a>
+            <div>
+                <a href="{% url 'landing_page'%}">
+                    <img class="logo" src="{% static 'assets/icons/logo.svg'%}" alt="" />
+                </a>
+            </div>
+
             <div class="navigation">
                 <ul class="nav-link">
-                    <li style="color: black;"><a>Resources</a></li>
-                    <li style="color: black;"><a>About us</a></li>
-                    <li style="color: black;"><a href="{% url 'faq'%}">Contact us</a></li>
-                </ul>
-            </div>
-            <div class="header-action navigation">
-                <a class="btn-link btn-login primary" href="{% url 'login'%}">Sign In</a>
-                <a class="btn-link secondary" href="{% url 'register'%}">Sign Up</a>
-            </div>
-            <div class="mobile-nav">
-                <ul class="">
-                    <li><a href="#">Resources</a></li>
+                    <li><a href="{% url 'doc'%}">Documentation</a></li>
                     <li><a href="{% url 'about'%}">About us</a></li>
                     <li><a href="{% url 'faq'%}">Contact us</a></li>
                 </ul>
-                <a class="btn-link btn-login primary" href="{% url 'login'%}">Sign In</a>
-                <a class="btn-link secondary" href="{% url 'register'%}">Sign Up</a>
+            </div>
+            <div class="header-action navigation">
+                <a class="btn-link btn-login primary" href="{% url 'login'%}">
+                    Sign In
+                </a>
+                <a class="btn-link secondary" href="{% url 'register'%}">
+                    Sign Up
+                </a>
+            </div>
+            <div class="mobile-nav">
+                <ul class="">
+                    <li><a href="{% url 'doc'%}">Documentation</a></li>
+                    <li><a href="{% url 'about'%}">About us</a></li>
+                    <li><a href="{% url 'about'%}">Contact us</a></li>
+                </ul>
+                <a class="btn-link btn-login primary" href="{% url 'login'%}">
+                    Sign In
+                </a>
+                <a class="btn-link secondary" href="{% url 'register'%}">
+                    Sign Up
+                </a>
             </div>
             <button class="hamburger">
                 <div class="bar"></div>
             </button>
         </nav>
     </header>
-
     <div class="hero">
         <div class="vects">
             <div class="mid1">
@@ -181,12 +193,10 @@
                 <div class="card" id="b18">
                     <img src="#" alt="" />
                     <h3></h3>
-                    <small></small>
                 </div>
                 <div class="card" id="b19">
                     <img src="#" alt="" />
                     <h3></h3>
-                    <small></small>
                 </div>
                 <div class="card" id="c1">
                     <img src="{% static 'assets/team images/Peter Felix.png'%}" alt="" />
@@ -207,9 +217,9 @@
                     <p class="role">Assistant(Dev)</p>
                 </div>
                 <div class="card" id="c4">
-                    <img src="{% static 'assets/team images/Metu Jane.png'%}" alt="" />
-                    <h3>Metu Jane</h3>
-                    <small>Product Designer</small>
+                    <img src="{% static 'assets/team images/Martha.png'%}" alt="" />
+                    <h3>Marthar Nderitu</h3>
+                    <small>Software Developer</small>
                 </div>
                 <div class="card" id="c5">
                     <img src="{% static 'assets/team images/Louis Binah.png'%}" alt="" />
@@ -257,10 +267,11 @@
                     <small>Product Designer</small>
                 </div>
                 <div class="card" id="c14">
-                    <img src="{% static 'assets/team images/Martha.png'%}" alt="" />
-                    <h3>Marthar Nderitu</h3>
-                    <small>Software Developer</small>
+                    <img src="{% static 'assets/team images/Metu Jane.png'%}" alt="" />
+                    <h3>Metu Jane</h3>
+                    <small>Product Designer</small>
                 </div>
+
                 <div class="card" id="c15">
                     <img src="{% static 'assets/team images/Ebuka.png'%}" alt="" />
                     <h3>Chukwuebuka Ezeokechukwu</h3>
@@ -299,7 +310,7 @@
                 <div class="card" id="c22">
                     <img src="{% static 'assets/team images/John Ojibo.png'%}" alt="" />
                     <h3>John Ojibo</h3>
-                    <small>Product Designer</small>
+                    <small>Software Developer</small>
                 </div>
             </div>
             <div class="arro">
@@ -313,14 +324,16 @@
         </div>
         <small id="courtesy">This product is courtesy of the Zuri Team</small>
     </main>
+
     <footer>
         <section class="footer-first">
             <div>
                 <img class="logo" src="{% static 'assets/icons/footer-logo.png'%}" alt="" />
             </div>
+
             <div>
-                <ul class="navs-link">
-                    <li><a href="#">Resources</a></li>
+                <ul class="nav-link">
+                    <li><a href="{% url 'doc'%}">Documentation</a></li>
                     <li><a href="{% url 'about'%}">About us</a></li>
                     <li><a href="{% url 'faq'%}">Contact us</a></li>
                 </ul>
@@ -345,9 +358,8 @@
         </section>
     </footer>
 
-    <script src="{% static 'js/nav.js'%}"></script>
     <script src="{% static 'js/About.js'%}"></script>
-
+    <script src="{% static 'js/nav.js'%}"></script>
 </body>
 
 </html>

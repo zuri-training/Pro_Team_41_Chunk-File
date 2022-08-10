@@ -27,7 +27,11 @@ dropDown.addEventListener("click", () => {
 
 const deleteAccountModal = document.querySelector("#delete-account-modal");
 const btnDeleteAccount = document.querySelector(".right .btn-danger");
-const cancelDeleteAccount = document.querySelector(".modal .cancel");
+const cancelDeleteAccount = document.querySelector(
+  "#delete-account-modal .cancel"
+);
+const logoutModal = document.querySelector("#logout-modal");
+const cancelLogoutBtn = document.querySelector("#logout-modal .cancel");
 
 function toggleModal() {
   deleteAccountModal.classList.toggle("show-modal");
@@ -41,10 +45,15 @@ function windowOnClick(event) {
   if (event.target === backdrop) {
     toggleDrawer();
   }
+  if (event.target === logoutModal) {
+    toggleLogoutModal();
+  }
 }
 
 btnDeleteAccount.addEventListener("click", toggleModal);
 cancelDeleteAccount.addEventListener("click", toggleModal);
+cancelLogoutBtn.addEventListener("click", toggleLogoutModal);
+
 window.addEventListener("click", windowOnClick);
 
 const navigationDrawer = document.querySelector(".nav-drawer");
@@ -57,6 +66,10 @@ function toggleDrawer() {
     return;
   }
   backdrop.style.display = "none";
+}
+
+function toggleLogoutModal() {
+  logoutModal.classList.toggle("show-modal");
 }
 
 window.addEventListener("click", windowOnClick);

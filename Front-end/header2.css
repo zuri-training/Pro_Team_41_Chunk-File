@@ -35,20 +35,30 @@ header .logo {
   }    
 }
 
-@media (max-width: 580px) {
+@media (max-width: 630px) {
   header .logo {
-    width: clamp(8rem, 30vw, 12rem);
+    width: clamp(11.8rem, 20vw, 12rem);
   }   
 }
-@media (max-width: 400px) {
+@media (max-width: 530px) {
   header .logo {
-    width: clamp(8rem, 35vw, 12rem);
+    width: clamp(14rem, 20vw, 12rem);
+  }   
+}
+@media (max-width: 430px) {
+  header .logo {
+    width: clamp(17.5rem, 20vw, 12rem);
+  }   
+}
+@media (max-width: 330px) {
+  header .logo {
+    width: clamp(22rem, 20vw, 12rem);
   }   
 }
 
 @media (max-width: 249px) {
   header .logo {
-    width: clamp(8rem, 35vw, 12rem);
+    width: clamp(25rem, 20vw, 12rem);
   }   
 }
 
@@ -93,6 +103,7 @@ ul {
 
 .primary-navigation a {
   text-decoration: none;
+  color: #301e4e;
 }
 
 .primary-navigation .nav-link a:hover {
@@ -173,7 +184,7 @@ ul {
 .hamburger::before {
   content: "";
   display: block;
-  width: 3.1rem;
+  width: 2.6rem;
   height: 4.5px;
   border-radius: 2px;
   background-color: var(--color-main);
@@ -186,10 +197,36 @@ ul {
     content: "";
     display: block;
     width: 2.5rem;
-    height: 4px;
+    height: 4.5px;
     border-radius: 2px;
     background-color: var(--color-main);
     margin: 7px 0;
+    transition: 0.4s;
+  }
+}
+@media (max-width: 430px){
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 3rem;
+    height: 5.5px;
+    border-radius: 2px;
+    background-color: var(--color-main);
+    margin: 8px 0;
+    transition: 0.4s;
+  }
+}
+
+
+@media (max-width: 430px){
+  .hamburger .bar, .hamburger::after, .hamburger::before {
+    content: "";
+    display: block;
+    width: 3.4rem;
+    height: 6.5px;
+    border-radius: 2px;
+    background-color: var(--color-main);
+    margin: 8px 0;
     transition: 0.4s;
   }
 }
@@ -239,7 +276,17 @@ ul {
   padding: 1rem 2.5rem;
   color: #fff;
 } */
-
+.mobile-nav a, .mobile-nav button {
+  display: block;
+  width: 100%;
+  max-width: 16rem;
+  margin: 0 auto 23px;
+  text-align: center;
+  background-color: #6a5c81;
+  padding: 1.3rem 1.5rem;
+  color: #fff;
+  font-size: 1.38rem;
+}
 .mobile-nav button {
   font: inherit;
   /* font-weight: 600; */

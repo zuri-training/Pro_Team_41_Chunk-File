@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% load static %}
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DOWNLOAD</title>
+  <!-- <link rel="stylesheet" href="dashboard.css" /> -->
+  <link rel="stylesheet" href="{% static 'css/dashboard-chunk.css'%}">
+</head>
+
+<body>
+  <header class="top-nav">
+    <div>
+      <img src="{% static 'assets/icons/logo.svg'%}" alt="chuck it logo" class="logo" />
+    </div>
+    <div class="user">
+      <small>{{user.username}}</small>
+      <a href="{% url 'signout'%}"><img src="{% static 'assets/icons/logout-icon.png'%}" alt=""
+          style="cursor: pointer;" /></a>
+    </div>
+  </header>
+  <main>
+    <section class="backdrop"></section>
+    <nav class="nav-drawer">
+      <div class="top">
+        <img src="{% static 'assets/icons/menu.png'%}" alt="" class="hamburger" />
+        <img src="{% static 'assets/icons/logo.svg'%}" alt="chunck it logo" class="logo" />
+      </div>
+
+      <button class="file-upload btn-upload">+<small></small></button>
+      <ul class="navigation">
+        <li class="active">
+          <a href="{% url 'save_file'%}">
+            <img src="{% static 'assets/icons/Folder-filled.png'%}" alt="" />
+            <small>Library</small>
+          </a>
+        </li>
+        <li>
+          <a href="{% url 'setting'%}">
+            <img src="{% static 'assets/icons/manage_accounts.png'%}" alt="" />
+            <small>Account</small>
+          </a>
+        </li>
+      </ul>
+
+      <small class="copy-right"><strong>&copy; 2022 ChunkIT, Inc</strong></small>
+    </nav>
+    <div class="chunk-content">
+      <h2>Chunk File <span>(2/2)</span></h2>
+      <div class="inner-modal-content">
+        <img src="{% static 'assets/images/download-folder.png'%}" alt="" class="top-img" />
+        <small>Chunking Complete</small>
+        <button class="primary">
+          <span><a href="{{file.processed_file.url}}" download="{{file.processed_file.url}}">
+              <img src="{% static 'assets/icons/file_download-light.png'%}" alt="file download icon" /></a></span><a
+            href="{{file.processed_file.url}}" download="{{file.processed_file.url}}"
+            style="text-decoration: none; color:inherit;">Download
+            Zipped Files
+          </a></button>
+
+        <div class="download-later">
+          <small>Or</small>
+          <small>Download later. Your file will be saved in your library</small>
+          <button class="complementary">
+            <span><a href="{% url 'save_file'%}"><img src="{% static 'assets/icons/file_download.svg'%}"
+                  alt="file download icon" /></a></span><a href="{% url 'save_file'%}"
+              style="text-decoration: none; color:inherit;">Download
+              Later</a></button>
+        </div>
+      </div>
+  </main>
+
+  <!-- <script src="dashboard.js"></script> -->
+  <script src="{% static 'js/dashboard-chunk.js'%}"></script>
+</body>
+
+</html>

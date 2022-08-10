@@ -3,7 +3,6 @@ from . import views
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
-path("home", views.home, name="home"),
 path("register", views.register, name="register"),
 path("download/<str:file_id>", views.download, name="download"),
 path("login", views.sign_in, name="login"),
@@ -16,6 +15,7 @@ path("setting", views.setting, name="setting"),
 path("save_file", views.save_file, name="save_file"),
 path('signout', views.signout, name="signout"),
 path('detele/<int:pk>/', views.file_delete, name="delete"),
+path('history/<int:pk>/', views.history, name="history"),
 
 
 # ******************* RESET PASSWORD VIEW *****************************

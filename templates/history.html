@@ -6,9 +6,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DELETE</title>
+    <title>DOWNLOAD</title>
     <!-- <link rel="stylesheet" href="dashboard.css" /> -->
-    <link rel="stylesheet" href="{% static 'css/detele.css'%}">
+    <link rel="stylesheet" href="{% static 'css/history.css'%}">
 </head>
 
 <body>
@@ -49,20 +49,33 @@
             <small class="copy-right"><strong>&copy; 2022 ChunkIT, Inc</strong></small>
         </nav>
         <div class="chunk-content">
-            <h2>Confirm Deletion</h2>
-            <form method="post" class="inner-modal-content">
-                {% csrf_token %}
+            <h2>Download Files</h2>
+            <div class="inner-modal-content">
+                <img src="{% static 'assets/images/download-folder.png'%}" alt="" class="top-img" />
                 <p>
-                    Are you sure you want to delete this file and its chunked files?
+                    Download
+                    <span id="name"><strong>{{file}}</strong></span> files.
                 </p>
-                <p>
-                    <span id="name"><strong>{{file}}</strong></span>
-                </p>
-                <button type="submit" class="danger">Delete</button>
+
+                <button class="primary">
+                    <span><a href="{{file.processed_file.url}}" download="{{file.processed_file.url}}">
+                            <img src="{% static 'assets/icons/file_download-light.png'%}"
+                                alt="file download icon" /></a></span><a href="{{file.processed_file.url}}"
+                        download="{{file.processed_file.url}}" style="text-decoration: none; color:inherit;">Download
+                        Zipped Files
+                    </a></button>
+
+                <button class="complementary">
+                    <span><a href="{{file.file.url}}" download="{{file.file.url}}"><img
+                                src="{% static 'assets/icons/file_download.svg'%}"
+                                alt="file download icon" /></a></span><a href="{{file.file.url}}"
+                        download="{{file.file.url}}" style="text-decoration: none; color:inherit;">Download Original
+                        File
+                    </a></button>
                 <button class="cancel"><a href="{% url 'save_file'%}"
                         style="text-decoration: none; color:inherit;">Cancel</a>
                 </button>
-            </form>
+            </div>
         </div>
     </main>
 

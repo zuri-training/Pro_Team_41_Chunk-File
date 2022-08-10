@@ -134,18 +134,7 @@ margin-top: 67px;
 
 }
 
-  /* NAV BUG SOLUTION */
-  /* .mobile-nav a, .mobile-nav button {
-    display: block;
-    width: 100%;
-    max-width: 16rem;
-    margin: 0 auto 23px;
-    text-align: center;
-    background-color: #6a5c81;
-    padding: 1.3rem 1.5rem;
-    color: #fff;
-    font-size: 1.38rem;
-  } */
+
   .primary-navigation {
     height: 4.5rem;
   }

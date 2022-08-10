@@ -20,55 +20,6 @@ import os
 def landing_page(request):
     return render(request,'landing_page.html')
 
-def home(request):
-    if request.method == 'POST':
-        name = request.POST.get("name")
-        type = request.POST.get("type")
-        file_data = request.FILES.get("file")
-        file_count = request.POST.get("file_count") or 2
-        file_count = int(file_count)
-        print(type)
-        user = request.user
-        file = File.objects.create(file=file_data,chunk_number=file_count,user=user,name=name,file_type=type)
-        url = file.file.url
-        url = str(settings.BASE_DIR)+url.replace("/","\\")
-        if url.split(".")[-1] not in ["json","csv"]:
-            messages.error(request, "Please upload csv or json file")
-            return redirect(request.META.get("HTTP_REFERER"))
-
-        # ******************* CSV OPTION *****************************
-        if url.split(".")[-1] == 'csv':
-            df = pd.read_csv(url)
-            rows_per_file = df.shape[0] // file_count
-            folder_name = str(settings.BASE_DIR) + "\\temp\\" + str(int(time.time()*1000))
-            os.makedirs(folder_name)
-            for row_start in range(0, df.shape[0], rows_per_file):
-                new_file  = df[row_start:row_start+rows_per_file]
-                new_file.to_csv(f"{folder_name}/chunk_{row_start}.csv")
-
-            outputfile = str(settings.MEDIA_ROOT) + f"\\processed-files\\{name}"
-            shutil.make_archive(outputfile, 'zip', folder_name)
-            file.processed_file = f"/processed-files/{name}.zip"
-            file.save()
-            return redirect("download", file.id)
-
-        # ******************* JSON OPTION *****************************
-        if url.split(".")[-1] == 'json':
-            df = pd.read_json(url)
-            rows_per_file = df.shape[0] // file_count
-            folder_name = str(settings.BASE_DIR) + "\\temp\\" + str(int(time.time()*1000))
-            os.makedirs(folder_name)
-            for row_start in range(0, df.shape[0], rows_per_file):
-                new_file  = df[row_start:row_start+rows_per_file]
-                new_file.to_json(f"{folder_name}/chunk_{row_start}.json",indent=1,orient='records')
-
-            outputfile = str(settings.MEDIA_ROOT) + f"\\processed-json-files\\folder_name"
-            shutil.make_archive(outputfile, 'zip', folder_name)
-            file.processed_file = f"/processed-json-files/folder_name.zip"
-            file.save()
-            return redirect("download", file.id) 
-    return render(request, 'dashboard.html')
-
 # ******************* DOWNLOAD VIEW *****************************
 @login_required(login_url="login")
 def download(request, file_id):
@@ -118,7 +69,7 @@ def sign_in(request):
         user = authenticate(username=username, password=password)
         if user is not None:
             login(request, user)
-            return redirect('home')
+            return redirect('save_file')
 
         else:
             messages.error(request, "Invalid Credential")
@@ -149,7 +100,7 @@ def setting(request):
             user.set_password(new_password)
             user.save()
             messages.error(request, "Password changed successfully")
-            return redirect('home')
+            return redirect('save_file')
         else:
             messages.error(request, "Incorrect old password")
             return redirect('setting')
@@ -162,6 +113,54 @@ def save_file(request):
     context = {
         'files':files
     }
+    if request.method == 'POST':
+        name = request.POST.get("name")
+        type = request.POST.get("type")
+        file_data = request.FILES.get("file")
+        #fSize = str(os.path.getsize(file_data))
+        #print(fSize)
+        file_count = request.POST.get("file_count") or 2
+        file_count = int(file_count)
+        print(type)
+        user = request.user
+        file = File.objects.create(file=file_data,chunk_number=file_count,user=user,name=name,file_type=type)
+        url = file.file.url
+        url = str(settings.BASE_DIR)+url.replace("/","\\")
+        if url.split(".")[-1] not in ["json","csv"]:
+            messages.error(request, "Please upload csv or json file")
+            return redirect(request.META.get("HTTP_REFERER"))
+
+        # ******************* CSV OPTION *****************************
+        if url.split(".")[-1] == 'csv':
+            df = pd.read_csv(url)
+            rows_per_file = df.shape[0] // file_count
+            folder_name = str(settings.BASE_DIR) + "\\temp\\" + str(int(time.time()*1000))
+            os.makedirs(folder_name)
+            for row_start in range(0, df.shape[0], rows_per_file):
+                new_file  = df[row_start:row_start+rows_per_file]
+                new_file.to_csv(f"{folder_name}/chunk_{row_start}.csv")
+
+            outputfile = str(settings.MEDIA_ROOT) + f"\\processed-files\\{name}"
+            shutil.make_archive(outputfile, 'zip', folder_name)
+            file.processed_file = f"/processed-files/{name}.zip"
+            file.save()
+            return redirect("download", file.id)
+
+        # ******************* JSON OPTION *****************************
+        if url.split(".")[-1] == 'json':
+            df = pd.read_json(url)
+            rows_per_file = df.shape[0] // file_count
+            folder_name = str(settings.BASE_DIR) + "\\temp\\" + str(int(time.time()*1000))
+            os.makedirs(folder_name)
+            for row_start in range(0, df.shape[0], rows_per_file):
+                new_file  = df[row_start:row_start+rows_per_file]
+                new_file.to_json(f"{folder_name}/chunk_{row_start}.json",indent=1,orient='records')
+
+            outputfile = str(settings.MEDIA_ROOT) + f"\\processed-json-files\\folder_name"
+            shutil.make_archive(outputfile, 'zip', folder_name)
+            file.processed_file = f"/processed-json-files/folder_name.zip"
+            file.save()
+            return redirect("download", file.id) 
     return render(request,'save_file.html',context)
     
 # ******************* DELETE FILES VIEW *****************************

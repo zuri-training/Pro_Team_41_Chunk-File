@@ -17,16 +17,27 @@ body {
   font-family: "Manrope", sans-serif;
 }
 
+button {
+  border-radius: 4px;
+}
+
 .login-container {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
+  background: linear-gradient(
+    129.38deg,
+    rgba(255, 110, 108, 0.21) -212.02%,
+    #52436b 106.07%
+  );
+
+  /* background: linear-gradient(#ff6e6c 21%, #52436b 100%); */
 }
 
 .login {
   background-color: #fff;
-  padding: 1rem 2rem;
+  padding: 2rem;
   width: 90%;
   max-width: 25rem;
   display: grid;
@@ -39,30 +50,32 @@ body {
   width: 100%;
 }
 
-.login img {
+h1 + small {
+  width: 100%;
+}
+
+a img {
   width: clamp(8rem, 20vw, 10rem);
 }
 
-.title {
+.login h1 {
   margin-top: 1rem;
-  font-size: 1.5rem;
-  font-weight: bolder;
-  
 }
 
 .reset h1 {
   margin-block: 1rem;
 }
 
-.login .forms-control {
+.login .form-control {
   margin-block: 1rem;
+  position: relative;
 }
 
-.login .forms-control label {
+.login .form-control label {
   font-size: 0.9rem;
 }
 
-.login .forms-control input {
+.login .form-control input {
   width: 100%;
   padding: 0.8rem;
   margin-top: 0.3rem;
@@ -72,11 +85,22 @@ body {
   outline: none;
 }
 
-.login .forms-control input:focus {
+.login .form-control input:focus {
   border: 1px solid var(--color-main);
 }
 
-.login .forms-control small {
+.form-control img {
+  position: absolute;
+  right: 1rem;
+  top: 2.3rem;
+  opacity: 0.7;
+}
+
+.form-control img.hide {
+  content: url("/static/assets/icons/remove_red_eye_hide.png");
+}
+
+.login .form-control small {
   float: right;
   margin-top: 0.5rem;
 }
@@ -86,15 +110,15 @@ a {
   color: var(--color-btn);
 }
 
-.login .forms-action {
+.login .form-action {
   margin-block: 3rem 1rem;
 }
 
-.reset .forms-action {
+.reset .form-action {
   margin-block: 1rem;
 }
 
-.login .forms-action button {
+.login .form-action button {
   width: 100%;
   padding: 0.8rem 1rem;
   font-family: inherit;
@@ -102,4 +126,3 @@ a {
   background-color: var(--color-main);
   border: none;
 }
-

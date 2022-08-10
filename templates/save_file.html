@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- <link rel="stylesheet" href="index.css" /> -->
     <link rel="stylesheet" href="{% static 'css/dashboard-modal.css'%}" />
     <link rel="stylesheet" href="{% static 'css/saved-files.css'%}" />
@@ -20,7 +21,8 @@
         </div>
         <div class="user">
             <small>{{user.username}}</small>
-            <img src="{% static 'assets/icons/logout-icon.png'%}" alt="" />
+            <a href="{% url 'signout'%}"><img src="{% static 'assets/icons/logout-icon.png'%}" alt=""
+                    style="cursor: pointer;" /></a>
         </div>
     </header>
     <main>
@@ -37,25 +39,29 @@
                                 <img src="{% static 'assets/icons/file_upload.png'%}" alt="" />
                                 <p>Drop File Here or Browse</p>
                                 <p>CSV, JSON</p>
-                                <small id="name" name="name">File name</small>
+                                <small id="name">File name</small>
                             </div>
                             <p>
-                                <small class="warning">File must not exceed 250 MB</small>
+                                <small class="warning" id="size">File must not exceed 250 MB</small>
                             </p>
                         </div>
                         <div class="form-control radio">
                             <p>Select file type</p>
-                            <label for="csv"><input type="radio" name="file-type" id="csv" />
+                            <label for="csv"><input type="radio" name="type" id="csv" value="CSV" />
                                 <span>CSV</span>
                             </label>
                             <label for="json">
-                                <input type="radio" name="file-type" id="json" />
+                                <input type="radio" name="type" id="json" value="JSON" />
                                 <span>JSON</span>
                             </label>
                         </div>
                         <div class="form-control">
+                            <label for="chunks-number">File Name</label>
+                            <input type="text" id="name" name="name" required placeholder="enter file name" />
+                        </div>
+                        <div class="form-control">
                             <label for="chunks-number">Select the number of chunks</label>
-                            <input type="number" id="chunks-number" name="file_count" value="2" />
+                            <input type="number" id="chunks-number" name="file_count" value="2" required />
                         </div>
                         <div class="form-action">
                             <button>Chunk File</button>
@@ -97,7 +103,7 @@
             <button class="file-upload btn-upload">+<small></small></button>
             <ul class="navigation">
                 <li class="active">
-                    <a href="{% url 'home'%}">
+                    <a href="{% url 'save_file'%}">
                         <img src="{% static 'assets/icons/Folder-filled.png'%}" alt="" />
                         <small>Library</small>
                     </a>
@@ -118,7 +124,7 @@
             </button>
             <button class="btn-upload">+ Upload New File</button>
         </section>
-
+        {% if files %}
         <section class="saved-files">
             <table>
                 <thead>
@@ -135,7 +141,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    {% for file in files%}
+                    {% for file in files %}
                     {% if file.user == user %}
                     <tr>
                         <td><input type="checkbox" name="" id="" /></td>
@@ -164,10 +170,53 @@
                 </tbody>
             </table>
         </section>
+        {% else %}
+        <section class="page-content">
+            {% for message in messages %}
+            <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                <p style="color:green;">{{message}}</p>
+
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
+
+            <img src="{% static 'assets/images/Add files-image.png '%}" alt="download folder image" />
+            <p>Your library is empty. Upload a file to start chuncking.</p>
+            <button class="btn-upload">Upload New File</button>
+        </section>
+        {% endif %}
     </main>
 
     <script src="{% static 'js/saved-files.js'%}"></script>
     <script src="{% static 'js/dashboard.js'%}"></script>
+    <script>
+        let button = document.getElementById('btn');
+        let digit = document.getElementById('chunks-number');
+        let file = document.getElementById('file');
+        let size = document.getElementById('size')
+
+        file.onchange = function () {
+            let maxSize = 250 * 1024 * 1024;
+            if (this.files[0].size > maxSize) {
+                swal.fire('the file is larger than 10mb');
+                this.value = "";
+            };
+        };
+        function update() {
+            let nbytes = 0;
+            let nfiles = this.files;
+            for (let i = 0; i < nfiles.length; i++) {
+                nbytes += nfiles[i].size;
+            }
+            let output = nbytes + 'bytes';
+            let multiples = ['kb', 'mb', 'gb'];
+            for (j = 0, nApprox = nbytes / 1024; nApprox > 1; nApprox /= 1024, j++) {
+                output = 'chunk_size ' + (nApprox / digit.value).toFixed(2) + ' ' + multiples[j];
+            }
+            size.innerHTML = output
+        }
+        file.addEventListener('change', update)
+    </script>
 </body>
 
 </html>

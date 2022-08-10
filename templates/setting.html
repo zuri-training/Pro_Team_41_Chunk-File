@@ -18,8 +18,7 @@
         </div>
         <div class="user">
             <small>{{user.username}}</small>
-            <a href="{% url 'signout'%}"><img src="{% static 'assets/icons/logout-icon.png'%}" alt=""
-                    style="cursor: pointer;" /></a>
+            <img src="{% static 'assets/icons/logout-icon.png'%}" alt="" onclick="toggleLogoutModal()" />
         </div>
     </header>
     <main>
@@ -33,7 +32,7 @@
             <button class="file-upload btn-upload">+<small></small></button>
             <ul class="navigation">
                 <li>
-                    <a href="{% url 'home'%}">
+                    <a href="{% url 'save_file'%}">
                         <img src="{% static 'assets/icons/Folder-filled.png'%}" alt="" />
                         <small>Library</small>
                     </a>
@@ -44,12 +43,7 @@
                         <small>Account</small>
                     </a>
                 </li>
-                <li class="active">
-                    <a href="{% url 'save_file'%}">
-                        <img src="{% static 'assets/icons/manage_accounts.png'%}" alt="" />
-                        <small>Save files</small>
-                    </a>
-                </li>
+
             </ul>
 
             <small class="copy-right"><strong>&copy; 2022 ChunkIT, Inc</strong></small>
@@ -62,6 +56,16 @@
                     be lost forever.
                 </p>
                 <button class="btn-danger">Delete Acount</button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </section>
+        <section class="modal" id="logout-modal">
+            <div class="modal-content">
+                <h2>Log out</h2>
+                <p>Are you sure you want to log out?</p>
+                <button class="btn-danger"><a href="{% url 'signout'%}"
+                        style="cursor: pointer; color:inherit; text-decoration: none;">Log
+                        out</a></button>
                 <button class="cancel">Cancel</button>
             </div>
         </section>

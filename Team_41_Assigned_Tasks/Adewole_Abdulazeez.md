@@ -1,7 +1,7 @@
 # Assigned tasks
 # Name - Adewole Abdulazeez
 
-* Style Guide <br>
+* **Style Guide** <br>
     I was tasked with creating buttons and grid system for the project - https://docs.google.com/document/d/1-Q47HDR3LC54Xpi66uLQWLQyrBlLT9eX1ppAPcFaKw4/edit?usp=sharing
 
 * Wireframe <br>

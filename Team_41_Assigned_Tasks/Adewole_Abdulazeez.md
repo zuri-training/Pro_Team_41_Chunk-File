@@ -16,11 +16,11 @@
 * Responsiveness team / Developer handoff team
     I worked on the responsiveness team to create mobile hi-fi screens for the landing page and reset password pages - https://docs.google.com/document/d/1tQZBTyOynX7jGzCoibmYs5THheKdq7aodLLwd2MlQEU/edit?usp=sharing
 
-* UX writing and editing team - 
-    
+* UX writing and editing team
+    I worked on documenetation under the UX writing and editing team - https://docs.google.com/document/d/1dsCMYuCUbm7nhXS6IP5gu5NxfGIsvFkXINR7IgeI1P8/edit?usp=sharing
 
 * Rearranging of wireframe and lo-fi screen for easy access
-    
+    I helped rearrange the wireframe and lo-fi for readability and easy access - https://docs.google.com/document/d/1X0IFmSnOrrpUJwDJ17RZ5nNvA_PLHQilkWBjKySnMoc/edit?usp=sharing
 
-* Fixing of inconsistency on the landing page while ensure responsiveness
-    
+* Fixing of inconsistency on the live website landing page and also Spacing, alignment and text resizing
+    I worked with the developers to fix inconsistency on the landing page e.t.c - https://docs.google.com/document/d/1e07iiXQMnw9nJg15aOC2AIoqLIMnmE4_9aWwP5r52iw/edit?usp=sharing

@@ -17,10 +17,20 @@
       </div>
       <div class="user">
         <small>user@gmail.com</small>
-        <img src="assets/icons/logout-icon.png" alt="" />
+        <img src="assets/icons/logout-icon.png" alt="" onclick="toggleLogoutModal()" />
       </div>
     </header>
     <main>
+      <section class="modal" id="logout-modal">
+        <div class="modal-content">
+          <h2>Log out</h2>
+          <p>
+            Are you sure you want to log out?
+          </p>
+          <button class="btn-danger">Log out</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </section>
       <section id="file-upload-modal" class="modal">
         <div class="modal-content">
           <span class="close-button"

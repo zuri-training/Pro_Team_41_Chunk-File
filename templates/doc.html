@@ -19,9 +19,9 @@
             <hr />
             <div class="doc-body">
                 <p>
-                    Chunking is a process of splitting large files into smaller unitds
+                    Chunking is a process of splitting large files into smaller units
                     of files called chunks. In some applications, such as a remote
-                    data compression, data synchronizatuin and data duplication.
+                    data compression, data synchronization and data duplication.
                     Chunking is important because it determines the duplicate
                     detection performance of the system. Chunk file is a small and
                     handy application designed to help you split large into pieces of
@@ -41,41 +41,19 @@
             <hr />
             <div class="doc-body">
                 <p>
-                    ChunkIt is a free web-based platform that splits large or heavy
-                    CSV and JSON files. When a user uploads a large file of up to
-                    250MB to our platform, our Python Panda modules begin
-                    authenticating the files to determine if they are CSV or JSON. If
-                    the files are none of these determined inputs or bigger than the
-                    size, our platform would not accept them, but if the data input is
-                    true, it accepts the files after determining the state, and the
-                    process of splitting commences through the help of the panda
-                    modules. The data is stacked in smaller files querying the number
-                    of parts or the size the user needs to split it. This is done
-                    through the use of logic. When the process of splitting is
-                    completed, the result is zipped using shutil modules, ready for
-                    the user to download.
+                    ChunkIt is a free web-based platform that splits large or heavy CSV and JSON files. When a user
+                    uploads a large file of up to 250MB to our platform, our Python Panda modules begin authenticating
+                    the files to determine if they are CSV or JSON. If the files are none of these determined inputs or
+                    bigger than the size, our platform would not accept them, but if the data input is true, it accepts
+                    the files after determining the state, and the process of splitting commences through the help of
+                    the panda modules. The data is stacked in smaller files querying the number of parts or the size the
+                    user needs to split it. This is done through the use of logic. When the process of splitting is
+                    completed, the result is zipped using shutil modules, ready for the user to download.
                 </p>
             </div>
         </div>
 
         <div class="doc third">
-            <div class="doc-head">
-                <h3>Library Page</h3>
-                <button class="btn-dropdown">
-                    <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
-                </button>
-            </div>
-            <hr />
-            <div class="doc-body">
-                <p>
-                    Users can view saved files, download chunked files, download the
-                    original file and delete some or all saved files by visiting the
-                    library page.
-                </p>
-                <img src="{% static 'assets/images/no_files.JPG'%}" />
-            </div>
-        </div>
-        <div class="doc fourth">
             <div class="doc-head">
                 <h3>Getting started</h3>
                 <button class="btn-dropdown">
@@ -85,18 +63,18 @@
             <hr />
             <div class="doc-body">
                 <p>
-                    For a user to get started with using the chunking feature of the
-                    platform, they need to create an account by registering with their
-                    email address to become an authenticated user. This means that an
-                    unauthenticated user can not use the chunking feature. However,
-                    the unauthenticated user can interact with the platform's
-                    documentation by accessing the documentations tab in the header
-                    and footer sections. They can also go through the platform's
-                    landing page and FAQ section to learn more about its features.
+                    For a user to get started with using the chunking feature of the platform, they need to create an
+                    account by registering with their email address to become an authenticated user. This means that an
+                    unauthenticated user can not use the chunking feature. However, the unauthenticated user can
+                    interact with the platform’s documentation by accessing the documentations tab in the header and
+                    footer sections. They can also go through the platform’s landing page and FAQ section to learn more
+                    about its features.
                 </p>
+                <img src="{% static 'assets/images/no_files.JPG'%}" />
             </div>
         </div>
-        <div class="doc fifth">
+
+        <div class="doc fourth">
             <div class="doc-head">
                 <h3>How to use ChunkIT</h3>
                 <button class="btn-dropdown">
@@ -126,7 +104,22 @@
                 </p>
             </div>
         </div>
-        <div class="doc sixth">
+        <div class="doc">
+            <div class="doc-head">
+                <h3>Library Page</h3>
+                <button class="btn-dropdown">
+                    <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
+                </button>
+            </div>
+            <hr>
+            <div class="doc-body">
+                <p>Users can view saved files, download chunked files, download the original file and delete some or all
+                    saved files by visiting the library page. </p>
+                <img src="{% static 'assets/images/no_files.JPG'%}">
+            </div>
+        </div>
+
+        <div class="doc fifth">
             <div class="doc-head">
                 <h3>Upload File Modal</h3>
                 <button class="btn-dropdown">
@@ -137,10 +130,13 @@
             <div class="doc-body">
                 <p>
                     In this modal you can upload the files you want to chunk. To start
-                    chunking, this is the step by step process you should take; <br />
-                    First click the “upload file” button <br />
+                    chunking, this is the step by step process you should take;
+                    <br />
+                    First click the “upload file” button
+                    <br />
                     Next select files from your local device, github or any other
-                    storage platform you use <br />
+                    storage platform you use
+                    <br />
                     Next drop the selected file inside the box in the upload file
                     modal
                     <br />
@@ -150,7 +146,8 @@
                 <img src="{% static 'assets/images/page_upload.JPG'%}" />
             </div>
         </div>
-        <div class="doc seventh">
+
+        <div class="doc sixth">
             <div class="doc-head">
                 <h3>Generated File Modal</h3>
                 <button class="btn-dropdown">
@@ -168,7 +165,8 @@
             </div>
         </div>
 
-        <div class="doc eight">
+
+        <div class="doc seventh">
             <div class="doc-head">
                 <h3>Delete File Modal</h3>
                 <button class="btn-dropdown">
@@ -180,13 +178,137 @@
                 <p>
                     This is the modal that helps to delete files that are no longer
                     <br />
-                    To delete: After opening your saved file modal, a list of all
-                    saved files will be shown along with a delete icon. <br />
-                    Click on the delete icon (bin icon). <br />
+                    To delete: <br> After opening your saved file modal, a list of all
+                    saved files will be shown along with a delete icon.
+                    <br />
+                    Click on the delete icon (bin icon).
+                    <br />
                     A delete confirmation pop-up will come up. Click on “delete files”
                     to proceed.
                 </p>
                 <img src="{% static 'assets/images/page_with_saved_file.JPG'%}" />
+            </div>
+        </div>
+        <div class="doc eight">
+            <div class="doc-head">
+                <h3>Technologies used</h3>
+                <button class="btn-dropdown">
+                    <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
+                </button>
+            </div>
+            <hr />
+            <div class="doc-body">
+                <h6>Django</h6>
+                <p>Django is a high-level Python web framework that enables rapid development of secure and maintainable
+                    websites. Django takes care of much of the hassle of web development, so you can focus on writing
+                    your app without needing to reinvent the wheel. It is free and open source, has a thriving and
+                    active community, great documentation, and many options for free and paid-for support.</p>
+
+                <h6>Why Django framework?</h6>
+                <p>Django's primary goal is to ease the creation of complex, database-driven websites. The framework
+                    emphasizes reusability and "pluggability" of components, less code, low coupling, rapid development,
+                    and the principle of don't repeat yourself.Python is used throughout, even for settings, files, and
+                    data models. Django also provides an optional administrative create, read, update and delete
+                    interface that is generated dynamically through introspection and configured via admin models.</p>
+
+                <h6>Pandas</h6>
+                <p>Pandas is an open-source library that is made mainly for working with relational or labeled data both
+                    easily and intuitively. It provides various data structures and operations for manipulating
+                    numerical data and time series. Pandas is fast and it has high performance & productivity for users.
+                </p>
+
+                <h6>Advantages of Using Pandas are;</h6>
+
+                <p>Fast and efficient for manipulating and analyzing data.</p>
+
+                <p>Data from different file www2 be loaded.</p>
+
+                <p>Easy handling of missing data (represented as NaN) in floating point as well as non-floating point
+                    data.</p>
+
+                <p>Size mutability: columns can be inserted and deleted from DataFrame and higher dimensional objects.
+                </p>
+
+                <p>Data set merging and joining.</p>
+
+                <p>Flexible reshaping and pivoting of data sets.</p>
+
+                <p>Provides time-series functionality.</p>
+
+                <p>Powerful group by functionality for performing split-apply-combine operations on data sets.</p>
+
+                <h6>Getting Started with Work</h6>
+                <p>
+                    The first step of working in pandas is to ensure whether it is installed in the Python folder or
+                    not. If not then we need to install it in our system using the pip command. Type cmd command in the
+                    search box and locate the folder using cd command where python-pip file has been installed. After
+                    locating it, type the command:
+                    pip install pandas.
+                    After the pandas have been installed into the system, you need to import the library. This module is
+                    generally imported as:
+                    import pandas as pd.
+                </p>
+
+                <h6>Limit</h6>
+                <p>The long answer is the size limit for pandas DataFrames is 100 gigabytes (GB) of memory instead of a
+                    set number of cells.</p>
+
+                <h6>Authorization</h6>
+                <p>
+                    Pandas is a free open-source library, no authorization is needed before using, the only thing you
+                    need is to have python installed in your system and run pip install pandas after that import the
+                    module as follow:
+                    Import pandas as pd
+                    Then you are free to use it.
+                </p>
+
+                <h6>The Operating System(OS) module</h6>
+                <p>
+                    The OS module in Python provides functions for creating and removing a directory (folder), fetching
+                    its contents, changing and identifying the current directory etc. You first need to import the OS
+                    module to interact with the underlying operating system.
+                    For this project the OS module is used to create a folder for the chunks files for easy zipping.
+                </p>
+
+                <h6>The Shutil Module</h6>
+                <p>The shutil module offers several high-level operations on files and collections of files. The shutil
+                    module helps you automate copying files and directories. This saves the steps of opening, reading,
+                    writing and closing files when there is no actual processing. It is a utility module which can be
+                    used to accomplish tasks, such as: copying, moving, or removing directory trees. But for the purpose
+                    of this project, the shutil module is only used to zip the folder created by the OS module</p>
+
+                <h6>Datetime Module</h6>
+                <p>
+                    In Python, date and time are not a data type of their own, but a module named datetime can be
+                    imported to work with the date as well as time.
+                    Python Datetime module comes built into python, so there is no need to install it externally.
+                    So before starting with this module we need to import it.
+                    Python datetime module supplies classes to work with date and time. These classes provide a number
+                    of functions to deal with dates, times and time intervals. Date and datetime are an object in
+                    Python, so when you manipulate them, you are actually manipulating objects and not string or
+                    timestamps.
+                </p>
+            </div>
+        </div>
+        <div class="doc nineth">
+            <div class="doc-head">
+                <h3>Privacy Policy</h3>
+                <button class="btn-dropdown">
+                    <img src="{% static 'assets/icons/drop-down.png'%}" alt="" />
+                </button>
+            </div>
+            <hr />
+            <div class="doc-body">
+                <p>
+                    ChunkIt uses modern encryption and secure development processes to keep your data secure.
+                    ChunkIt respects your right to privacy when you make use of our software. Your personal data is
+                    treated in compliance with data protection laws.
+                    Please send any reports to (insert email). We will reply as soon as possible.
+                    Chunkit will never sell your personal data,we can only share some part of your data with any third
+                    party client only on your permission. But chunkit will not be responsible for any misuse of personal
+                    data by a third party client.
+
+                </p>
             </div>
         </div>
     </div>

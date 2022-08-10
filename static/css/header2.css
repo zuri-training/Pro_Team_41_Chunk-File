@@ -25,8 +25,8 @@ header {
 }
 
 header .logo {
-  width: clamp(8rem, 20vw, 12rem);
-  /* width: 16rem; */
+  /* width: clamp(8rem, 20vw, 12rem); */
+  width: 16rem;
 }
 
 /* .big-heading {
@@ -62,32 +62,27 @@ ul {
 
 .primary-navigation ul {
   display: flex;
-  gap: 3rem;
-  gap: clamp(0.5rem, 4vw, 3rem);
-  /* gap: 1rem; */
-  /* white-space: nowrap; */
-  /* justify-content: space-evenly; */
+  gap: clamp(1rem, 4vw, 3rem);
 }
 
 .primary-navigation a {
   text-decoration: none;
-  color: var(--color-main);
+  /* color: var(--color-main); */
 }
 
 .primary-navigation .nav-link a:hover {
   color: var(--pink);
+  cursor: pointer;
 }
 
 .header-action .btn-link {
   padding: 0.5rem 3rem;
-  padding-inline: clamp(0.5rem, 3vw, 3rem);
+  padding-inline: clamp(0.5rem, 4vw, 3rem);
   border-radius: 4px;
   font-family: inherit;
   border-radius: 4px;
   font-weight: 500;
   font-size: 0.9rem;
-  cursor: pointer;
-
   border: 1px solid var(--color-main);
 }
 
@@ -115,7 +110,7 @@ ul {
 
 @media (max-width: 740px) {
   .primary-navigation {
-    min-height: 3.5rem;
+    min-height: 5rem;
   }
 
   .primary-navigation .navigation {
@@ -134,10 +129,10 @@ ul {
   }
 }
 
-.hamburger {
+/* .hamburger {
   position: relative;
   display: block;
-  width: 25px;
+  width: 5%;
   cursor: pointer;
   z-index: 9999;
 
@@ -145,18 +140,18 @@ ul {
   background: none;
   outline: none;
   border: none;
-}
+} */
 
 .hamburger .bar,
 .hamburger::after,
 .hamburger::before {
   content: "";
   display: block;
-  width: 100%;
-  height: 3px;
+  width: 3.1rem;
+  height: 4.5px;
   border-radius: 2px;
   background-color: var(--color-main);
-  margin: 4px 0;
+  margin: 7px 0;
   transition: 0.4s;
 }
 
@@ -180,9 +175,9 @@ ul {
   top: 0;
   left: 100%;
   width: 100%;
-  height: 100vh;
+  height: 323vh;
   background-color: var(--color-main);
-  padding-top: 120px;
+  padding-top: 159px;
   transition: 0.4s;
   z-index: 1000;
 }
@@ -195,7 +190,7 @@ ul {
   display: block;
 }
 
-.mobile-nav a,
+/* .mobile-nav a,
 .mobile-nav button {
   display: block;
   width: 100%;
@@ -205,7 +200,7 @@ ul {
   background-color: #6a5c81;
   padding: 1rem 2.5rem;
   color: #fff;
-}
+} */
 
 .mobile-nav button {
   font: inherit;
@@ -221,20 +216,4 @@ ul {
   width: 100%;
   border-radius: 2px;
   box-shadow: 0px 1px 10px #999;
-}
-
-@media (max-width: 900px) {
-  header {
-    padding-inline: 2rem;
-  }
-
-  .primary-navigation ul {
-    gap: 1rem;
-  }
-}
-
-@media (max-width: 420px) {
-  header {
-    padding-inline: 1rem;
-  }
 }

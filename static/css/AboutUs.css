@@ -26,10 +26,11 @@ header {
 }
 
 .hero {
+  /* margin-top: 5rem; */
   overflow: hidden;
   width: 100%;
 
-  height: 643px;
+  min-height: 61vh;
   left: 0px;
   top: 0px;
 
@@ -44,7 +45,8 @@ header {
   bottom: -132.91%;
 
   width: 100%;
-  height: 715px;
+  height: 645px;
+  /* height: 690px; */
 
   margin-left: 9%;
   overflow: hidden;
@@ -180,6 +182,7 @@ main div > h6 {
   overflow-x: auto;
   overflow-y: scroll;
   gap: 20px;
+  height: 321px;
   /* padding: 40px 48px 32px; */
 }
 .cards::-webkit-scrollbar {
@@ -193,15 +196,16 @@ main div > h6 {
   flex-direction: column;
   align-items: center;
   padding: 40px 48px 32px;
-  gap: 20px;
+  gap: 6px;
 
   width: 230px;
-  height: 308px;
+  height: 309px;
+  margin-top: 2px;
 
   /* Background color */
 
   background: #f2f1f4;
-  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15), 0px 1px 2px rgba(0, 0, 0, 0.3);
   border-radius: 4px;
 
   /* Inside auto layout */

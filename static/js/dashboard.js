@@ -67,9 +67,3 @@ fileInput.addEventListener("change", () => {
   fileName.textContent = fileInput.files[0].name;
 });
 
-filUploadForm.addEventListener("submit", (event) => {
-  event.preventDefault();
-  toggleFileUploadModal();
-  toggleDownloadChunkModal();
-  //   console.log(fileUploadModal.classList.contains("show-modal"));
-});

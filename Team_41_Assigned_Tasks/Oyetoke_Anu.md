@@ -12,6 +12,8 @@ Research Plan- https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/18
 
 Prototype of Hifi and mobile responsive screen- https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/79
 
+Fix Inconsistency between Dashboard(Library page)UI Design and Frontend Implementation https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/106
+
 ## Figjam Link
 
 https://www.figma.com/file/QPH61hv4MWT1FtnJKPrP3O/PROJECT-CHUNK-FILE-TEAM-41-USER-RESEARCH?node-id=0%3A1

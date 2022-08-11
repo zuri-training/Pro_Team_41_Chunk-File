@@ -19,4 +19,4 @@ High Fidelity designs of Sign up, Sign in, Forgot Password screens (Link to Issu
 Check Consistencies on Buttons and Components (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/81)
 
 
-Settle inconsistency development issue in Gign Up, Sign in and Account setting page (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/104 ; https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/107)
+Settle inconsistency development issue in Sign Up, Sign in and Account setting page (Link to Issue https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/104 ; https://github.com/zuri-training/Pro_Team_41_Chunk-File/issues/107)

@@ -30,7 +30,7 @@ class Message(models.Model):
     def __str__(self):
         return f'{self.name}'
 
-class Email(models.Model):
+class Subscribe(models.Model):
     email = models.EmailField()
     date = models.DateTimeField(default=datetime.now, blank=True)
 

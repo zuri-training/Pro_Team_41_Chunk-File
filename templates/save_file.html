@@ -21,15 +21,27 @@
         </div>
         <div class="user">
             <small>{{user.username}}</small>
-            <a href="{% url 'signout'%}"><img src="{% static 'assets/icons/logout-icon.png'%}" alt=""
-                    style="cursor: pointer;" /></a>
+            <img src="{% static 'assets/icons/logout-icon.png'%}" alt="" onclick="toggleLogoutModal()" />
         </div>
     </header>
     <main>
+        <section class="modal" id="logout-modal">
+            <div class="modal-content">
+                <h2>Log out</h2>
+                <p>
+                    Are you sure you want to log out?
+                </p>
+                <button class="btn-danger"><a href="{% url 'signout'%}"
+                        style="cursor: pointer; color:inherit; text-decoration: none;">Log
+                        out</a></button>
+                <button class="cancel">Cancel</button>
+            </div>
+        </section>
         <section id="file-upload-modal" class="modal">
             <div class="modal-content">
                 <span class="close-button"><img src="{% static 'assets/icons/close.png'%}" alt="" /></span>
                 <h2>Chunk File <span>(1/2)</span></h2>
+
                 <div class="inner-modal-content">
                     <form enctype="multipart/form-data" method="post">
                         {% csrf_token %}
@@ -124,8 +136,16 @@
             </button>
             <button class="btn-upload">+ Upload New File</button>
         </section>
+
         {% if files %}
         <section class="saved-files">
+            {% for message in messages %}
+
+            <div class="alert alert-{{message.tags}} alert-dismissible fade show" role="alert">
+                <p style="color: red;">{{message}}</p>
+                <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+            {% endfor %}
             <table>
                 <thead>
                     <tr>
@@ -195,12 +215,18 @@
         let file = document.getElementById('file');
         let size = document.getElementById('size')
 
+
         file.onchange = function () {
             let maxSize = 250 * 1024 * 1024;
             if (this.files[0].size > maxSize) {
                 swal.fire('the file is larger than 10mb');
                 this.value = "";
             };
+            if (digit.value <= 0) {
+                swal.fire('chunk number cannot be zero or negative number');
+                this.value = "";
+
+            }
         };
         function update() {
             let nbytes = 0;

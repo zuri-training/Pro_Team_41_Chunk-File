@@ -8,8 +8,8 @@ from django.core.files import File as DjangoFile
 from django.core.files.base import ContentFile
 from django.utils.html import strip_tags
 from django.conf import settings
-from .forms import MessageForm
-from . models import File, Message
+from .forms import MessageForm, SubscribeForm
+from . models import File, Message,Subscribe
 import pandas as pd
 import shutil
 import time
@@ -109,7 +109,7 @@ def setting(request):
 # ******************* SAVE FILES VIEW *****************************
 @login_required(login_url="login")
 def save_file(request):
-    files = File.objects.all().order_by("-id")
+    files = File.objects.filter(user=request.user).order_by("-id")
     context = {
         'files':files
     }
@@ -121,7 +121,9 @@ def save_file(request):
         #print(fSize)
         file_count = request.POST.get("file_count") or 2
         file_count = int(file_count)
-        print(type)
+        if file_count <= 0:
+            messages.error(request, "chunk number cannot be zero or negative number")
+            return redirect(request.META.get("HTTP_REFERER"))
         user = request.user
         file = File.objects.create(file=file_data,chunk_number=file_count,user=user,name=name,file_type=type)
         url = file.file.url
@@ -164,6 +166,7 @@ def save_file(request):
     return render(request,'save_file.html',context)
     
 # ******************* DELETE FILES VIEW *****************************
+@login_required(login_url="login")
 def file_delete(request, pk):
     file = File.objects.get(id=pk)
     if request.method == 'POST':
@@ -175,6 +178,7 @@ def file_delete(request, pk):
     return render(request, "delete.html",context)
 
 # ******************* HISTORY FILES VIEW *****************************
+@login_required(login_url="login")
 def history(request, pk):
     file = File.objects.get(id=pk)
     context = {
@@ -196,6 +200,15 @@ def send(request):
             messages.error(request,f"{field}: {error}")
             return redirect('faq')
 
+
+def subscribe(request):
+    form = SubscribeForm(request.POST)
+    if form.is_valid():
+        form.save()
+        messages.success(request, "Message successfully sent")
+        return redirect('faq')
+
+    
 # ******************* LOGOUT VIEW *****************************
 def signout(request):
     logout(request)
@@ -208,12 +221,15 @@ def signout(request):
 @login_required(login_url="admin_login")   
 def admin_home(request):
     message_count = Message.objects.all().count()
+    sub_count = Subscribe.objects.all().count()
     users_count = User.objects.all().count()
     file_count = File.objects.all().count()
     context = {
         'file_count':file_count,
         'users_count':users_count,
-        'message_count':message_count
+        'message_count':message_count,
+        'sub_count':sub_count
+
     }
     return render(request,'admin/admin_home.html',context)
 
@@ -221,6 +237,7 @@ def admin_home(request):
 @login_required(login_url="admin_login")   
 def message(request):
     file_count = File.objects.all().count()
+    sub_count = Subscribe.objects.all().count()
     users_count = User.objects.all().count()
     messages = Message.objects.all().order_by("-id")
     message_count = Message.objects.all().count()
@@ -228,7 +245,8 @@ def message(request):
         'messages':messages,
         'users_count':users_count,
         'file_count':file_count,
-        'message_count':message_count
+        'message_count':message_count,
+        'sub_count':sub_count
     }
     return render(request,'admin/message.html',context)
 
@@ -238,12 +256,14 @@ def user(request):
     users = User.objects.all()
     message_count = Message.objects.all().count()
     file_count = File.objects.all().count()
+    sub_count = Subscribe.objects.all().count()
     users_count = User.objects.all().count()
     context = {
         'users':users,
         'users_count':users_count,
         'file_count':file_count,
-        'message_count':message_count
+        'message_count':message_count,
+        'sub_count':sub_count
 
     }
     return render(request,'admin/user.html',context)
@@ -254,17 +274,32 @@ def file(request):
     message_count = Message.objects.all().count()
     users_count = User.objects.all().count()
     file_count = File.objects.all().count()
+    sub_count = Subscribe.objects.all().count()
+
     context = {
         'file_count':file_count,
         'users_count':users_count,
-        'message_count':message_count
+        'message_count':message_count,
+        'sub_count':sub_count
     }
     return render(request,'admin/file.html',context)
 
 # ******************* ADMIN GET ALL SUBSCRIBERS VIEW *****************************
 @login_required(login_url="admin_login")   
-def subscribe(request):
-    return render(request,'admin/subscribe.html')
+def subscribers(request):
+    subscribers = Subscribe.objects.all()
+    sub_count = Subscribe.objects.all().count()
+    message_count = Message.objects.all().count()
+    users_count = User.objects.all().count()
+    file_count = File.objects.all().count()
+    context = {
+        'sub_count':sub_count,
+        'file_count':file_count,
+        'users_count':users_count,
+        'message_count':message_count,
+        'subscribers':subscribers
+    }
+    return render(request,'admin/subscribe.html',context)
 
 
 # ******************* ADMIN LOGIN VIEW *****************************

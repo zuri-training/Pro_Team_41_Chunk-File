@@ -14,9 +14,7 @@ const shape3 =
   'M469.539032,263.986786H-0.000001L0,0c226.11113,0,182.887283-0.414484,469.539032,0V263.986786zz'
 
 new TimelineMax({
-  onStart: (window.onscroll = function () {
-    window.scrollTo(0, 0)
-  }),
+  // onStart:
   repeat: 0,
   repeatDelay: 1,
   onComplete: displayNone,
@@ -49,6 +47,10 @@ new TimelineMax({
     '-=.8',
   )
 
+  .to(animation, 0.3, {
+    opacity: 0,
+  })
+
 toWhite.forEach((white) =>
   gsap.to(white, {
     delay: 2,
@@ -60,5 +62,3 @@ function displayNone() {
   animation.classList.add('none')
   console.log('done')
 }
-
-// window.onscroll = function () { window.scrollTo(0, 0); };

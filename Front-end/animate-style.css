@@ -3,11 +3,12 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* position: absolute; */
-  /* width: 100%;
-  background-color: white; */
+  position: absolute;
+  width: 100%;
   /* overflow: hidden;
   height: 100%; */
+  z-index: 1;
+  background-color: white;
 }
 
 .wave {
@@ -27,4 +28,6 @@
 
 .none {
   display: none;
+  animation-name: fade;
+  animation-timing-function: 1;
 }

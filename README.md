@@ -67,7 +67,8 @@ Django was used for the rapid development of a secure and maintainable platform 
 MySQL was used to provide comprehensive support for the applications developed in Django and to store user data.
 
 ### Challenges we faced
-> Cracking the splitting feature
+> Cracking the splitting functionality
+  - Splitting by size is possible, but the end product is not usable. This issue was resolved by using the **Numbers of chunks** feature and Pandas Library. 
 
 > Deploying to the server
 

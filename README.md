@@ -76,23 +76,26 @@ MySQL was used to provide comprehensive support for the applications developed i
 
 ### ChunkIT Key features 
 
-> Landing page
+> Landing Page, FAQ/ContactUs Page, About Us page & Documentation page 
 
-> FAQ/ContactUs Page
+Accessible to all users, authenticated and unauthenticated
 
-> Registration Page
+> Sign In and Sign Up page 
 
-> Login Page
+To authenticate authorized users to access the chunking platform 
 
-> About Us
+> Dashboard
 
-> Documentation Page
+#### Library Page
 
-> Dashboard:
-- Account settings Page
-- Library Page
+User can upload a file and chunk it according to their preference. The user's saved files are also listed in the library page.
 
-## Features to consider for future versions 
+#### Account settings Page
+
+User can view their account details and change their authentication details 
+
+### Features to consider for future versions 
+
 - Allow user to view statistics of splittings done previously
 - Allow user to be able to sort split CSV and JSON files easily
 

@@ -59,6 +59,15 @@ while Javascript adds functionality in the frontend.
 - MYSQL (Database)
 - Django - Framework, Python (Backend)
 
+## Challenges we faced
+
+> Cracking the splitting by feature
+
+>Deploying to the server
+
+> Implementing the frontend of the platform according to specification
+
+> 
 
 ### ChunkIT Key features 
 

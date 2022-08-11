@@ -53,21 +53,19 @@ This project, **ChunkIT**, is a project initiative introduced by the Zuri team. 
 ##### HTML, CSS 
 HTML & CSS add structure and style to the webpages.
 
-#### Javascript
-while Javascript adds functionality in the frontend.
+#### Bootstrap
+The Bootstrap framework was used to quickly design the front end of the platform. 
 
-- MYSQL (Database)
-- Django - Framework, Python (Backend)
+#### Javascript (Vanilla)
+Vanilla JS was used to create an rich interfaces, add speed to the client side and add functionality to the platform's authentication.
 
-## Challenges we faced
+#### Python (Django)
+Django was used for the rapid development of a secure and maintainable platform at the backend.
 
-> Cracking the splitting by feature
+> MySQL 
 
->Deploying to the server
+MySQL was used to provide comprehensive support for the applications developed in Django and to store user data.
 
-> Implementing the frontend of the platform according to specification
-
-> 
 
 ### ChunkIT Key features 
 

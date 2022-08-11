@@ -66,6 +66,12 @@ Django was used for the rapid development of a secure and maintainable platform 
 
 MySQL was used to provide comprehensive support for the applications developed in Django and to store user data.
 
+### Challenges we faced
+> Cracking the splitting by feature
+
+> Deploying to the server
+
+> Implementing the frontend of the platform according to specification
 
 ### ChunkIT Key features 
 

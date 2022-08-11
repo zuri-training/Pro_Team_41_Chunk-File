@@ -211,7 +211,7 @@ li.active {
   justify-content: space-between;
   width: 100%;
   top: 5.5rem;
-  padding-inline: 6rem 2rem;
+  padding-inline: 5rem 2rem;
   z-index: 1;
 }
 
@@ -538,6 +538,7 @@ li.active {
 @media (max-width: 500px) {
   .nav-drawer {
     padding-inline: 0.2rem;
+    width: 3rem;
   }
   .page-content {
     left: 56%;
@@ -552,5 +553,9 @@ li.active {
 
   .btn-upload {
     font-size: 0.7rem;
+  }
+
+  .library-actions {
+    padding-inline: 4rem 1.5rem;
   }
 }

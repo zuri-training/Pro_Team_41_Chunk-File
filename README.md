@@ -109,10 +109,10 @@ User can upload a file and chunk it according to their preference. The user's sa
 
 User can view their account details and change their authentication details 
 
-### Features to consider for future versions 
+### What to expect in future versions 
 
 - Allow user to view statistics of splittings done previously
-- Allow user  to sort split CSV and JSON files easily
+- Allow user to sort split CSV and JSON files easily
 - Merge CSV and JSON
 - Allow user to chunk more file formats 
 
@@ -128,11 +128,12 @@ User can view their account details and change their authentication details
 
 
 ## Product Specialization
-> Mobile Phones and Laptops
+> Mobile Phones, Tablets and Laptops
 
 
 ## Project Status
-> Project is in progress
+> first Phase completed
+> next Phase yet to start
 
 
 ## Github Collaboration

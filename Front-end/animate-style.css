@@ -1,0 +1,27 @@
+.animation--body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.wave {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+}
+.logo {
+  width: 40%;
+  max-width: 180px;
+  max-height: 40%;
+  position: relative;
+  z-index: 1;
+}
+
+.none {
+  display: none;
+  animation-name: fade;
+  animation-timing-function: 1;
+}

@@ -1,13 +1,15 @@
 # ChunkIT
-- [x] A platform that accepts CSV or JSON large files, and break them into smaller bits.
+> Background
+- [x] This project, **ChunkIT**, is a project initiative introduced by the Zuri team. ChunkIT is a platform that accepts CSV or JSON large files and chunks them into smaller bits. It also allows users to save or download their files in zipped format anytime. **Chunking** is simply the process of splitting large files into smaller files called **chunks** without losing their content or quality.
 
 > Our Vision
-- [x] Helping clients manage their large file easily.
+- [x] Helping clients manage their large files easily.
+
 > Our Client
 - [x] Zuri
+
 > Our Target Market
 - [x] Large CSV and JSON file users (Developers, companies)
-
 
 > Our User Personas
 - [x] Developers, Data Analyst, Multinationals
@@ -17,7 +19,7 @@
 
 ## Table of content
 - [ChunkIT](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit)
-- [Background](https://github.com/zuri-training/Pro_Team_41_Chunk-File#background)
+- [Project Description](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-description)
 - [Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#objectives)
 - [ChunkIt Solutions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-solutions)
 - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
@@ -29,7 +31,7 @@
 - [DOCUMENTATION](https://github.com/zuri-training/Pro_Team_41_Chunk-File#documentation)
 
 
-## Background
+## Project Description
 This project, ***ChunkIT***, is a project initiative introduced by the Zuri team. It is useful for anyone sharing large documents. Chunking is simply the process of splitting large files into smaller files called chunks without losing their content or quality.
 
 

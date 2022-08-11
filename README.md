@@ -74,8 +74,13 @@ MySQL was used to provide comprehensive support for the applications developed i
    import pandas as pd
    
    if url.split(".")[-1] == 'csv':
-        df = pd.read_csv(url)
-        rows_per_file = df.shape[0] // file_count
+       df = pd.read_csv(url)
+       rows_per_file = df.shape[0] // file_count
+       folder_name = str(settings.BASE_DIR) + "\\temp\\" + str(int(time.time()*1000))
+       os.makedirs(folder_name)
+       for row_start in range(0, df.shape[0], rows_per_file):
+           new_file  = df[row_start:row_start+rows_per_file]
+           new_file.to_csv(f"{folder_name}/chunk_{row_start}.csv")
    ```
 
 > Deploying to the server

@@ -72,6 +72,10 @@ MySQL was used to provide comprehensive support for the applications developed i
 
    ```
    import pandas as pd
+   
+   if url.split(".")[-1] == 'csv':
+        df = pd.read_csv(url)
+        rows_per_file = df.shape[0] // file_count
    ```
 
 > Deploying to the server
@@ -80,32 +84,29 @@ MySQL was used to provide comprehensive support for the applications developed i
 
 ### ChunkIT Key features 
 
-####  Landing Page, FAQ/ContactUs Page, About Us page & Documentation page 
+> Landing Page, FAQ/ContactUs Page, About Us page & Documentation page 
 
 Accessible to all users, authenticated and unauthenticated
 
-####  Sign In and Sign Up page 
+> Sign In and Sign Up page 
 
-To authenticate users to access the chunking platform 
+To authenticate authorized users to access the chunking platform 
 
-####  Dashboard
+> Dashboard
 
-Where the user can chunk their files and optionally save them on the platform for future downloading
-
-##### Dashboard - Library Page
+#### Library Page
 
 User can upload a file and chunk it according to their preference. The user's saved files are also listed in the library page.
 
-##### Dashboard - Account settings Page
+#### Account settings Page
 
 User can view their account details and change their authentication details 
 
 ### Features to consider for future versions 
 
 - Allow user to view statistics of splittings done previously
-- Allow user  to sort split CSV and JSON files easily
-- Merge CSV and JSON
-- Allow user to chunk more file formats 
+- Allow user to be able to sort split CSV and JSON files easily
+
 
 ### User Flow
 > Unauthenticated User:

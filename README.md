@@ -1,6 +1,6 @@
 # ChunkIT
 > Background
-- [x] This project, **ChunkIT**, is a project initiative introduced by the Zuri team. ChunkIT is a platform that accepts CSV or JSON large files and chunks them into smaller bits. It also allows users to save or download their files in zipped format anytime. **Chunking** is simply the process of splitting large files into smaller files called **chunks** without losing their content or quality.
+- [x] A platform that accepts CSV or JSON large files and chunks them into smaller bits.
 
 > Our Vision
 - [x] Helping clients manage their large files easily.
@@ -32,31 +32,35 @@
 
 
 ## Project Description
-This project, ***ChunkIT***, is a project initiative introduced by the Zuri team. It is useful for anyone sharing large documents. Chunking is simply the process of splitting large files into smaller files called chunks without losing their content or quality.
+This project, **ChunkIT**, is a project initiative introduced by the Zuri team. ChunkIT is a platform that accepts CSV or JSON large files and chunks them into smaller bits. It also allows users to save or download their files in zipped format anytime. **Chunking** is simply the process of splitting large files into smaller files called **chunks** without losing their content or quality.
 
 
-## Objectives
-- To solve problems regarding issues of having large CSV and JSON files
+### Objectives
+- Solve problems regarding issues of having large CSV and JSON files
 - Allow user to split large CSV and JSON files
-- The user should be able to save files and have the possibility of downloading it later in the future
-- The user should be able to view statistics of splittings done previously
-- The user should be able to sort split CSV and JSON files easily
+- Allow user to save files and have the possibility of downloading in the future
 
 
-## ChunkIT Solutions
+### ChunkIT Solutions
 - Create means of chunking CSV and JSON files seamlessly
 - Easily import, save and download your CSV and JSON files anytime
 - Chunking as much as 250MB of CSV and JSON files without a fee
 - Splitting files into different sizes and numbers
 
 
-## Technologies Used
-- HTML/CSS/Javascript (Frontend)
+### Technologies Used
+
+##### HTML, CSS 
+HTML & CSS add structure and style to the webpages.
+
+#### Javascript
+while Javascript adds functionality in the frontend.
+
 - MYSQL (Database)
 - Django - Framework, Python (Backend)
 
 
-## ChunkIT Key features 
+### ChunkIT Key features 
 
 > Landing page
 
@@ -70,10 +74,14 @@ This project, ***ChunkIT***, is a project initiative introduced by the Zuri team
 
 > Documentation Page
 
-
 > Dashboard:
 - Account settings Page
 - Library Page
+
+## Features to consider for future versions 
+- Allow user to view statistics of splittings done previously
+- Allow user to be able to sort split CSV and JSON files easily
+
 
 ### User Flow
 > Unauthenticated User:

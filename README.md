@@ -209,9 +209,34 @@ git push origin your-current-branch-name
 ## Credits 
 #### Team members
 
-| Name        | Github Username                                              | Role                         |
-| ----------- | ------------------------------------------------------------ | ---------------------------- |
-| Peter Felix | [@thejourneybeginsng](https://github.com/thejourneybeginsng) | Product Designer (Team Lead) |
+| Name                             | Github Username                                              | Role                                       |
+| -------------------------------- | ------------------------------------------------------------ | ------------------------------------------ |
+| Peter Felix                      | [@thejourneybeginsng](https://github.com/thejourneybeginsng) | Product Designer (Team Lead)               |
+| Efosa Ero                        | [@Efoxa](https://github.com/Efoxa)                           | Full Stack Developer (Assistant Team Lead) |
+| Nicole Moyo                      | [@beverly-m](https://github.com/beverly-m)                   | Product Designer (Assistant Team Lead)     |
+| Ohayi James Chukwuka             | [@Sanctogiacomo](https://github.com/Sanctogiacomo)           | Product Designer                           |
+| Daniel Ukoha                     | [@Superfly101](https://github.com/Superfly101)               | Frontend Developer                         |
+| Louis Binah                      | [@BINAH25](https://github.com/BINAH25)                       | Backend Developer                          |
+| John Ojibo                       | [@jkull247](https://github.com/jkull247)                     | Frontend Developer                         |
+| Emmanuel Osaite                  | [@Vixxena](https://github.com/Vixxena)                       | Product Designer                           |
+| Chukwuebuka Joshua Ezeokechukwu  | [@Ebuka500](https://github.com/Ebuka500)                     | Product Designer                           |
+| Marthar Nderitu                  | [@MNderi](https://github.com/MNderi)                         | Frontend Developer                         |
+| Metu Jane                        | [@MetuJane](https://github.com/MetuJane)                     | Product Designer                           |
+| Esther Oyebode                   | [@EstherOyebode](https://github.com/EstherOyebode)           | Product Designer                           |
+| Azeez Olayinka Bankole           | [@Olabanky](https://github.com/Olabanky)                     | Frontend Developer                         |
+| Adedamola Alausa                 | [@Theadedamola](https://github.com/Theadedamola)             | Product Designer                           |
+| Francis Udeh                     | [@UgoKing](https://github.com/UgoKing)                       | Product Designer                           |
+| Augusta Okwor                    | [@AugustaOkwor1](https://github.com/AugustaOkwor1)           | Product Designer                           |
+| Oyindamola Aina                  | [@Dammina001](https://github.com/Dammina001)                 | Frontend Developer                         |
+| Oyetoke Anu                      | [@Oyetokeanu](https://github.com/Oyetokeanu)                 | Product Designer                           |
+| Queen Iheanacho                  | [@Preshtyrace](https://github.com/Preshtyrace)               | Product Designer                           |
+| Chukwudebere Emmanuel Onyinyechi | [@Daberetech](https://github.com/Daberetech)                 | Product Designer                           |
+| Adewole Abdulazeez               | [@TechFlow247](https://github.com/TechFlow247)               | Product Designer                           |
+| Omonigho Seth                    | [@nigho-seth](https://github.com/nigho-seth)                 | Product Designer                           |
+| Judah Ndukwu                     | [@Cleverley1](https://github.com/Cleverley1)                 | Product Designer                           |
+| Joseph Igbekoyi                  | [@Jaay06](https://github.com/Jaay06)                         | Frontend Developer                         |
+
+#### Resources
 
 # DOCUMENTATION
 ## Understanding the process of chunking files

@@ -131,8 +131,6 @@ MySQL was used to provide comprehensive support for the applications developed i
 > Implementing the frontend of the platform according to design specifications
 
 
-
-
 ## Product Specialization
 > Mobile Phones, Tablets and Laptops
 

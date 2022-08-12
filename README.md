@@ -16,8 +16,6 @@
 - [x] Developers, Data Analyst, Multinationals
 
 
-
-
 ## Table of content
 - [ChunkIT](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#background)
 - [Project Description](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-description)
@@ -51,6 +49,7 @@ This project, **ChunkIT**, is a project initiative introduced by the Zuri team. 
 - Chunking as much as 250MB of CSV and JSON files without a fee
 - Splitting files into different sizes and numbers
 
+
 ### ChunkIT Key features 
 
 ####  Landing Page, FAQ/ContactUs Page, About Us page & Documentation page 
@@ -77,15 +76,34 @@ User can view their account details and change their authentication details
 > #### Unauthenticated User:
 1. The user visits the Landing page and can view the platform's features.
 
-![Landing page6](https://user-images.githubusercontent.com/71017261/184405160-03168d35-c62e-4273-87b0-de4c374f6c7a.gif)
+
+> ![Landing page](https://user-images.githubusercontent.com/71017261/184405160-03168d35-c62e-4273-87b0-de4c374f6c7a.gif)
+
 
 2. The user can access the platform's documentation and other pages on the header section.
+
+
+> ![Plaform page](https://user-images.githubusercontent.com/71017261/184406425-fe508c32-1467-4998-ba9a-93de80fd0060.gif)
+
+
 3. The user can create an account by navigating to the sign up page. When they successfully create an account, they are authorised to access the dashboard where they can chunk and save their files.
+
+
+> ![Register](https://user-images.githubusercontent.com/71017261/184406953-f7379b15-b9d6-496a-a98e-f209df328fc1.gif)
+
 
 > #### Authenticated User:
 1. The user now has full access to all our services and can chunk any CSV or JSON file he wants
+
+> ![Chunking](https://user-images.githubusercontent.com/71017261/184409368-727fc67e-ca28-40b5-bd75-ec7f7e377053.gif)
+
 2. The user has a dashboard where he can upload, chunk, save or download files at any time.
+
+> ![Downloading](https://user-images.githubusercontent.com/71017261/184409454-9451a28f-11dd-45aa-8a38-dfd4bcb86849.gif)
+
 3. The user also has a account settings page that they can access anytime they log in.
+
+> ![Account](https://user-images.githubusercontent.com/71017261/184409502-5c5eb1c5-ba9d-4174-b43b-74b92cfded05.gif)
 
 ### What to expect in future versions 
 

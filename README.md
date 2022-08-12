@@ -1,6 +1,8 @@
- <p><img src = "/Front-end\assets\icons\logo.svg"></p>
+<p><img src = "/Front-end\assets\icons\logo.svg"></p>
+ 
 
-> Background
+
+## Background
 - [x] A platform that accepts CSV or JSON large files and chunks them into smaller bits.
 
 > Our Vision

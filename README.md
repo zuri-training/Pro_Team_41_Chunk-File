@@ -77,7 +77,7 @@ User can view their account details and change their authentication details
 1. The user visits the Landing page and can view the platform's features.
 
 
-> ![Landing page](https://user-images.githubusercontent.com/71017261/184405160-03168d35-c62e-4273-87b0-de4c374f6c7a.gif)
+> ![Landing page](https://user-images.githubusercontent.com/71017261/184410896-5838e02d-8d03-4355-a016-e37e3ae19a8c.gif)
 
 
 2. The user can access the platform's documentation and other pages on the header section.

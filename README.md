@@ -163,7 +163,7 @@ MySQL was used to provide comprehensive support for the applications developed i
 
 
 ## Github Collaboration
-1. Fork this repository and create a project folde on your local manchine
+1. Fork this repository and create a project folder on your local machine
 
 2. Navigate to the terminal (pointing to your project folder/directory), Clone and then open it up on your prefered code editor
 
@@ -209,6 +209,9 @@ git push origin your-current-branch-name
 ## Credits 
 #### Team members
 
+| Name        | Github Username                                              | Role                         |
+| ----------- | ------------------------------------------------------------ | ---------------------------- |
+| Peter Felix | [@thejourneybeginsng](https://github.com/thejourneybeginsng) | Product Designer (Team Lead) |
 
 # DOCUMENTATION
 ## Understanding the process of chunking files

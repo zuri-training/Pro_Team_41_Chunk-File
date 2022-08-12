@@ -157,8 +157,9 @@ MySQL was used to provide comprehensive support for the applications developed i
 
 
 ## Project Status
-> first Phase completed
-> next Phase yet to start
+> First Phase completed
+
+> Next Phase yet to start
 
 
 ## Github Collaboration

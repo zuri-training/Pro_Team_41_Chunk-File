@@ -26,10 +26,10 @@
    - [What to expect in future versions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#what-to-expect-in-future-versions)
    - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
    - [Challenges we faced](https://github.com/zuri-training/Pro_Team_41_Chunk-File#challenges-we-faced) 
-- [Product specialization](https://github.com/zuri-training/Pro_Team_41_Chunk-File#product-specialization)
+- [Product Specialization](https://github.com/zuri-training/Pro_Team_41_Chunk-File#product-specialization)
 - [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
 - [Github Collaboration](https://github.com/zuri-training/Pro_Team_41_Chunk-File#github-collaboration)
-- [Links](https://github.com/zuri-training/Pro_Team_41_Chunk-File#links)
+- [Project Links](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-links)
 - [DOCUMENTATION](https://github.com/zuri-training/Pro_Team_41_Chunk-File#documentation)
 
 
@@ -201,10 +201,14 @@ git push origin your-current-branch-name
 10. Create a pull request to the main branch
 
 
-## Links
-> Our testable link
+## Project Links
+> #### Our testable link
 - https://zuri-training.github.io/Pro_Team_41_Chunk-File/
- 
+
+
+## Credits 
+#### Team members
+
 
 # DOCUMENTATION
 ## Understanding the process of chunking files

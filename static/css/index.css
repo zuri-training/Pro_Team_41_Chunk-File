@@ -275,16 +275,17 @@ section {
 }
 
 .tilt--folder {
-  /* border: 2px solid yellow; */
   /* margin-top: 7.5rem; */
-  margin-right: -12.5rem;
+
   /* display: flex;
   align-items: center; */
+  /* max-width: 596.34px;
+  width: 70%; */
 }
 
-/* .tilted--img {
-  width: ;
-} */
+.tilted--img {
+  /* margin-right: -12rem; */
+}
 
 .checkmarks {
   margin-top: 2.5rem;
@@ -616,8 +617,10 @@ section {
     width: 100%;
     margin: 0 auto;
   }
+
   .checkmark__setup {
   }
+
   .checkmark {
     max-width: fit-content;
     margin: 0 auto;

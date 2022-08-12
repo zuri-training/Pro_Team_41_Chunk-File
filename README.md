@@ -76,6 +76,9 @@ User can view their account details and change their authentication details
 ### User Flow
 > #### Unauthenticated User:
 1. The user visits the Landing page and can view the platform's features.
+
+![Landing page6](https://user-images.githubusercontent.com/71017261/184405160-03168d35-c62e-4273-87b0-de4c374f6c7a.gif)
+
 2. The user can access the platform's documentation and other pages on the header section.
 3. The user can create an account by navigating to the sign up page. When they successfully create an account, they are authorised to access the dashboard where they can chunk and save their files.
 

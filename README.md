@@ -19,7 +19,7 @@
 
 
 ## Table of content
-- [ChunkIT](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit)
+- [ChunkIT](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/Front-end/assets/icons/logo.svg)
 - [Project Description](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-description)
 - [Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#objectives)
 - [ChunkIt Solutions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-solutions)

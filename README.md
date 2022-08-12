@@ -21,10 +21,12 @@
 ## Table of content
 - [ChunkIT](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#background)
 - [Project Description](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-description)
-- [Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#objectives)
-- [ChunkIt Solutions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-solutions)
-- [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
-- [ChunkIT Key features](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-key-features)
+   - [ChunkIT Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-objectives)
+   - [ChunkIT Solutions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-solutions)
+   - [ChunkIT Key features](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-key-features)
+   - [What to expect in future versions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#what-to-expect-in-future-versions)
+   - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
+   - [Challenges we faced](https://github.com/zuri-training/Pro_Team_41_Chunk-File#challenges-we-faced) 
 - [Product specialization](https://github.com/zuri-training/Pro_Team_41_Chunk-File#product-specialization)
 - [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
 - [Github Collaboration](https://github.com/zuri-training/Pro_Team_41_Chunk-File#github-collaboration)
@@ -36,7 +38,7 @@
 This project, **ChunkIT**, is a project initiative introduced by the Zuri team. ChunkIT is a platform that accepts CSV or JSON large files and chunks them into smaller bits. It also allows users to save or download their files in zipped format anytime. **Chunking** is simply the process of splitting large files into smaller files called **chunks** without losing their content or quality.
 
 
-### Objectives
+### ChunkIT Objectives
 - Solve problems regarding issues of having large CSV and JSON files
 - Allow user to split large CSV and JSON files
 - Allow user to save files and have the possibility of downloading in the future
@@ -47,46 +49,6 @@ This project, **ChunkIT**, is a project initiative introduced by the Zuri team. 
 - Easily import, save and download your CSV and JSON files anytime
 - Chunking as much as 250MB of CSV and JSON files without a fee
 - Splitting files into different sizes and numbers
-
-
-### Technologies Used
-
-##### HTML, CSS 
-HTML & CSS add structure and style to the webpages.
-
-#### Bootstrap
-The Bootstrap framework was used to quickly design the front end of the platform. 
-
-#### Javascript (Vanilla)
-Vanilla JS was used to create an rich interfaces, add speed to the client side and add functionality to the platform's authentication.
-
-#### Python (Django)
-Django was used for the rapid development of a secure and maintainable platform at the backend.
-
-> MySQL 
-
-MySQL was used to provide comprehensive support for the applications developed in Django and to store user data.
-
-### Challenges we faced
-> Cracking the splitting functionality
-   <p>Splitting by size is possible, but the end product may not be usable. This issue was resolved by using the <strong>Numbers of chunks</strong> feature and Pandas Library.</p> 
-
-   ```
-   import pandas as pd
-   
-   if url.split(".")[-1] == 'csv':
-       df = pd.read_csv(url)
-       rows_per_file = df.shape[0] // file_count
-       folder_name = str(settings.BASE_DIR) + "\\temp\\" + str(int(time.time()*1000))
-       os.makedirs(folder_name)
-       for row_start in range(0, df.shape[0], rows_per_file):
-           new_file  = df[row_start:row_start+rows_per_file]
-           new_file.to_csv(f"{folder_name}/chunk_{row_start}.csv")
-   ```
-
-> Deploying to the server
-
-> Implementing the frontend of the platform according to specification
 
 ### ChunkIT Key features 
 
@@ -116,6 +78,45 @@ User can view their account details and change their authentication details
 - Allow user to sort split CSV and JSON files easily
 - Merge CSV and JSON
 - Allow user to chunk more file formats 
+
+### Technologies Used
+
+##### HTML, CSS 
+HTML & CSS add structure and style to the webpages.
+
+#### Bootstrap
+The Bootstrap framework was used to quickly design the front end of the platform. 
+
+#### Javascript (Vanilla)
+Vanilla JS was used to create an rich interfaces, add speed to the client side and add functionality to the platform's authentication.
+
+#### Python (Django)
+Django was used for the rapid development of a secure and maintainable platform at the backend.
+
+> ###### MySQL 
+
+MySQL was used to provide comprehensive support for the applications developed in Django and to store user data.
+
+### Challenges we faced
+> Cracking the splitting functionality
+   <p>Splitting by size is possible, but the end product may not be usable. This issue was resolved by using the <strong>Numbers of chunks</strong> feature and Pandas Library.</p> 
+
+   ```
+   import pandas as pd
+   
+   if url.split(".")[-1] == 'csv':
+       df = pd.read_csv(url)
+       rows_per_file = df.shape[0] // file_count
+       folder_name = str(settings.BASE_DIR) + "\\temp\\" + str(int(time.time()*1000))
+       os.makedirs(folder_name)
+       for row_start in range(0, df.shape[0], rows_per_file):
+           new_file  = df[row_start:row_start+rows_per_file]
+           new_file.to_csv(f"{folder_name}/chunk_{row_start}.csv")
+   ```
+
+> Deploying to the server
+
+> Implementing the frontend of the platform according to design specifications
 
 ### User Flow
 > Unauthenticated User:

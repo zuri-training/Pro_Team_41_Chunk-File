@@ -27,6 +27,7 @@
    - [What to expect in future versions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#what-to-expect-in-future-versions)
    - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
    - [Challenges we faced](https://github.com/zuri-training/Pro_Team_41_Chunk-File#challenges-we-faced) 
+   - [User Flow](https://github.com/zuri-training/Pro_Team_41_Chunk-File#user-flow)
 - [Product specialization](https://github.com/zuri-training/Pro_Team_41_Chunk-File#product-specialization)
 - [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
 - [Github Collaboration](https://github.com/zuri-training/Pro_Team_41_Chunk-File#github-collaboration)
@@ -119,14 +120,15 @@ MySQL was used to provide comprehensive support for the applications developed i
 > Implementing the frontend of the platform according to design specifications
 
 ### User Flow
-> Unauthenticated User:
-- User starts flow by entering the Landing page from the link and can check through who we are and the services we can offer.
-- Users can access the platform's documentation and other resources on the header section.
-- The moment an unauthenticated user signs up, they are authorised to access the plaform's chunking features and their journey continues.
-> Authenticated User:
-- The user now has full access to all our services and can chunk any CSV or JSON file he wants
-- The user has a dashboard where he can upload, chunk, save or download files at any time.
-- The user also has a setting, profile, and chunk history page that he can access anytime he logs in.
+> #### Unauthenticated User:
+1. The user visits the Landing page and can view the platform's features.
+2. The user can access the platform's documentation and other pages on the header section.
+3. The user can create an account by navigating to the sign up page. When they successfully create an account, they are authorised to access the dashboard where they can chunk and save their files.
+
+> #### Authenticated User:
+1. The user now has full access to all our services and can chunk any CSV or JSON file he wants
+2. The user has a dashboard where he can upload, chunk, save or download files at any time.
+3. The user also has a account settings page that they can access anytime they log in.
 
 
 ## Product Specialization

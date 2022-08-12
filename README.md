@@ -205,9 +205,11 @@ git push origin your-current-branch-name
   The platform can only accept files up to 250 MB in size and are also of the correct format, CSV or JSON. 
  Once the file uploaded by the user satisfies the requirements, the user can choose the size of the chunk files they require. 
  The size of the chunk should not be above the original file size. If it is, the file will not be chunked.   If the size of the chunk is within the acceptable range, the user is directed to a screen where they can download a zipped file containing the chunked file. The user can also choose to download the files later, and their files are saved on the dashboard.
+ <img src="/Front-end/assets/team images/chunk file modal.png">
 
 ## What to do after the file is chunked
 >   When chunking is over user can save or download the file. The user can also come back later to continue the process without the risk of losing files.  Downloaded files are automatically zipped for easy transfer. Past chunks can be accessed on the user dashboard when needed.
+ <img src="/Front-end/assets/team images/zip- svg.png">
 
 ## List of available features  
 

@@ -69,7 +69,7 @@ MySQL was used to provide comprehensive support for the applications developed i
 
 ### Challenges we faced
 > Cracking the splitting functionality
-   <p>Splitting by size is possible, but the end product may not be usable. This issue was resolved by using the **Numbers of chunks** feature and Pandas Library.</p> 
+   <p>Splitting by size is possible, but the end product may not be usable. This issue was resolved by using the <strong>Numbers of chunks</strong> feature and Pandas Library.</p> 
 
    ```
    import pandas as pd

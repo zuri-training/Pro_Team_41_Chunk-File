@@ -24,10 +24,10 @@
    - [ChunkIT Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-objectives)
    - [ChunkIT Solutions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-solutions)
    - [ChunkIT Key features](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-key-features)
+   - [User Flow](https://github.com/zuri-training/Pro_Team_41_Chunk-File#user-flow)
    - [What to expect in future versions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#what-to-expect-in-future-versions)
    - [Technologies Used](https://github.com/zuri-training/Pro_Team_41_Chunk-File#technologies-used)
    - [Challenges we faced](https://github.com/zuri-training/Pro_Team_41_Chunk-File#challenges-we-faced) 
-   - [User Flow](https://github.com/zuri-training/Pro_Team_41_Chunk-File#user-flow)
 - [Product specialization](https://github.com/zuri-training/Pro_Team_41_Chunk-File#product-specialization)
 - [Project Status](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-status)
 - [Github Collaboration](https://github.com/zuri-training/Pro_Team_41_Chunk-File#github-collaboration)
@@ -72,6 +72,17 @@ User can upload a file and chunk it according to their preference. The user's sa
 ##### Dashboard - Account settings Page
 
 User can view their account details and change their authentication details 
+
+### User Flow
+> #### Unauthenticated User:
+1. The user visits the Landing page and can view the platform's features.
+2. The user can access the platform's documentation and other pages on the header section.
+3. The user can create an account by navigating to the sign up page. When they successfully create an account, they are authorised to access the dashboard where they can chunk and save their files.
+
+> #### Authenticated User:
+1. The user now has full access to all our services and can chunk any CSV or JSON file he wants
+2. The user has a dashboard where he can upload, chunk, save or download files at any time.
+3. The user also has a account settings page that they can access anytime they log in.
 
 ### What to expect in future versions 
 
@@ -119,16 +130,7 @@ MySQL was used to provide comprehensive support for the applications developed i
 
 > Implementing the frontend of the platform according to design specifications
 
-### User Flow
-> #### Unauthenticated User:
-1. The user visits the Landing page and can view the platform's features.
-2. The user can access the platform's documentation and other pages on the header section.
-3. The user can create an account by navigating to the sign up page. When they successfully create an account, they are authorised to access the dashboard where they can chunk and save their files.
 
-> #### Authenticated User:
-1. The user now has full access to all our services and can chunk any CSV or JSON file he wants
-2. The user has a dashboard where he can upload, chunk, save or download files at any time.
-3. The user also has a account settings page that they can access anytime they log in.
 
 
 ## Product Specialization

@@ -1,3 +1,15 @@
+# Deployment Instructions
+1. Please clone the branch backend/main with the command below
+```
+git clone -b backend/main https://github.com/zuri-training/Pro_Team_41_Chunk-File.git
+```
+2. please install the requirement for the project with the command below
+pip install -r requiremnet.txt
+```
+3. the achitecture is Monolith (Django Templating)
+4. Please the project folder name is chunk_41 it is where setting.py, wsgi.py can be found.
+5. please the app folder name is chunkit
+
 <p><img src = "/Front-end\assets\icons\logo.svg"></p>
 ## Background
 - [x] A platform that accepts CSV or JSON large files and chunks them into smaller bits.

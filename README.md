@@ -243,7 +243,7 @@ git push origin your-current-branch-name
 | Nicole Moyo                      | [@beverly-m](https://github.com/beverly-m)                   | Product Designer (Assistant Team Lead)     |
 | Ohayi James Chukwuka             | [@Sanctogiacomo](https://github.com/Sanctogiacomo)           | Product Designer                           |
 | Daniel Ukoha                     | [@Superfly101](https://github.com/Superfly101)               | Frontend Developer                         |
-| Louis Binah                      | [@BINAH25](https://github.com/BINAH25)                       | Backend Developer                          |
+| Louis Binah                      | [@BINAH25](https://github.com/BINAH25)                       | Full Stack Developer                       |
 | John Ojibo                       | [@jkull247](https://github.com/jkull247)                     | Frontend Developer                         |
 | Emmanuel Osaite                  | [@Vixxena](https://github.com/Vixxena)                       | Product Designer                           |
 | Chukwuebuka Joshua Ezeokechukwu  | [@Ebuka500](https://github.com/Ebuka500)                     | Product Designer                           |

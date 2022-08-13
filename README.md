@@ -7,8 +7,11 @@ git clone -b backend/main https://github.com/zuri-training/Pro_Team_41_Chunk-Fil
 pip install -r requiremnet.txt
 ```
 3. the achitecture is Monolith (Django Templating)
+```
 4. Please the project folder name is chunk_41 it is where setting.py, wsgi.py can be found.
-5. please the app folder name is chunkit
+```
+6. please the app folder name is chunkit
+```
 
 <p><img src = "/Front-end\assets\icons\logo.svg"></p>
 ## Background

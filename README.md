@@ -12,9 +12,17 @@ pip install -r requirements.txt
 ```
 3. The achitecture is Monolith (Django Templating)
 > 
-4. The project folder name is chunk_41. it is where setting.py, wsgi.py can be found.
+4. static and media files configured
+>
+5. Please when specifying the static path on the server, remember to specfify the media path too.
+>
+6. The project folder name is chunk_41. it is where setting.py, wsgi.py can be found.
 > 
-5. The app folder name is chunkit
+7. The app folder name is chunkit
+>
+8. the static folder name is static
+>
+9. the media folder name is media
 
 <p><img src = "/Front-end\assets\icons\logo.svg"></p>
 

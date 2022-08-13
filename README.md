@@ -1,6 +1,6 @@
 <p><img src = "/Front-end\assets\icons\logo.svg"></p>
 
-## Deployment Instructions
+# Deployment Instructions
 1. Please clone the branch backend/main with the command below
 ```
 git clone -b backend/main https://github.com/zuri-training/Pro_Team_41_Chunk-File.git
@@ -12,7 +12,7 @@ pip install -r requiremnet.txt
 4. Please the project folder name is chunk_41 it is where setting.py, wsgi.py can be found.
 5. please the app folder name is chunkit
 
-Background
+##Background
 - [x] A platform that accepts CSV or JSON large files and chunks them into smaller bits.
 
 > Our Vision

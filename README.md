@@ -4,7 +4,8 @@
 git clone -b backend/main https://github.com/zuri-training/Pro_Team_41_Chunk-File.git
 ```
 2. please install the requirement for the project with the command below
-pip install -r requiremnet.txt
+```
+pip install -r requirement.txt
 ```
 3. the achitecture is Monolith (Django Templating)
 4. Please the project folder name is chunk_41 it is where setting.py, wsgi.py can be found.

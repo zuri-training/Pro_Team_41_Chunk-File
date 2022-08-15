@@ -1,4 +1,7 @@
-# Deployment Instructions
+<details close="close">
+<summary> <strong>Deployment Instructions</strong> </summary>
+
+
 > THE DEPLOYMENT BRANCH IS - [backend/main](https://github.com/zuri-training/Pro_Team_41_Chunk-File/tree/backend/main)
 
 1.  clone the branch backend/main with the command below
@@ -29,6 +32,8 @@ python manage.py migrate chunkit
 9. the static folder name is static
 >
 10. the media folder name is media
+
+</details>
 
 <p><img src = "/Front-end\assets\icons\logo.svg"></p>
 
@@ -331,19 +336,18 @@ These are platforms that helped us build the project:
   The platform can only accept files up to 250 MB in size and are also of the correct format, CSV or JSON. 
  Once the file uploaded by the user satisfies the requirements, the user can choose the size of the chunk files they require. 
  The size of the chunk should not be above the original file size. If it is, the file will not be chunked.   If the size of the chunk is within the acceptable range, the user is directed to a screen where they can download a zipped file containing the chunked file. The user can also choose to download the files later, and their files are saved on the dashboard.
- <p align="center"><img src="/Front-end/assets/team images/chunk file modal.png" height="450"></p>
+
 
 ## What to do after the file is chunked
 >   When chunking is over user can save or download the file. The user can also come back later to continue the process without the risk of losing files.  Downloaded files are automatically zipped for easy transfer. Past chunks can be accessed on the user dashboard when needed.
- <p align="center"><img src="/Front-end/assets/team images/zip- svg.png" height="450"></p>
+
 
 ## List of available features  
 
 - Analyse files
 - Split JSON
 - Split CSV
-- Split by rows
-- Split by file size
+- Rename File
 - Split by number of chunks
 - Save chunked CSV files
 - Save chunked JSON files

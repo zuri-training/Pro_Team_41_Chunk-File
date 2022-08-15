@@ -214,6 +214,7 @@ Towards the end of the project, we started having some designers joining develop
 
 ## Product Specialization
 > Mobile Phones and Laptops
+
 > ![Responsive](https://user-images.githubusercontent.com/71017261/184665794-af7eab0e-a489-455a-9429-e2688130ac43.gif)
 
 

@@ -180,6 +180,8 @@ MySQL was used to provide comprehensive support for the applications developed i
 
 Chunking by size is possible; however, we discovered that the end product is not usable at times. For example, when a user uploads a JSON file of 20 MB and they require chunks of 2MB, generating files of exactly 2MB each meant that the file may not meet the JSON file standards.
 
+
+> #### Solution (Cracking the chunking functionality)
 We decided to attempt chunking by the number of files, which was easier to implement for the team. 
 
 We used the Pandas library to implement the algorithm to chunk the files. The following is a snippet of our code:
@@ -202,17 +204,20 @@ We used the Pandas library to implement the algorithm to chunk the files. The fo
 
 > #### Deploying to the server
 
-> #### Implementing the frontend of the platform according to design specifications
+> #### Implementing the platform according to UI/UX design specifications
+Our team consists of Product Designers, Frontend Developers and Backend Developers. The Product Designers carried out the necessary research to inform the UI designs, and shared the hi-fidelity screens and relevant resources with the Frontend developers for platform implementation. The Frontend developers then communicated with the backend developers about any chances made to the UI designs that would influence the backend features. 
 
+Although the Frontend developers managed to implement the UI design changes as accurately as possible, the user flow between each screen was not developed according to the Product Design teams expectations in some instances. The Frontend developers interpreted the flow different from the Designers, whilst the Backend developers also had their own interpretation.
+
+> #### Solution (Implementing the platform according to UI/UX design specifications)
+Towards the end of the project, we started having some designers joining developer meetings to find out how developers interpret the UI designs. This uncovered the areas where there were misunderstandings, and we were able to rectify most of the inconsistencies that were on our platform. Communication between all subgroups of the team was important to ensure the end product is seamless.
 
 ## Product Specialization
-> Mobile Phones, Tablets and Laptops
+> Mobile Phones and Laptops
 
 
 ## Project Status
-> First Phase completed
-
-> Next Phase yet to start
+> First Phase completed, Next Phase yet to start
 
 
 ## Github Collaboration
@@ -256,7 +261,11 @@ git push origin your-current-branch-name
 
 ## Project Links
 > #### Our testable link
+- https://chunkt.pythonanywhere.com/
+
+> #### Our frontend implementation link
 - https://zuri-training.github.io/Pro_Team_41_Chunk-File/
+
 
 
 ## Credits 

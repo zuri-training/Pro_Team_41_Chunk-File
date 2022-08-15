@@ -165,8 +165,24 @@ Django was used for the rapid development of a secure and maintainable platform 
 MySQL was used to provide comprehensive support for the applications developed in Django and to store user data.
 
 ### Challenges we faced
-> Cracking the splitting functionality
-   <p>Splitting by size is possible, but the end product may not be usable. This issue was resolved by using the <strong>Numbers of chunks</strong> feature and Pandas Library.</p> 
+> #### Cracking the chunking functionality
+   We planned to implement 3 methods of chunking:
+   
+   1. Chunking by size (which was the primary method to implement)
+      - The user chooses the size of each chunk to be generated from the original file, then the original file is divided according to the specified size.
+      - e.g. A user uploads a 100 MB file and chooses a chunk size of 5 MB. 20 files of roughly 5 MB each would be generated from the 100 MB file.
+   2. Chunking by number of rows 
+      - The user chooses the number of rows each file chunk should have. 
+      - e.g. With a file of 20 rows, and the user chooses 10 rows per chunk, approximately 2 files will be generated.
+   3. Chunking by number of files/chunks
+      - The user selects the number of files they would like to be generated from the original file.
+      - e.g. From an 80 MB file, a user requires 5 files. Approximately 5 files of 16 MB will be generated from the original file.
+
+Chunking by size is possible; however, we discovered that the end product is not usable at times. For example, when a user uploads a JSON file of 20 MB and they require chunks of 2MB, generating files of exactly 2MB each meant that the file may not meet the JSON file standards.
+
+We decided to attempt chunking by the number of files, which was easier to implement for the team. 
+
+We used the Pandas library to implement the algorithm to chunk the files. The following is a snippet of our code:
 
    ```
    import pandas as pd
@@ -180,10 +196,13 @@ MySQL was used to provide comprehensive support for the applications developed i
            new_file  = df[row_start:row_start+rows_per_file]
            new_file.to_csv(f"{folder_name}/chunk_{row_start}.csv")
    ```
+ ###### N.B. Although the user may select the number of chunks/files they require, they may find that the files generated are one chunk/file more than requested.
+ This was inevitable because as the algorithim is chunking the files, it prioritises the usability of the file. This means that if the required number of chunks/files are generated but they are not usable, the algorithm will try to increase the number of chunks to meet the CSV or JSON file standards, such that the file is usable.
+ 
 
-> Deploying to the server
+> #### Deploying to the server
 
-> Implementing the frontend of the platform according to design specifications
+> #### Implementing the frontend of the platform according to design specifications
 
 
 ## Product Specialization

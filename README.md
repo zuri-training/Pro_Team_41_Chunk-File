@@ -48,7 +48,8 @@ python manage.py migrate chunkit
 - [x] Developers, Data Analyst, Multinationals
 
 
-## Table of content
+## Table of Contents
+- [Deployment Instructions](https://github.com/zuri-training/Pro_Team_41_Chunk-File#deployment-instructions)
 - [ChunkIT](https://github.com/zuri-training/Pro_Team_41_Chunk-File/blob/main/README.md#background)
 - [Project Description](https://github.com/zuri-training/Pro_Team_41_Chunk-File#project-description)
    - [ChunkIT Objectives](https://github.com/zuri-training/Pro_Team_41_Chunk-File#chunkit-objectives)
@@ -270,6 +271,11 @@ git push origin your-current-branch-name
 | Joseph Igbekoyi                  | [@Jaay06](https://github.com/Jaay06)                         | Frontend Developer                         |
 
 #### Resources
+These are platforms that helped us build the project:
+- https://greensock.com/forums/forum/11-gsap/
+- https://stackoverflow.com/
+- https://www.w3schools.com/
+- https://codepen.io/
 
 # DOCUMENTATION
 ## Understanding the process of chunking files

@@ -60,6 +60,7 @@ a img {
 
 .login h1 {
   margin-top: 1rem;
+  color: var(--color-main);
 }
 
 .reset h1 {
@@ -107,6 +108,13 @@ a img {
 
 a {
   text-decoration: none;
+  color: var(--color-main);
+  position: relative;
+  /* font-size: 400; */
+}
+
+a.redirect {
+  text-decoration: none;
   color: var(--color-btn);
 }
 
@@ -125,4 +133,20 @@ a {
   color: #fff;
   background-color: var(--color-main);
   border: none;
+}
+
+.sent small,
+.sent p {
+  margin-block-start: 1.5rem;
+  /* text-align: center; */
+}
+
+.arrow {
+  position: absolute;
+  left: -1.2rem;
+  top: 1px;
+}
+
+.arrow img {
+  width: 1rem;
 }

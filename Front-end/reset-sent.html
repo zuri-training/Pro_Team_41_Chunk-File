@@ -4,23 +4,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reset Password</title>
+    <title>Sent</title>
     <link rel="stylesheet" href="login.css" />
   </head>
   <body>
     <main>
       <section class="login-container">
-        <div class="login reset">
+        <div class="login sent">
           <!-- <span class="close-button">&times;</span> -->
           <a href="../index.html"
             ><img src="assets/icons/logo.svg" alt="Logo"
           /></a>
-          <h1>Forgot Your Password</h1>
-          <small>
-            Enter your email address and we will send you instructions to reset
-            your password
-          </small>
-          <form action="" class="" id="reset-form">
+          <h1>Check your mail</h1>
+          <p>We sent a password reset link to your registered email</p>
+          <!-- <form action="" class="" id="reset-form">
             <div class="form-control">
               <label for="email">Email Address</label>
               <input
@@ -32,12 +29,19 @@
             <div class="form-action">
               <button>Continue</button>
             </div>
-          </form>
+          </form> -->
+          <small
+            >Didn't receive the email?
+            <a href="reset-password.html" class="redirect"
+              >Click to resend</a
+            ></small
+          >
           <small>
-            <a href="login.html" class=""
+            <a href="login.html"
               ><span class="arrow"
-                ><img src="assets/icons/login-arrow_back.png" alt="" /></span
-              >Back to Sign In</a
+                ><img src="assets/icons/login-arrow_back.png" alt=""
+              /></span>
+              Back to Sign In</a
             ></small
           >
         </div>
@@ -45,5 +49,5 @@
     </main>
     <footer></footer>
   </body>
-  <script src="reset-password.js"></script>
+  <!-- <script src="reset-password.js"></script> -->
 </html>

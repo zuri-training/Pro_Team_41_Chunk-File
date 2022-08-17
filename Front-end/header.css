@@ -74,8 +74,12 @@ ul {
   color: var(--color-main);
 }
 
-.primary-navigation .nav-link a:hover {
+.primary-navigation a.active {
   color: var(--pink);
+}
+
+.primary-navigation .nav-link a:hover {
+  color: #ff6f6caf;
 }
 
 .header-action .btn-link {

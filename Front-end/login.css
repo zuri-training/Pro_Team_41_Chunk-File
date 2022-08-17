@@ -19,6 +19,7 @@ body {
 
 button {
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .login-container {
@@ -149,4 +150,12 @@ a.redirect {
 
 .arrow img {
   width: 1rem;
+}
+
+form.success {
+  text-align: center;
+}
+
+form.success p {
+  text-align: left;
 }

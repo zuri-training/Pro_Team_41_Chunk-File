@@ -74,6 +74,10 @@ ul {
   color: var(--color-main);
 }
 
+.primary-navigation a.active {
+  color: var(--pink);
+}
+
 .primary-navigation .nav-link a:hover {
   color: var(--pink);
 }

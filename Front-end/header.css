@@ -79,7 +79,7 @@ ul {
 }
 
 .primary-navigation .nav-link a:hover {
-  color: var(--pink);
+  color: #ff6f6caf;
 }
 
 .header-action .btn-link {

@@ -28,6 +28,7 @@ button:hover {
   position: relative;
   top: 4rem;
   padding-left: 6rem;
+  z-index: -1;
   /* left: 5rem; */
 }
 
@@ -281,5 +282,11 @@ button:hover {
 
   .right div {
     margin: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .settings {
+    padding-inline: 4rem 1rem;
   }
 }

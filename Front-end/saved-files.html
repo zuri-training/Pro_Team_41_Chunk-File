@@ -17,10 +17,20 @@
       </div>
       <div class="user">
         <small>user@gmail.com</small>
-        <img src="assets/icons/logout-icon.png" alt="" />
+        <img src="assets/icons/logout-icon.png" alt="" onclick="toggleLogoutModal()" />
       </div>
     </header>
     <main>
+      <section class="modal" id="logout-modal">
+        <div class="modal-content">
+          <h2>Log out</h2>
+          <p>
+            Are you sure you want to log out?
+          </p>
+          <button class="btn-danger">Log out</button>
+          <button class="cancel">Cancel</button>
+        </div>
+      </section>
       <section id="file-upload-modal" class="modal">
         <div class="modal-content">
           <span class="close-button"
@@ -181,10 +191,10 @@
                 <input type="checkbox" name="" id="select-all" />
               </th>
               <th scope="col">File Name</th>
-              <th scope="col">Size</th>
-              <th scope="col">Type</th>
-              <th scope="col">Last Modified</th>
-              <th scope="col">Chunk files</th>
+              <th scope="col" class="hide">Size</th>
+              <th scope="col" class="hide">Type</th>
+              <th scope="col" class="hide">Last Modified</th>
+              <th scope="col" class="hide">Chunk files</th>
               <th scope="col"></th>
             </tr>
           </thead>
@@ -192,12 +202,12 @@
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
               <td>Filename1.csv</td>
-              <td>5.41MB</td>
-              <td>CSV</td>
-              <td>
+              <td class="hide">5.41MB</td>
+              <td class="hide">CSV</td>
+              <td class="hide">
                 <span class="date">July 25, 2022 3:30 PM</span>
               </td>
-              <td>5</td>
+              <td class="hide">5</td>
               <td>
                 <div>
                   <button class="btn-download">
@@ -212,12 +222,12 @@
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
               <td>Filename1239sk.json</td>
-              <td>2.65MB</td>
-              <td>CSV</td>
-              <td>
+              <td class="hide">2.65MB</td>
+              <td class="hide">CSV</td>
+              <td class="hide">
                 <span class="date">July 20, 2022 - 1:12 AM</span>
               </td>
-              <td>3</td>
+              <td class="hide">3</td>
               <td>
                 <div>
                   <button class="btn-download">
@@ -232,12 +242,12 @@
             <tr>
               <td><input type="checkbox" name="" id="" /></td>
               <td>RandomFileNameThatIsLongSomehow.json</td>
-              <td>100 MB</td>
-              <td>CSV</td>
-              <td>
+              <td class="hide">100 MB</td>
+              <td class="hide">CSV</td>
+              <td class="hide">
                 <span class="date">July 19, 2022 - 12:56 PM</span>
               </td>
-              <td>4</td>
+              <td class="hide">4</td>
               <td>
                 <div>
                   <button class="btn-download">

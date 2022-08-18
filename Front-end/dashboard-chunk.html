@@ -5,7 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="dashboard.css" />
+    <!-- <link rel="stylesheet" href="dashboard.css" /> -->
+    <link rel="stylesheet" href="dashboard-chunk.css">
   </head>
   <body>
     <header class="top-nav">
@@ -14,20 +15,10 @@
       </div>
       <div class="user">
         <small>user@gmail.com</small>
-        <img src="assets/icons/logout-icon.png" alt="" onclick="toggleLogoutModal()" />
+        <img src="assets/icons/logout-icon.png" alt="" />
       </div>
     </header>
     <main>
-      <section class="modal" id="logout-modal">
-        <div class="modal-content">
-          <h2>Log out</h2>
-          <p>
-            Are you sure you want to log out?
-          </p>
-          <button class="btn-danger">Log out</button>
-          <button class="cancel">Cancel</button>
-        </div>
-      </section>
       <section id="file-upload-modal" class="modal">
         <div class="modal-content">
           <span class="close-button"
@@ -45,7 +36,7 @@
                   <small id="name">File name</small>
                 </div>
                 <p>
-                  <small class="warning"><span><img src="assets/icons/warning_amber.png" alt=""></span> File must not exceed 250 MB</small>
+                  <small class="warning">File must not exceed 250 MB</small>
                 </p>
               </div>
               <div class="form-control radio">
@@ -106,7 +97,7 @@
           <img src="assets/icons/logo.svg" alt="chunck it logo" class="logo" />
         </div>
 
-        <button class="file-upload btn-upload">+<small></small></button>
+        <button class="file-upload btn-upload" onclick="window.location.href='./dashboard.html'">+<small></small></button>
         <ul class="navigation">
           <li class="active">
             <a href="dashboard.html">
@@ -126,22 +117,50 @@
           ><strong>&copy; 2022 ChunkIT, Inc</strong></small
         >
       </nav>
-      <section class="library-actions">
+      <!-- <section class="library-actions">
         <button class="btn-delete" disabled>
           <img src="assets/icons/delete-enabled-icon.png" alt="" />
         </button>
         <button class="btn-upload">+ Upload New File</button>
-      </section>
-      <section class="page-content">
+      </section> -->
+      <!-- <section class="page-content">
         <img
           src="assets/images/Add files-image.png"
           alt="download folder image"
         />
-        <p>Your library is empty. Upload a file to start chunking.</p>
+        <p>Your library is empty. Upload a file to start chuncking.</p>
         <button class="btn-upload">Upload New File</button>
-      </section>
+      </section> -->
+      <div class="chunk-content">
+        <!-- <span class="close-button"
+          ><img src="assets/icons/close.png" alt=""
+        /></span> -->
+        <h2>Chunk File <span>(2/2)</span></h2>
+        <div class="inner-modal-content">
+          <img src="assets/images/download-folder.png" alt="" class="top-img" />
+          <small>Chunking Complete</small>
+          <button class="primary">
+            <span
+              ><img
+                src="assets/icons/file_download-light.png"
+                alt="file download icon" /></span
+            >Download Zipped Files
+          </button>
+
+          <div class="download-later">
+              <small>Or</small>
+              <small>Download later. Your file will be saved in your library</small>
+              <button class="complementary">
+                  <span
+                    ><img
+                      src="assets/icons/file_download.svg"
+                      alt="file download icon" /></span
+                  >Download Later</button>
+          </div>
+      </div>
     </main>
 
-    <script src="dashboard.js"></script>
+    <!-- <script src="dashboard.js"></script> -->
+    <script src="dashboard-chunk.js"></script>
   </body>
 </html>

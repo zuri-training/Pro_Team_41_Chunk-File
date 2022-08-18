@@ -34,10 +34,11 @@ body {
   /* table-layout: fixed; */
   border-collapse: collapse;
   width: 100%;
-  min-width: 740px;
+  /* margin-left: 1rem; */
+  /* min-width: 740px; */
   /* height: fit-content; */
   text-align: left;
-  overflow-x: scroll;
+  /* overflow-x: scroll; */
 }
 
 table th:last-of-type,
@@ -82,4 +83,30 @@ table input {
 
 #file-upload-modal form {
   width: 100%;
+}
+
+@media (max-width: 700px) {
+  table tr .hide {
+    display: none;
+  }
+
+  table td:first-of-type,
+  table th:first-of-type {
+    width: 0.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  table td,
+  table th {
+    font-size: 0.9rem;
+  }
+
+  .saved-files {
+    padding-left: 4rem;
+  }
+
+  .library-actions {
+    padding-inline: 3rem 1rem;
+  }
 }

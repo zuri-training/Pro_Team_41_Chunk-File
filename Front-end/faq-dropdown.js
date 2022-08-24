@@ -1,4 +1,4 @@
-const question = document.querySelector(".question-container .inner");
+// const question = document.querySelector(".question-container .inner");
 
 const dropdowns = document.querySelectorAll(".btn-dropdown");
 
